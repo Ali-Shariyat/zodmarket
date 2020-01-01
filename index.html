@@ -7,28 +7,33 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap4-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+          media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+          media="all">
 </head>
 <body class="rtl" data-theme-color="">
 <header class="py-4">
-    <div class="container d-flex align-items-center justify-content-between custom-container">
+    <div class="container align-items-center justify-content-between custom-container d-none d-lg-flex">
         <div class="d-inline-flex">
             <div class="logo">
                 <a href="#"><img src="image/logo.png" alt="logo"> </a>
             </div>
             <div class="menu d-flex align-items-center mr-5">
-                <ul class="d-flex mb-3">
+                <ul class="d-flex mb-1">
                     <li class="ml-4 active">
-                        <a href="#" class="position-relative pb-2">
+                        <a href="#" class="position-relative pb-3">
                             <i class="icon-font-home color-color-persimmon font-size-12"></i>
                             صفحه اصلی</a>
                     </li>
                     <li class="ml-4">
-                        <a href="#" class="position-relative pb-2">
+                        <a href="#" class="position-relative pb-3">
                             <i class="icon-font-grouping color-color-persimmon font-size-12"></i>
                             دسته بندی ها</a>
                     </li>
                     <li class="ml-4">
-                        <a href="#" class="position-relative pb-2">
+                        <a href="#" class="position-relative pb-3">
                             <i class="icon-font-discounts color-color-persimmon font-size-12"></i>
                             تخفیف ها</a>
                     </li>
@@ -36,9 +41,9 @@
             </div>
         </div>
         <div class="d-inline-flex justify-content-end">
-            <form class="search-box overflow-hidden border-radius-50 border-color-coral-red border-width-3 border-style-solid d-flex col-xl-6">
+            <form class="search-box overflow-hidden border-radius-50 border-color-persimmon border-width-3 border-style-solid d-flex col-xl-6">
                 <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100">
-                <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22"></i>
+                <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22 color-color-malachite"></i>
                 </a>
             </form>
             <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2">
@@ -50,6 +55,79 @@
                 <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
             </a>
         </div>
+    </div>
+    <div class="d-flex d-lg-none justify-content-between container-fluid">
+        <div class="menu-small-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt="logo"></a>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt="logo"></a>
+        </div>
+    </div>
+
+    <div class="menu-items position-fixed h-100 text-white">
+        <div class="close-menu w-100"><i class="far fa-times-circle p-3"></i></div>
+        <ul class="">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">صفحه اصلی</a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class=""><a href="">دانشگاه ها در استان ها</a><i class="fas fa-plus float-left position-relative"></i></div>
+                <ul class="menu-down">
+                    <li><a href="#">استان تهران</a></li>
+                    <li><a href="#">استان مازندران</a></li>
+                    <li><a href="#">استان خراسان رضوى</a></li>
+                    <li><a href="#">استان آذربايجان شرقى</a></li>
+                    <li><a href="#">استان فارس</a></li>
+                    <li><a href="#">استان اصفهان</a></li>
+                    <li><a href="#">استان خوزستان</a></li>
+                    <li><a href="#">استان کرمان</a></li>
+                    <li><a href="#">استان گيلان</a></li>
+                    <li><a href="#">استان گلستان</a></li>
+                    <li><a href="#">استان مرکزى</a></li>
+                    <li><a href="#">استان آذرباىجان غربى</a></li>
+                    <li><a href="#">استان سمنان</a></li>
+                    <li><a href="#">استان قم</a></li>
+                    <li><a href="#">استان گلستان</a></li>
+                    <li><a href="#">استان سيستان و بلوچستان</a></li>
+                    <li><a href="#">استان يزد</a></li>
+                    <li><a href="#">استان قزوين</a></li>
+                    <li><a href="#">استان همدان</a></li>
+                    <li><a href="#">استان هرمزگان</a></li>
+                    <li><a href="#">استان اردبيل</a></li>
+                    <li><a href="#">استان بوشهر</a></li>
+                    <li><a href="#">استان لرستان</a></li>
+                    <li><a href="#">استان خراسان شمالى</a></li>
+                    <li><a href="#">استان کرمانشاه</a></li>
+                    <li><a href="#">استان زنجان</a></li>
+                    <li><a href="#">استان ايلام</a></li>
+                    <li><a href="#">استان خراسان جنوبى</a></li>
+                    <li><a href="#">استان کهکيلويه و بويراحمد</a></li>
+                    <li><a href="#">استان کردستان</a></li>
+                    <li><a href="#">استان چهارمحال و بختيارى</a></li>
+                    <li><a href="#">استان البرز</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">رتبه بندی علمی</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> تحلیل محتوایی مقالات</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">دانشگاه های برتر</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> نظام رتبه بندی دانشگاه ها</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> رصد مقالات</a>
+            </li>
+        </ul>
+
     </div>
 </header>
 <main>

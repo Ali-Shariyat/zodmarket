@@ -273,6 +273,10 @@ ul li {
   border-color: #0DB413;
 }
 
+.border-color-persimmon {
+  border-color: #FE6845;
+}
+
 .border-style-solid {
   border-style: solid;
 }
@@ -303,7 +307,7 @@ header .search-box input {
 }
 header .search-box .search-btn {
   left: 10px;
-  top: 50%;
+  top: calc(50% + 1px);
   transform: translate(0, -50%);
 }
 header .shop-icon {
@@ -315,6 +319,45 @@ header .shop-icon .shop-item-number {
   bottom: 0;
   height: 20px;
   min-width: 20px;
+}
+header .menu-small-icon {
+  font-size: 40px;
+}
+header .menu-items {
+  z-index: 1003;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  background-color: #272727;
+  transition: all 0.5s;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 1200px) {
+  header .menu-items .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+header .menu-items .fas.float-left {
+  top: 6px;
+}
+header .menu-items .close-menu > .far {
+  font-size: 26px;
+}
+header .menu-items ul {
+  float: right;
+  width: 100%;
+  padding: 15px;
+}
+header .menu-items ul.menu-down {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  header .menu-items ul.menu-down li {
+    color: #fff;
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
