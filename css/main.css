@@ -277,6 +277,10 @@ ul li {
   border-color: #FE6845;
 }
 
+.border-color-atomic-tangerine {
+  border-color: #FFA259;
+}
+
 .border-style-solid {
   border-style: solid;
 }
