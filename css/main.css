@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "iran-yekan";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/iran-yekan/IRANYEKANWEBLIGHT.woff") format("woff");
+}
+@font-face {
+  font-family: "iran-yekan";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/iran-yekan/IRANYEKANWEBBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: "icon-font";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icon-font.woff") format("woff");
+}
+[class*=font-weight-] {
+  font-family: iran-yekan, serif, sans-serif, cursive, fantasy, monospace;
+}
+
+.font-weight-normal {
+  font-weight: 500 !important;
+}
+
+[class^=icon-font-]::before,
+[class^=icon-font-]::after {
+  font-family: icon-font, serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  line-height: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: iran-yekan, serif, sans-serif, cursive, fantasy, monospace;
+}
+
+a, a:active, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover img {
+  opacity: 0.75;
+}
+
+ul li {
+  list-style: none;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.continuation-line {
+  height: 2px;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.black-page {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+.outline-none {
+  outline: none;
+}
+
+.h-47 {
+  height: 47px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-silver {
+  color: #bebebe;
+}
+
+.color-coral-red {
+  color: #FA4252;
+}
+
+.color-atomic-tangerine {
+  color: #FA4252;
+}
+
+.color-color-persimmon {
+  color: #FE6845;
+}
+
+.color-color-malachite {
+  color: #0DB413;
+}
+
+.color-alabaster {
+  color: #f8f8f8;
+}
+
+.bg-coral-red {
+  background-color: #FA4252;
+}
+
+.bg-malachite {
+  background-color: #0DB413;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-position-center {
+  background-position: center;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-attachment-fixed {
+  background-attachment: fixed;
+}
+
+.m-top {
+  margin-top: 2.5rem;
+}
+
+.m-bottom {
+  margin-bottom: 2.5rem;
+}
+
+.p-top {
+  padding-top: 2.5rem;
+}
+
+.p-bottom {
+  padding-bottom: 2.5rem;
+}
+
+.icon-font-profile::before {
+  content: "";
+}
+
+.icon-font-grouping::before {
+  content: "";
+}
+
+.icon-font-discounts::before {
+  content: "";
+}
+
+.icon-font-home::before {
+  content: "";
+}
+
+.icon-font-shop::before {
+  content: "";
+}
+
+.icon-font-search::before {
+  content: "";
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.font-size-10 {
+  font-size: 10px !important;
+}
+
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+.font-size-22 {
+  font-size: 22px !important;
+}
+
+.font-size-24 {
+  font-size: 24px !important;
+}
+
+.font-size-26 {
+  font-size: 26px !important;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-100 {
+  flex: 100;
+}
+
+.btn.btn-xs {
+  padding: 0.05rem 0.4rem;
+  font-size: 0.775rem;
+  line-height: 1.4;
+  border-radius: 0.2rem;
+}
+.btn.btn-hover:hover {
+  opacity: 0.8;
+}
+
+.border-radius-17 {
+  border-radius: 17px;
+}
+
+.border-radius-50 {
+  border-radius: 50px;
+}
+
+.border-width-3 {
+  border-width: 3px;
+}
+
+.border-color-coral-red {
+  border-color: #FA4252;
+}
+
+.border-color-malachite {
+  border-color: #0DB413;
+}
+
+.border-style-solid {
+  border-style: solid;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container.custom-container {
+    max-width: 1300px;
+    width: 90%;
+  }
+}
+header {
+  border-bottom: 10px solid #f8f8f8;
+}
+header ul li.active a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #0DB413;
+  border-radius: 10px;
+  bottom: 0;
+}
+header .search-box {
+  height: 47px;
+}
+header .search-box input {
+  padding-left: 22px;
+}
+header .search-box .search-btn {
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+header .shop-icon {
+  width: 50px;
+  height: 50px;
+}
+header .shop-icon .shop-item-number {
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  min-width: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
