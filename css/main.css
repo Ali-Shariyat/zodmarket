@@ -342,6 +342,9 @@ header .shop-icon .shop-item-number {
 header .menu-small-icon {
   font-size: 30px;
 }
+header .header-small .logo img {
+  height: 40px;
+}
 header .menu-items {
   z-index: 1003;
   top: 0;
