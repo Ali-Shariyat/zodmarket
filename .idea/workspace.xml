@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ecfd80c-7209-4ce7-8d22-6b872e213005" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icon-font.woff" afterPath="$PROJECT_DIR$/fonts/icon-font.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_header.scss" afterPath="$PROJECT_DIR$/scss/components/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_reboot.scss" afterPath="$PROJECT_DIR$/scss/_reboot.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+            <state relative-caret-position="207">
+              <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -71,8 +75,8 @@
       <file leaf-file-name="_reboot.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_reboot.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="373" column="15" lean-forward="true" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
+            <state relative-caret-position="492">
+              <caret line="348" column="17" lean-forward="false" selection-start-line="348" selection-start-column="17" selection-end-line="348" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -129,6 +133,7 @@
       <find>font-si</find>
       <find>menu-small-icon</find>
       <find>menu-down</find>
+      <find>icon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,8 +151,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/scss/_reboot.scss" />
         <option value="$PROJECT_DIR$/scss/components/_header.scss" />
+        <option value="$PROJECT_DIR$/scss/_reboot.scss" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -253,12 +258,12 @@
       <option name="presentableId" value="Default" />
       <updated>1577858328147</updated>
       <workItem from="1577858330397" duration="10286000" />
-      <workItem from="1577871964790" duration="4856000" />
+      <workItem from="1577871964790" duration="5541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15142000" />
+    <option name="totallyTimeSpent" value="15827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -447,45 +452,37 @@
         <state relative-caret-position="187">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
-            <marker date="1577877324470" expanded="true" signature="3240:3254" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3266:3282" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3296:3394" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3416:3435" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3455:3481" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3501:3527" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3545:3569" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3595:3623" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3649:3677" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3703:3731" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3814:3840" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3885:3963" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3917:3961" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="3976:4124" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4133:4173" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4204:4339" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4359:4378" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4404:4429" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4461:4535" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4554:4588" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4625:4688" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4713:4735" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4755:4893" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4937:5000" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="4970:4998" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="5036:5051" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="5135:5186" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="5219:5239" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="5283:5407" ph="{...}" />
-            <marker date="1577877324470" expanded="true" signature="5322:5405" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3240:3254" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3266:3282" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3296:3394" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3416:3435" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3455:3481" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3501:3527" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3545:3569" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3595:3623" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3649:3677" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3703:3731" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3814:3840" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3885:3963" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3917:3961" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="3976:4124" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4133:4173" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4204:4339" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4359:4378" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4404:4429" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4461:4535" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4554:4588" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4625:4688" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4713:4735" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4755:4893" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4937:5000" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="4970:4998" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="5036:5051" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="5135:5186" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="5219:5239" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="5283:5407" ph="{...}" />
+            <marker date="1577878943615" expanded="true" signature="5322:5405" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_reboot.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="373" column="15" lean-forward="true" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,10 +508,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_reboot.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="348" column="17" lean-forward="false" selection-start-line="348" selection-start-column="17" selection-end-line="348" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+        <state relative-caret-position="207">
+          <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
           <folding>
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>

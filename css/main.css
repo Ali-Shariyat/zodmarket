@@ -199,6 +199,10 @@ ul li {
   content: "";
 }
 
+.icon-font-hammer::before {
+  content: "";
+}
+
 .z-index-1 {
   z-index: 1;
 }
