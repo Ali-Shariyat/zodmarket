@@ -99,6 +99,10 @@ ul li {
   height: 47px;
 }
 
+.dividing-line {
+  border-left: 1px solid #000;
+}
+
 .color-white {
   color: #fff;
 }
@@ -291,6 +295,17 @@ ul li {
     width: 90%;
   }
 }
+.black-page {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.68);
+  z-index: 20;
+  position: fixed;
+  display: none;
+}
+
 header {
   border-bottom: 10px solid #f8f8f8;
 }
@@ -325,7 +340,7 @@ header .shop-icon .shop-item-number {
   min-width: 20px;
 }
 header .menu-small-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 header .menu-items {
   z-index: 1003;

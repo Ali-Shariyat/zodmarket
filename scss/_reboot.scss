@@ -44,41 +44,53 @@ a:hover {
 ul li {
   list-style: none
 }
-.dir-ltr{
+
+.dir-ltr {
   direction: ltr;
 }
+
 .overflow-hidden {
   overflow: hidden !important;
 }
-.overflow-x-hidden{
+
+.overflow-x-hidden {
   overflow-x: hidden !important;
 }
-.continuation-line{
+
+.continuation-line {
   height: 2px;
 }
-.text-no-wrap{
+
+.text-no-wrap {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: inline-block;
 }
-.black-page{
+
+.black-page {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  top:0;
+  top: 0;
   z-index: 9;
   display: none;
   background-color: rgba(0, 0, 0, 0.36);
 }
-.rtl{
+
+.rtl {
 }
-.outline-none{
+
+.outline-none {
   outline: none;
 }
-.h-47{
+
+.h-47 {
   height: 47px;
+}
+.dividing-line{
+  border-left: 1px solid #000;
 }
 //==========================================
 //list-style
@@ -226,10 +238,11 @@ ul li {
 //==========================================
 //background colors
 //==========================================
-.bg-coral-red{
+.bg-coral-red {
   background-color: $color-coral-red;
 }
-.bg-malachite{
+
+.bg-malachite {
   background-color: $color-malachite;
 }
 
@@ -307,36 +320,36 @@ ul li {
 //==========================================
 //icon fonts
 //==========================================
-.icon-font-profile::before{
+.icon-font-profile::before {
   content: "\f100";
 }
 
-.icon-font-grouping::before{
+.icon-font-grouping::before {
   content: "\f101";
 }
 
-.icon-font-discounts::before{
+.icon-font-discounts::before {
   content: "\f104";
 }
 
-.icon-font-home::before{
+.icon-font-home::before {
   content: "\f105";
 }
 
-.icon-font-shop::before{
+.icon-font-shop::before {
   content: "\f106";
 }
 
-.icon-font-search::before{
+.icon-font-search::before {
   content: "\f111";
 }
+
 //==========================================
 //z-index
 //==========================================
 .z-index-1 {
   z-index: 1;
 }
-
 
 //==========================================
 //font size
@@ -357,18 +370,23 @@ ul li {
 .font-size-16 {
   font-size: $f-16 !important;
 }
+
 .font-size-18 {
   font-size: $f-18 !important;
 }
+
 .font-size-20 {
   font-size: $f-20 !important;
 }
+
 .font-size-22 {
   font-size: $f-22 !important;
 }
+
 .font-size-24 {
   font-size: $f-24 !important;
 }
+
 .font-size-26 {
   font-size: $f-26 !important;
 }
@@ -387,24 +405,25 @@ ul li {
 //==========================================
 //btn
 //==========================================
-.btn{
-  &.btn-xs{
+.btn {
+  &.btn-xs {
     padding: 0.05rem 0.4rem;
     font-size: 0.775rem;
     line-height: 1.4;
     border-radius: 0.2rem;
   }
-  &.btn-hover{
-    &:hover{
+  &.btn-hover {
+    &:hover {
       opacity: .8;
     }
   }
 }
-.btn{
-  .btn-solid{
+
+.btn {
+  .btn-solid {
 
   }
-  .btn-hollow{
+  .btn-hollow {
 
   }
 }
@@ -412,30 +431,38 @@ ul li {
 //==========================================
 //border
 //==========================================
-.border-radius-17{
+.border-radius-17 {
   border-radius: 17px;
 }
-.border-radius-50{
+
+.border-radius-50 {
   border-radius: 50px;
 }
-.border-width-3{
+
+.border-width-3 {
   border-width: 3px;
 }
-.border-color-coral-red{
+
+.border-color-coral-red {
   border-color: $color-coral-red;
 }
-.border-color-malachite{
+
+.border-color-malachite {
   border-color: $color-malachite;
 }
-.border-color-persimmon{
+
+.border-color-persimmon {
   border-color: $color-persimmon;
 }
-.border-color-atomic-tangerine{
+
+.border-color-atomic-tangerine {
   border-color: $color-atomic-tangerine;
 }
-.border-style-solid{
+
+.border-style-solid {
   border-style: solid;
 }
+
 //==========================================
 //container
 //==========================================
@@ -444,4 +471,18 @@ ul li {
     max-width: 1300px;
     width: 90%;
   }
+}
+
+//==========================================
+//black-page
+//==========================================
+.black-page {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.68);
+  z-index: 20;
+  position: fixed;
+  display: none;
 }

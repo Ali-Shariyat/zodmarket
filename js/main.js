@@ -12,3 +12,9 @@ $(".black-page , .close-menu i").click(function () {
     $(".black-page").fadeOut();
     $("html").removeAttr("style");
 });
+
+$(".menu-items ul li div i.fas.fa-plus").click(function () {
+    $(this).parents("ul li").find("ul.menu-down").stop().slideToggle();
+    $(this).toggleClass("fa-plus");
+    $(this).toggleClass("fa-minus");
+});
