@@ -1,0 +1,35 @@
+footer {
+  border-top: 3px solid $color-coral-red;
+  > .container.custom-container{
+    @include media-query("(max-width: 991px)") {
+      max-width: 880px;
+    }
+  }
+  .footer-sidebar-right {
+    li {
+      i {
+        min-width: 41px;
+        text-align: center;
+
+        @include media-query("(max-width: 991px)") {
+          font-size: 20px !important;
+          min-width: 22px;
+        }
+      }
+    }
+  }
+  .footer-content-title {
+    border-bottom: 2px solid $color-froly;
+
+    @include media-query("(max-width: 991px)") {
+      font-size: 18px !important;
+    }
+  }
+  .footer-content {
+    a {
+      &:hover {
+        color: $color-coral-red;
+      }
+    }
+  }
+}

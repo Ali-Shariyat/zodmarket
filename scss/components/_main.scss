@@ -22,6 +22,12 @@ main{
       }
       li{
         width: 190px;
+        > div{
+          transition: all .2s ease;
+          &:hover{
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+          }
+        }
         @include media-query("(max-width: 991px)") {
           width: 214px;
         }
@@ -29,6 +35,11 @@ main{
           width: 176px;
         }
       }
+    }
+  }
+  .ad{
+    .ad-big,.ad-small{
+      height: 213px;
     }
   }
   .slider-home-page{
@@ -118,6 +129,79 @@ main{
         right: 0;
         @include media-query("(max-width: 575px)") {
           right: 10px;
+        }
+      }
+    }
+  }
+  .slider{
+    .slider-title{
+      i{
+        &.background-icon{
+          &::after{
+            content: "";
+            left: 6px;
+            right: 0;
+            bottom: 0;
+            width: 43px;
+            height: 43px;
+            position: absolute;
+            border-radius: 19px 13px 9px 13px;
+            z-index:-1;
+          }
+        }
+      }
+    }
+    .slider-item{
+      > div{
+        transition: all .2s ease;
+        &:hover{
+          //background-color: $color-picasso;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
+          //transform: scale(1.05);
+
+          .slider-item-content{
+            .add-to-shop{
+              background-color: $color-malachite;
+              i{
+                &::before{
+                  color: $color-white;
+                }
+              }
+            }
+            .price{
+              span{
+                color: $color-black;
+              }
+            }
+          }
+        }
+        .slider-item-image{
+          .product-discount{
+            width: 44px;
+            height: 44px;
+            top: 16px;
+            right: 15px;
+            &::before{
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%,0);
+              top:-12px;
+              height: 12px;
+              background-color: $color-coral-red;
+              width: 4px;
+            }
+          }
+        }
+        .slider-item-content{
+          .add-to-shop{
+            width: 45px;
+            height: 45px;
+            border: 5px solid $color-white;
+
+            left: 18px;
+            top: -22px;
+          }
         }
       }
     }

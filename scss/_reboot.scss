@@ -1,3 +1,4 @@
+//@include font-face(iran-yekan, '../fonts/iran-yekan/BYEKAN', normal, normal, ttf);
 @include font-face(iran-yekan, '../fonts/iran-yekan/IRANYEKANWEBLIGHT', 300, normal, woff);
 @include font-face(iran-yekan, '../fonts/iran-yekan/IRANYEKANWEBBOLD', bold, normal, woff);
 @include font-face(icon-font, '../fonts/icon-font', normal, normal, woff);
@@ -94,7 +95,9 @@ ul li {
 .dividing-line{
   border-left: 1px solid #000;
 }
-
+.cursor-pointer{
+  cursor: pointer;
+}
 .text-decoration-line-through{
   text-decoration: line-through;
 }
@@ -139,6 +142,14 @@ ul li {
   color: $color-silver;
 }
 
+.color-silver-2 {
+  color: $color-silver-2;
+}
+
+.color-silver-3 {
+  color: $color-silver-3;
+}
+
 .color-coral-red {
   color: $color-coral-red;
 }
@@ -147,16 +158,20 @@ ul li {
   color: $color-atomic-tangerine;
 }
 
-.color-color-persimmon {
+.color-persimmon {
   color: $color-persimmon;
 }
 
-.color-color-malachite {
+.color-malachite {
   color: $color-malachite;
 }
 
 .color-alabaster {
   color: $color-alabaster;
+}
+
+.color-cornflower-lilac {
+  color: $color-cornflower-lilac;
 }
 
 //.color-mine-shaft-2 {
@@ -260,10 +275,55 @@ ul li {
   background-color: $color-alabaster-2;
 }
 
+.bg-silver-2 {
+  background-color: $color-silver-2;
+}
+
+.bg-silver-3 {
+  background-color: $color-silver-3;
+}
+
+.bg-seashell {
+  background-color: $color-seashell;
+}
+
 .bg-persimmon {
   background-color: $color-persimmon;
 }
 
+.bg-froly {
+  background-color: $color-froly;
+}
+
+.bg-cornflower-lilac {
+  background-color: $color-cornflower-lilac;
+}
+
+.bg-mercury {
+  background-color: $color-mercury;
+}
+
+//==========================================
+//background colors after before
+//==========================================
+
+.bg-after-atomic-tangerine {
+  &::after{
+    background-color: $color-atomic-tangerine;
+  }
+}
+
+.bg-after-mint-green {
+  &::after{
+    background-color: $color-mint-green;
+  }
+}
+
+.bg-after-cornflower-lilac {
+  &::after{
+    background-color: $color-cornflower-lilac;
+  }
+}
 //.bg-pacific-blue{
 //  background-color: $color-pacific-blue;
 //}
@@ -346,6 +406,14 @@ ul li {
   content: "\f101";
 }
 
+.icon-font-cup::before {
+  content: "\f102";
+}
+
+.icon-font-sound::before {
+  content: "\f103";
+}
+
 .icon-font-discounts::before {
   content: "\f104";
 }
@@ -356,6 +424,9 @@ ul li {
 
 .icon-font-shop::before {
   content: "\f106";
+}
+.icon-font-plus::before {
+  content: "\f107";
 }
 
 .icon-font-plus-border::before {
@@ -378,14 +449,40 @@ ul li {
   content: "\f110";
 }
 
+.icon-font-laps::before {
+  content: "\f112";
+}
+
 .icon-font-close::before {
   content: "\f114";
 }
+
 .icon-font-plus-menu::before {
   content: "\f115";
 }
+
 .icon-font-remove-menu::before {
   content: "\f116";
+}
+
+.icon-font-car::before {
+  content: "\f117";
+}
+
+.icon-font-medal::before {
+  content: "\f118";
+}
+
+.icon-font-location::before {
+  content: "\f119";
+}
+
+.icon-font-manual-worker::before {
+  content: "\f120";
+}
+
+.icon-font-ATM-card::before {
+  content: "\f121";
 }
 
 //==========================================
@@ -395,6 +492,12 @@ ul li {
   z-index: 1;
 }
 
+//==========================================
+//line-height
+//==========================================
+.line-height-1{
+  line-height: 1;
+}
 //==========================================
 //font size
 //==========================================
