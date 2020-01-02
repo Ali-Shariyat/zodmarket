@@ -36,9 +36,13 @@ a, a:active, a:hover {
   text-decoration: none;
   color: inherit;
 }
-
+.text-hover{
+  &:hover {
+    color: $color-coral-red !important;
+  }
+}
 a:hover {
-  //color: $color-cream-can !important;
+  //color: $color-coral-red !important;
   & img {
     opacity: .75;
   }
@@ -301,6 +305,10 @@ ul li {
 
 .bg-mercury {
   background-color: $color-mercury;
+}
+
+.bg-atomic-tangerine {
+  background-color: $color-atomic-tangerine;
 }
 
 //==========================================
@@ -673,4 +681,13 @@ ul li {
 
 .item img {
   max-height: 100%;
+}
+//==========================================
+//shop small
+//==========================================
+
+.shop-small{
+  bottom: 0;
+  z-index:2;
+  border-radius: 45px 45px 0 0;
 }

@@ -51,6 +51,10 @@ a, a:active, a:hover {
   color: inherit;
 }
 
+.text-hover:hover {
+  color: #FA4252 !important;
+}
+
 a:hover img {
   opacity: 0.75;
 }
@@ -199,6 +203,10 @@ ul li {
 
 .bg-mercury {
   background-color: #E1E1E1;
+}
+
+.bg-atomic-tangerine {
+  background-color: #FFA259;
 }
 
 .bg-after-atomic-tangerine::after {
@@ -482,6 +490,12 @@ ul li {
   max-height: 100%;
 }
 
+.shop-small {
+  bottom: 0;
+  z-index: 2;
+  border-radius: 45px 45px 0 0;
+}
+
 header {
   height: 114px;
 }
@@ -645,7 +659,7 @@ main .slider-home-page ul li .slider-home-page-image::before {
   }
 }
 main .slider-home-page ul li .slider-home-page-image .discount {
-  left: 90px;
+  left: 102px;
   top: 10px;
 }
 @media only screen and (max-width: 767px) {
