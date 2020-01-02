@@ -161,6 +161,7 @@ main{
 
           .slider-item-content{
             .add-to-shop{
+              cursor: pointer;
               background-color: $color-malachite;
               i{
                 &::before{

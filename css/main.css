@@ -725,6 +725,7 @@ main .slider .slider-item > div:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
 }
 main .slider .slider-item > div:hover .slider-item-content .add-to-shop {
+  cursor: pointer;
   background-color: #0DB413;
 }
 main .slider .slider-item > div:hover .slider-item-content .add-to-shop i::before {
@@ -764,28 +765,12 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 footer {
   border-top: 3px solid #FA4252;
 }
-@media only screen and (max-width: 991px) {
-  footer > .container.custom-container {
-    max-width: 880px;
-  }
-}
 footer .footer-sidebar-right li i {
   min-width: 41px;
   text-align: center;
 }
-@media only screen and (max-width: 991px) {
-  footer .footer-sidebar-right li i {
-    font-size: 20px !important;
-    min-width: 22px;
-  }
-}
 footer .footer-content-title {
   border-bottom: 2px solid #F76D79;
-}
-@media only screen and (max-width: 991px) {
-  footer .footer-content-title {
-    font-size: 18px !important;
-  }
 }
 footer .footer-content a:hover {
   color: #FA4252;
