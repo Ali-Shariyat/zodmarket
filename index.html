@@ -6,54 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
-          media="all">
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
-          media="all">
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"-->
+          <!--media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"-->
+          <!--media="all">-->
 </head>
 <body class="rtl" data-theme-color="">
 <header class="py-2 py-md-4">
-    <div class="container align-items-center justify-content-between custom-container d-none d-lg-flex">
-        <div class="d-inline-flex">
-            <div class="logo">
-                <a href="#"><img src="image/logo.png" alt="logo"> </a>
+    <div class="container custom-container d-none d-lg-block">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="d-inline-flex">
+                <div class="logo">
+                    <a href="#"><img src="image/logo.png" alt="logo"> </a>
+                </div>
+                <div class="menu d-flex align-items-center mr-5">
+                    <ul class="d-flex mb-1">
+                        <li class="ml-4 active">
+                            <a href="#" class="position-relative pb-3">
+                                <i class="icon-font-home color-color-persimmon font-size-12"></i>
+                                صفحه اصلی</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#" class="position-relative pb-3">
+                                <i class="icon-font-grouping color-color-persimmon font-size-12"></i>
+                                دسته بندی ها</a>
+                        </li>
+                        <li class="ml-4">
+                            <a href="#" class="position-relative pb-3">
+                                <i class="icon-font-discounts color-color-persimmon font-size-12"></i>
+                                تخفیف ها</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu d-flex align-items-center mr-5">
-                <ul class="d-flex mb-1">
-                    <li class="ml-4 active">
-                        <a href="#" class="position-relative pb-3">
-                            <i class="icon-font-home color-color-persimmon font-size-12"></i>
-                            صفحه اصلی</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#" class="position-relative pb-3">
-                            <i class="icon-font-grouping color-color-persimmon font-size-12"></i>
-                            دسته بندی ها</a>
-                    </li>
-                    <li class="ml-4">
-                        <a href="#" class="position-relative pb-3">
-                            <i class="icon-font-discounts color-color-persimmon font-size-12"></i>
-                            تخفیف ها</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="d-inline-flex justify-content-end">
-            <form class="search-box overflow-hidden border-radius-50 border-color-atomic-tangerine border-width-3 border-style-solid d-flex col-xl-6">
-                <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100">
-                <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22 color-color-malachite"></i>
+            <div class="d-inline-flex justify-content-end">
+                <form class="search-box overflow-hidden border-radius-50 border-color-atomic-tangerine border-width-3 border-style-solid d-flex col-xl-6">
+                    <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100">
+                    <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22 color-color-malachite"></i>
+                    </a>
+                </form>
+                <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2">
+                    ورود/ثبت نام
+                    <i class="icon-font-profile font-size-20 mr-2"></i>
+                </div>
+                <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative">
+                    <i class="icon-font-shop font-size-22 d-inline-flex color-white"></i>
+                    <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
                 </a>
-            </form>
-            <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2">
-                ورود/ثبت نام
-                <i class="icon-font-profile font-size-20 mr-2"></i>
             </div>
-            <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative">
-                <i class="icon-font-shop font-size-22 d-inline-flex color-white"></i>
-                <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
-            </a>
         </div>
     </div>
     <div class="d-flex d-lg-none justify-content-between container-fluid header-small">
@@ -64,20 +67,20 @@
             <a href="#"><img src="image/logo.png" alt="logo"></a>
         </div>
         <div class="search-login-icon d-inline-flex align-items-center">
-            <a href="" class="icon-font-search font-size-20"></a>
+            <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
             <div class="dividing-line py-2 mr-3 ml-1"></div>
             <a class="icon-font-profile font-size-20 font-size-20 mr-2"></a>
         </div>
     </div>
 
     <div class="menu-items position-fixed h-100 text-white">
-        <div class="close-menu w-100"><i class="far fa-times-circle p-3"></i></div>
+        <div class="close-menu w-100 d-flex justify-content-end"><i class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex"></i></div>
         <ul class="">
             <li class="nav-item">
                 <a class="nav-link active" href="#">صفحه اصلی</a>
             </li>
             <li class="nav-item dropdown">
-                <div class=""><a href="">دانشگاه ها در استان ها</a><i class="fas fa-plus float-left position-relative"></i></div>
+                <div class=""><a href="">دانشگاه ها در استان ها</a><i class="float-left position-relative icon-font-plus-menu"></i></div>
                 <ul class="menu-down">
                     <li><a href="#">استان تهران</a></li>
                     <li><a href="#">استان مازندران</a></li>
@@ -133,13 +136,215 @@
     </div>
 </header>
 <main>
-
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-2 pt-sm-5">
+            <div class="title">
+                <h2>دسته بندی ها</h2>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 grouping-content p-0">
+                <div data-scroll>
+                    <ul class="d-flex flex-wrap">
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                        <li class="text-center pl-2 mb-2 pr-0">
+                            <div class="d-flex flex-column bg-alabaster-2 border-radius-17 py-3 px-2 ">
+                                <i class="icon-font-discounts font-size-26"></i>
+                                <span>بهداشتی و شوینده</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="" class="btn d-flex align-items-center w-100 bg-coral-red py-4 mt-3 overflow-hidden">
+                <i class="icon-font-chevron-right color-white font-size-30 d-flex"></i>
+                <span class="color-white pr-3 font-weight-bold font-size-40">خوشمزه های زود مارکتی</span>
+            </a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 slider-home-page pt-4">
+            <ul class="slider">
+                <li class="pl-5 pr-4 item d-flex flex-column align-items-start">
+                    <div class="slider-home-page-image text-center position-relative w-100">
+                        <div class="discount position-absolute bg-persimmon color-white border-radius-50 py-2 px-3">%35</div>
+                        <img src="image/shampoo.png" alt="image" class="h-100">
+                    </div>
+                    <div class="slider-home-page-content w-100 d-flex justify-content-between">
+                        <div>
+                            <h4 class="">شامپو سر و بدن ویشکا</h4>
+                            <span class="color-coral-red font-weight-bold">مدل ذغالی کربنی</span>
+                        </div>
+                        <div class="price d-inline-block">
+                            <label class="d-block mb-0 text-left font-size-16 text-decoration-line-through">35.000</label>
+                            <span class="color-color-malachite font-size-30 d-block">29.000</span>
+                        </div>
+                    </div>
+                    <a href="" class="btn bg-malachite color-white d-flex w-100 align-items-center justify-content-between py-3">
+                        <h6 class="mb-0 font-size-20">افزودن به سبد خرید</h6>
+                        <i class="icon-font-plus-border font-size-22 d-flex"></i>
+                    </a>
+                </li>
+                <li class="pl-5 pr-4 item d-flex flex-column align-items-start">
+                    <div class="slider-home-page-image text-center position-relative w-100">
+                        <div class="discount position-absolute bg-persimmon color-white border-radius-50 py-2 px-3">%35</div>
+                        <img src="image/shampoo.png" alt="image" class="h-100">
+                    </div>
+                    <div class="slider-home-page-content w-100 d-flex justify-content-between">
+                        <div>
+                            <h4 class="">شامپو سر و بدن ویشکا</h4>
+                            <span class="color-coral-red font-weight-bold">مدل ذغالی کربنی</span>
+                        </div>
+                        <div class="price d-inline-block">
+                            <label class="d-block mb-0 text-left font-size-16 text-decoration-line-through">35.000</label>
+                            <span class="color-color-malachite font-size-30 d-block">29.000</span>
+                        </div>
+                    </div>
+                    <a href="" class="btn bg-malachite color-white d-flex w-100 align-items-center justify-content-between py-3">
+                        <h6 class="mb-0 font-size-20">افزودن به سبد خرید</h6>
+                        <i class="icon-font-plus-border font-size-22 d-flex"></i>
+                    </a>
+                </li>
+                <li class="pl-5 pr-4 item d-flex flex-column align-items-start">
+                    <div class="slider-home-page-image text-center position-relative w-100">
+                        <div class="discount position-absolute bg-persimmon color-white border-radius-50 py-2 px-3">%35</div>
+                        <img src="image/shampoo.png" alt="image" class="h-100">
+                    </div>
+                    <div class="slider-home-page-content w-100 d-flex justify-content-between">
+                        <div>
+                            <h4 class="">شامپو سر و بدن ویشکا</h4>
+                            <span class="color-coral-red font-weight-bold">مدل ذغالی کربنی</span>
+                        </div>
+                        <div class="price d-inline-block">
+                            <label class="d-block mb-0 text-left font-size-16 text-decoration-line-through">35.000</label>
+                            <span class="color-color-malachite font-size-30 d-block">29.000</span>
+                        </div>
+                    </div>
+                    <a href="" class="btn bg-malachite color-white d-flex w-100 align-items-center justify-content-between py-3">
+                        <h6 class="mb-0 font-size-20">افزودن به سبد خرید</h6>
+                        <i class="icon-font-plus-border font-size-22 d-flex"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="chevron chevron-left">
+                <i class="icon-font-chevron-left font-size-30 color-alto"></i>
+            </div>
+            <div class="chevron chevron-right">
+                <i class="icon-font-chevron-right font-size-30 color-alto"></i>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 <footer>
 
 </footer>
+
+<!-- Modal -->
+<div class="modal fade search-box-modal" id="search-box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <form>
+                    <input type="search" placeholder="جستجو کن" class="border-0 outline-none w-100">
+                    <span class="icon-font-search font-size-20 position-absolute bg-white pr-1"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="black-page"></div>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/flickity-fade.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

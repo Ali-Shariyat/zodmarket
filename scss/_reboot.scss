@@ -11,7 +11,9 @@
 }
 
 [class^="icon-font-"]::before,
-[class^="icon-font-"]::after {
+[class^="icon-font-"]::after,
+[class*=" icon-font-"]::before,
+[class*=" icon-font-"]::after{
   font-family: icon-font, $DefaultFonts;
   font-weight: normal;
   font-style: normal;
@@ -92,6 +94,10 @@ ul li {
 .dividing-line{
   border-left: 1px solid #000;
 }
+
+.text-decoration-line-through{
+  text-decoration: line-through;
+}
 //==========================================
 //list-style
 //==========================================
@@ -121,6 +127,10 @@ ul li {
   color: $color-white;
 }
 
+.color-alto {
+  color: $color-alto;
+}
+
 .color-black {
   color: $color-black;
 }
@@ -134,7 +144,7 @@ ul li {
 }
 
 .color-atomic-tangerine {
-  color: $color-coral-red;
+  color: $color-atomic-tangerine;
 }
 
 .color-color-persimmon {
@@ -246,6 +256,14 @@ ul li {
   background-color: $color-malachite;
 }
 
+.bg-alabaster-2 {
+  background-color: $color-alabaster-2;
+}
+
+.bg-persimmon {
+  background-color: $color-persimmon;
+}
+
 //.bg-pacific-blue{
 //  background-color: $color-pacific-blue;
 //}
@@ -340,13 +358,34 @@ ul li {
   content: "\f106";
 }
 
+.icon-font-plus-border::before {
+  content: "\f108";
+}
+
 .icon-font-search::before {
   content: "\f111";
 }
 
-
 .icon-font-hammer::before {
   content: "\f113";
+}
+
+.icon-font-chevron-left::before {
+  content: "\f109";
+}
+
+.icon-font-chevron-right::before {
+  content: "\f110";
+}
+
+.icon-font-close::before {
+  content: "\f114";
+}
+.icon-font-plus-menu::before {
+  content: "\f115";
+}
+.icon-font-remove-menu::before {
+  content: "\f116";
 }
 
 //==========================================
@@ -394,6 +433,18 @@ ul li {
 
 .font-size-26 {
   font-size: $f-26 !important;
+}
+
+.font-size-30 {
+  font-size: $f-30 !important;
+}
+
+.font-size-40 {
+  font-size: $f-40 !important;
+}
+
+.font-size-48 {
+  font-size: $f-48 !important;
 }
 
 //==========================================
@@ -490,4 +541,33 @@ ul li {
   z-index: 20;
   position: fixed;
   display: none;
+}
+//==========================================
+//scroll-bar
+//==========================================
+.nicescroll-rails{
+  direction: ltr;
+  background-color: $color-gallery !important;
+  height: 7px !important;
+  div{
+    background-color: $color-coral-red !important;
+  }
+}
+//==========================================
+//slider
+//==========================================
+.item {
+  width: 100%; /* full width */
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.is-fullscreen .item {
+  height: 100%;
+}
+
+.item img {
+  max-height: 100%;
 }
