@@ -42,7 +42,7 @@ $('[data-slider]').each(function () {
         autoPlay: eval($this.attr("data-autoPlay")),
         pauseAutoPlayOnHover: eval($this.attr("data-pauseAutoPlayOnHover")),
         rightToLeft: true,
-        fade: true
+        fade: eval($this.attr("data-fade"))
     };
     $this.find(".this-slider").flickity(option);
     setTimeout(function () {
@@ -169,4 +169,18 @@ $("[data-drop-down]").each(function () {
     });
 });
 
+//==================
+// advanced search
+//==================
+$(".advanced-search-btn").click(function (e) {
+    $(".category-sidebar-right").stop().fadeIn();
+    e.stopPropagation();
+    e.preventDefault();
+});
 
+//==================
+// close btn
+//==================
+$("[data-close-btn]").click(function () {
+    $(this).parents("[data-close-selector]").stop().fadeOut();
+});

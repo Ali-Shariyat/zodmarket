@@ -402,6 +402,10 @@ ul li {
   content: "";
 }
 
+.icon-font-advanced-search::before {
+  content: "";
+}
+
 .z-index-1 {
   z-index: 1;
 }
@@ -891,6 +895,19 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 @media only screen and (max-width: 991px) {
   .category-content {
     max-width: 890px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .category-content .category-sidebar-right {
+    position: fixed;
+    display: none;
+    background-color: #fff;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
   }
 }
 .category-content .category-sidebar-right .grouping > div {
