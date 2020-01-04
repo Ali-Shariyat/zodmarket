@@ -394,6 +394,14 @@ ul li {
   content: "";
 }
 
+.icon-font-washing-liquid::before {
+  content: "";
+}
+
+.icon-font-washing::before {
+  content: "";
+}
+
 .icon-font-chevron-top::before {
   content: "";
 }
@@ -404,6 +412,14 @@ ul li {
 
 .icon-font-advanced-search::before {
   content: "";
+}
+
+.icon-font-hand-washing::before {
+  content: "";
+}
+
+.icon-font-shampoo::before {
+  content: "";
 }
 
 .z-index-1 {
@@ -769,7 +785,7 @@ main .slider-home-page ul li .slider-home-page-image::before {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 70px;
+  bottom: 40px;
   z-index: -1;
   border-radius: 174px 159px 112px 212px;
 }
@@ -890,8 +906,8 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .original-category ul li {
   transition: all 0.3s ease;
 }
-.original-category ul li.original-category-items {
-  min-width: 178px;
+.original-category ul li.original-category-items h5 {
+  white-space: nowrap;
 }
 .original-category ul li.original-category-items i::before {
   background: linear-gradient(#FE6845, #FFA259);

@@ -3,7 +3,9 @@
     li {
       transition: all .3s ease;
       &.original-category-items {
-        min-width: 178px;
+        h5{
+          white-space: nowrap;
+        }
         i {
           &::before {
             background: linear-gradient(#FE6845, #FFA259);

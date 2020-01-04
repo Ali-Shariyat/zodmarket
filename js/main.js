@@ -136,10 +136,15 @@ $(window).on('ready load resize change', function () {
 $("[data-scroll-no-touch]").each(function () {
     var $this = $(this);
     $this.scrollbar();
-})
+});
+// var $get_width = 0;
+// $(".original-category ul li").each(function () {
+//     $get_width += +$(this).outerWidth(true);
+//     $(this).parent().css("width",$get_width);
+// });
 if ($(".original-category").length) {
     var this_div = $(".original-category ul").width()/2;
-    $(".original-category").animate({"scrollLeft": this_div}, 200);
+    $(".original-category").animate({"scrollLeft": 500}, 500);
 }
 //==================
 // shop-small

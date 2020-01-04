@@ -64,7 +64,7 @@ main{
             top:0;
             right: 0;
             left: 0;
-            bottom: 70px;
+            bottom: 40px;
             z-index: -1;
             border-radius: 174px 159px 112px 212px;
             @include media-query("(max-width: 767px)") {
