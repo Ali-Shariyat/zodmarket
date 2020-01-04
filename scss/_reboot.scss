@@ -660,6 +660,7 @@ ul li {
   direction: ltr;
   background-color: $color-gallery !important;
   height: 7px !important;
+  opacity: 1 !important;
   div{
     background-color: $color-coral-red !important;
   }
@@ -687,6 +688,7 @@ ul li {
 //==========================================
 
 .shop-small{
+  display: none;
   bottom: 0;
   z-index:2;
   border-radius: 45px 45px 0 0;

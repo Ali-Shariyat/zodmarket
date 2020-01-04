@@ -468,6 +468,7 @@ ul li {
   direction: ltr;
   background-color: #eee !important;
   height: 7px !important;
+  opacity: 1 !important;
 }
 .nicescroll-rails div {
   background-color: #FA4252 !important;
@@ -491,6 +492,7 @@ ul li {
 }
 
 .shop-small {
+  display: none;
   bottom: 0;
   z-index: 2;
   border-radius: 45px 45px 0 0;
