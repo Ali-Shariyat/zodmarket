@@ -599,6 +599,24 @@ ul li {
   transform: translate(0, -50%);
 }
 
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #FA4252;
+}
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-label::before {
+  border: 1px solid #DBDBDB;
+  background-color: #fff;
+}
+.custom-control-label::before, .custom-control-label::after {
+  width: 28px;
+  height: 28px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 header {
   height: 114px;
 }
@@ -974,6 +992,15 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   .category-content .category-main .category-search-tools ul li a {
     font-size: 10px;
   }
+}
+.category-content .category-search-tools-menu-small {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #fff;
+  display: none;
+  z-index: 5;
 }
 
 .modal.search-box-modal .icon-font-search {

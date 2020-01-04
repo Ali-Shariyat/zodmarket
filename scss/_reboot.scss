@@ -792,3 +792,47 @@ ul li {
     transform: translate(0,-50%);
   }
 }
+
+//==========================================
+//custom-control
+//==========================================
+.custom-radio{
+  .custom-control-input{
+    &:checked{
+      ~{
+        .custom-control-label{
+          &::before{
+            background-color: $color-coral-red;
+          }
+        }
+      }
+    }
+    &:focus{
+      ~{
+        .custom-control-label{
+          &::before{
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+.custom-control{
+  &.custom-radio{
+
+  }
+}
+.custom-control-label{
+  &::before{
+    border: 1px solid #DBDBDB;
+    background-color: #fff;
+  }
+  &::before,
+  &::after{
+    width: 28px;
+    height: 28px;
+    top:50%;
+    transform: translate(0,-50%);
+  }
+}

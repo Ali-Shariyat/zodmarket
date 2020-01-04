@@ -172,8 +172,8 @@ $("[data-drop-down]").each(function () {
 //==================
 // advanced search
 //==================
-$(".advanced-search-btn").click(function (e) {
-    $(".category-sidebar-right").stop().fadeIn();
+$("[data-open-popup]").click(function (e) {
+    $("[data-select-popup="+$(this).attr("data-open-popup")+"]").stop().fadeIn();
     e.stopPropagation();
     e.preventDefault();
 });
@@ -183,4 +183,13 @@ $(".advanced-search-btn").click(function (e) {
 //==================
 $("[data-close-btn]").click(function () {
     $(this).parents("[data-close-selector]").stop().fadeOut();
+});
+
+//==================
+// sort select
+//==================
+$("[data-sort-select]").change(function () {
+    $("[data-sort-text="+$(this).attr("data-sort-select")+"] span").text($(this).find("input:checked").siblings("label").text());
+    // console.log($(this).find("input:checked").siblings("label").text());
+    $(this).find("[data-close-btn]").trigger("click");
 });

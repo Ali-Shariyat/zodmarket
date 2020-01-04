@@ -165,7 +165,7 @@
     </div>
     <div class="container custom-container category-content">
         <div class="row d-flex">
-            <div class="category-sidebar-right col-xl-3 col-lg-4 col-md-4" data-close-selector>
+            <div class="category-sidebar-right col-xl-3 col-lg-4 col-md-4" data-close-selector data-select-popup="advanced-search">
                 <i class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex d-md-none" data-close-btn></i>
                 <div class="grouping my-1 my-md-3">
                     <div class="border-radius-17 p-2" data-drop-down>
@@ -416,26 +416,32 @@
             </div>
             <div class="category-main col-xl-9 col-lg-8 col-md-8 mt-3">
                 <div class="category-search-tools border-radius-17 d-flex py-2 px-3 justify-content-between flex-column flex-md-row">
-                    <ul class="d-flex align-items-center m-0 justify-content-center justify-content-md-start flex-wrap">
-                        <li>
+                    <ul class="d-flex align-items-center m-0 flex-wrap justify-content-center justify-content-md-start">
+                        <li class="d-none d-md-inline-flex">
                             <i class="icon-font-filter font-size-14 ml-2 color-black-30"></i>
                         </li>
                         <li class="d-inline-flex d-md-none">
-                            <a href="#" class="bg-silver-2 color-white py-2 pr-3 pl-3 pl-lg-4 border-radius-50 ml-1 d-flex align-items-center advanced-search-btn">
+                            <a href="#" class="bg-silver-2 color-white py-2 pr-3 pl-3 pl-lg-4 border-radius-50 ml-1 d-flex align-items-center" data-open-popup="advanced-search">
                                 <i class="icon-font-advanced-search ml-2 color-white mr-2"></i>
-                                تنظیمات پیشرفته
+                                <span>تنظیمات پیشرفته</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="d-inline-flex d-md-none">
+                            <a href="#" class="bg-silver-2 color-white py-2 pr-3 pl-3 pl-lg-4 border-radius-50 ml-1 d-flex align-items-center" data-sort-text="sort-text-1" data-open-popup="sort">
+                                <i class="icon-font-advanced-search ml-2 color-white mr-2"></i>
+                                <span>پرفروش ترین</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-md-inline-flex">
                             <a href="#" class="bg-malachite color-white py-2 pr-3 pl-3 pl-lg-4 border-radius-50 ml-1">پرفروش ترین</a>
                         </li>
-                        <li>
+                        <li class="d-none d-md-inline-flex">
                             <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">جدیدترین</a>
                         </li>
-                        <li>
+                        <li class="d-none d-md-inline-flex">
                             <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">ارزان ترین</a>
                         </li>
-                        <li>
+                        <li class="d-none d-md-inline-flex">
                             <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">گرانترین</a>
                         </li>
                     </ul>
@@ -446,6 +452,35 @@
                             </a>
                         </form>
                     </div>
+                </div>
+                <div class="category-search-tools-menu-small position-fixed" data-close-selector data-select-popup="sort" data-sort-select="sort-text-1">
+                    <i class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex d-md-none" data-close-btn></i>
+                    <ul>
+                        <li>
+                            <div class="custom-control custom-radio py-2 pr-5">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label pr-3" for="customRadio1">پرفروش ترین</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-radio py-2 pr-5">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label pr-3" for="customRadio2">جدید ترین</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-radio py-2 pr-5">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label pr-3" for="customRadio3">ارزان ترین</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-radio py-2 pr-5">
+                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label pr-3" for="customRadio4">گرانترین</label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="slider">
                     <div class="p-reverse mt-2">
