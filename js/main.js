@@ -41,7 +41,8 @@ $('[data-slider]').each(function () {
         pageDots: eval($this.attr("data-items-nav")),
         autoPlay: eval($this.attr("data-autoPlay")),
         pauseAutoPlayOnHover: eval($this.attr("data-pauseAutoPlayOnHover")),
-        rightToLeft: true
+        rightToLeft: true,
+        fade: true
     };
     $this.find(".this-slider").flickity(option);
     setTimeout(function () {
