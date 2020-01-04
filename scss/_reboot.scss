@@ -106,6 +106,13 @@ ul li {
   text-decoration: line-through;
 }
 //==========================================
+//paddings
+//==========================================
+.p-reverse{
+  margin-left: -.25rem;
+  margin-right: -.25rem;
+}
+//==========================================
 //list-style
 //==========================================
 //.list-style-1{
@@ -142,6 +149,14 @@ ul li {
   color: $color-black;
 }
 
+.color-black-60 {
+  color: $color-black-60;
+}
+
+.color-black-30 {
+  color: $color-black-30;
+}
+
 .color-silver {
   color: $color-silver;
 }
@@ -176,6 +191,14 @@ ul li {
 
 .color-cornflower-lilac {
   color: $color-cornflower-lilac;
+}
+
+.color-dove-gray {
+  color: $color-dove-gray;
+}
+
+.color-nobel {
+  color: $color-nobel;
 }
 
 //.color-mine-shaft-2 {
@@ -309,6 +332,10 @@ ul li {
 
 .bg-atomic-tangerine {
   background-color: $color-atomic-tangerine;
+}
+
+.bg-wild-sand {
+  background-color: $color-wild-sand;
 }
 
 //==========================================
@@ -493,6 +520,20 @@ ul li {
   content: "\f121";
 }
 
+.icon-font-spray::before {
+  content: "\f122";
+}
+
+.icon-font-chevron-top::before {
+  content: "\f125";
+}
+
+.icon-font-filter::before {
+  content: "\f126";
+}
+
+
+
 //==========================================
 //z-index
 //==========================================
@@ -548,6 +589,10 @@ ul li {
 
 .font-size-30 {
   font-size: $f-30 !important;
+}
+
+.font-size-36 {
+  font-size: $f-36 !important;
 }
 
 .font-size-40 {
@@ -626,6 +671,10 @@ ul li {
   border-color: $color-atomic-tangerine;
 }
 
+.border-color-gallery-2 {
+  border-color: $color-gallery-2;
+}
+
 .border-style-solid {
   border-style: solid;
 }
@@ -658,11 +707,37 @@ ul li {
 //==========================================
 .nicescroll-rails{
   direction: ltr;
-  background-color: $color-gallery !important;
-  height: 7px !important;
-  opacity: 1 !important;
+  //background-color: $color-gallery !important;
+  //height: 7px !important;
+  border-radius: 50px;
+  //opacity: 1 !important;
   div{
-    background-color: $color-coral-red !important;
+    //background-color: $color-coral-red !important;
+    border: none !important;
+  }
+}
+.scrollbar-inner{
+  >{
+    .scroll-element{
+      &.scroll-y{
+        height: auto;
+        right: auto;
+        left: 2px;
+        top:10px;
+        bottom: 10px;
+        z-index:1;
+        border-radius: 50px;
+        width: 7px;
+      }
+      .scroll-element_track{
+        background-color: $color-gallery;
+      }
+      .scroll-bar{
+        background-color: $color-coral-red;
+        opacity: 1;
+
+      }
+    }
   }
 }
 //==========================================
@@ -692,4 +767,19 @@ ul li {
   bottom: 0;
   z-index:2;
   border-radius: 45px 45px 0 0;
+}
+//==========================================
+//search box
+//==========================================
+
+.search-box{
+  height: 47px;
+  input{
+    padding-left: 22px;
+  }
+  .search-btn{
+    left: 10px;
+    top:calc(50% + 1px);
+    transform: translate(0,-50%);
+  }
 }

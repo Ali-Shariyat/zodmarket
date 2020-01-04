@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"-->
+    <!--media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"-->
+    <!--media="all">-->
+</head>
+<body class="rtl" data-theme-color="">
+<header class="">
+    <div class="py-4 header-big position-fixed bg-white d-none d-lg-block">
+        <div class="container custom-container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="d-inline-flex">
+                    <div class="logo">
+                        <a href="#"><img src="image/logo.png" alt="logo"> </a>
+                    </div>
+                    <div class="menu d-flex align-items-center mr-5">
+                        <ul class="d-flex mb-1">
+                            <li class="ml-4 active">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-home color-persimmon font-size-12"></i>
+                                    صفحه اصلی</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-grouping color-persimmon font-size-12"></i>
+                                    دسته بندی ها</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-discounts color-persimmon font-size-12"></i>
+                                    تخفیف ها</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-inline-flex justify-content-end">
+                    <form class="search-box overflow-hidden border-radius-50 border-color-atomic-tangerine border-width-3 border-style-solid d-flex col-xl-6">
+                        <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100">
+                        <a href="#" class="search-btn bg-white position-absolute "><i
+                                class="icon-font-search font-size-22 color-malachite"></i>
+                        </a>
+                    </form>
+                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center">
+                        ورود/ثبت نام
+                        <i class="icon-font-profile font-size-20 mr-2"></i>
+                    </div>
+                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative">
+                        <i class="icon-font-shop font-size-22 d-inline-flex color-white"></i>
+                        <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex d-lg-none justify-content-between container-fluid header-small py-2 position-fixed bg-white">
+        <div class="menu-small-icon d-flex align-items-center">
+            <i class="icon-font-hammer font-size-18"></i>
+        </div>
+        <div class="logo pr-4">
+            <a href="#"><img src="image/logo.png" alt="logo"></a>
+        </div>
+        <div class="search-login-icon d-inline-flex align-items-center">
+            <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
+            <div class="dividing-line py-2 mr-3 ml-1"></div>
+            <a class="icon-font-profile font-size-20 font-size-20 mr-2"></a>
+        </div>
+    </div>
+
+    <div class="menu-items position-fixed h-100 text-white">
+        <div class="close-menu w-100 d-flex justify-content-end"><i
+                class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex"></i></div>
+        <ul class="">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">صفحه اصلی</a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class=""><a href="">دسته بندی ها</a><i
+                        class="float-left position-relative icon-font-plus-menu"></i></div>
+                <ul class="menu-down">
+                    <li><a href="#">بهداشتی و شوینده</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تخفیف ها</a>
+            </li>
+        </ul>
+
+    </div>
+</header>
+<main>
+    <div class="original-category mt-4" data-scroll data-scroll-rail-color="transparent" data-scroll-cursor-color="transparent">
+        <ul class="d-flex flex-nowrap">
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+            <li class="original-category-items d-flex justify-content-center align-items-center bg-wild-sand px-3 py-2 border-radius-17 mx-2">
+                <i class="icon-font-spray font-size-36 d-flex"></i>
+                <h5 class="mt-2 mr-3">شیشه شور</h5>
+            </li>
+        </ul>
+    </div>
+    <div class="container custom-container category-content">
+        <div class="row d-flex">
+            <div class="category-sidebar-right col-xl-3 col-lg-4 col-md-4">
+                <div class="grouping my-3">
+                    <div class="border-radius-17 p-2" data-drop-down>
+                        <div class="grouping-header d-flex justify-content-between align-items-center cursor-pointer" data-drop-down-header>
+                            <h5>دسته بندی نتایج</h5>
+                            <i class="icon-font-chevron-top font-size-10 color-dove-gray d-flex"></i>
+                        </div>
+                        <div class="grouping-content-inter-page pt-2" data-drop-down-content>
+                            <ul class="pr-4 mb-0">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="icon-font-chevron-left mt-2 color-dove-gray"></i>
+                                        <span class="pr-2 font-size-18 color-black-60">بهداشتی و شوینده</span>
+                                    </div>
+                                    <ul class="pr-4">
+                                        <li>
+                                            <div class="d-flex align-items-center">
+                                                <i class="icon-font-chevron-left mt-2 color-dove-gray"></i>
+                                                <span class="pr-2 font-size-18 color-black-60">مواد شوینده</span>
+                                            </div>
+                                            <ul class="pr-2">
+                                                <li>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="pr-2 font-size-18 color-black">شیشه پاک کن</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grouping my-3">
+                    <div class="border-radius-17 p-2" data-drop-down>
+                        <div class="grouping-header d-flex justify-content-between align-items-center cursor-pointer" data-drop-down-header>
+                            <h5>دسته بندی نتایج</h5>
+                            <i class="icon-font-chevron-top font-size-10 color-dove-gray d-flex"></i>
+                        </div>
+                        <div class="grouping-content-inter-page pt-0" data-drop-down-content>
+                            <div class="py-3 search-box-parent px-3">
+                                <form class="search-box overflow-hidden border-radius-50 border-color-gallery-2 border-width-3 border-style-solid d-flex col-12 position-relative">
+                                    <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100 font-size-12">
+                                    <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22 color-malachite"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <form class="pr-2 mb-0 pl-4 checkbox-parent scrollbar-inner" data-scroll-no-touch>
+                                <ul>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck1"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck2"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck3"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label d-flex justify-content-between cursor-pointer align-items-center py-2 pr-3" for="customCheck4"><span>اکتیو</span> <span>active</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-main col-xl-9 col-lg-8 col-md-8 mt-3">
+                <div class="category-search-tools border-radius-17 d-flex py-2 px-3 justify-content-between">
+                    <ul class="d-flex align-items-center m-0">
+                        <li>
+                            <i class="icon-font-filter font-size-14 ml-2 color-black-30"></i>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-malachite color-white py-2 pr-3 pl-3 pl-lg-4 border-radius-50 ml-1">پرفروش ترین</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">جدیدترین</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">ارزان ترین</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 pr-2 pl-2 border-radius-50 ml-1 color-nobel">گرانترین</a>
+                        </li>
+                    </ul>
+                    <div class="search-box-parent col-xl-3 col-lg-3 col-md-3 col-sm-4 px-0">
+                        <form class="search-box overflow-hidden border-radius-50 border-color-gallery-2 border-width-3 border-style-solid d-flex col-12 position-relative">
+                            <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100 font-size-12">
+                            <a href="#" class="search-btn bg-white position-absolute "><i class="icon-font-search font-size-22 color-malachite"></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="p-reverse mt-2">
+                        <ul class="col-xl-12 p-0 d-flex flex-wrap pb-3">
+                            <li class="slider-item col-xl-3 col-lg-4 col-md-6 col-sm-12 px-1 pt-1 pb-2 item">
+                                <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                    <div class="slider-item-image border-radius-17 overflow-hidden">
+                                        <a href="#">
+                                            <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                        </a>
+                                        <div class="color-white font-weight-bold product-discount bg-coral-red position-absolute d-flex justify-content-center align-items-center border-radius-50">
+                                            %30
+                                        </div>
+                                    </div>
+                                    <div class="slider-item-content d-flex flex-column position-relative">
+                                        <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                            <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                        </div>
+                                        <div class="pt-3 pr-2">
+                                            <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                            <span class="font-size-10 d-block">وزن-تعداد</span>
+                                        </div>
+                                        <div class="price d-flex justify-content-end align-items-end pb-1">
+                                            <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.000</label>
+                                            <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider-item col-xl-3 col-lg-4 col-md-6 col-sm-12 px-1 pt-1 pb-2 item">
+                                <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                    <div class="slider-item-image border-radius-17 overflow-hidden">
+                                        <a href="#">
+                                            <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="slider-item-content d-flex flex-column position-relative">
+                                        <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                            <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                        </div>
+                                        <div class="pt-3 pr-2">
+                                            <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                            <span class="font-size-10 d-block">وزن-تعداد</span>
+                                        </div>
+                                        <div class="price d-flex justify-content-end align-items-end pb-1">
+                                            <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                            <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider-item col-xl-3 col-lg-4 col-md-6 col-sm-12 px-1 pt-1 pb-2 item">
+                                <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                    <div class="slider-item-image border-radius-17 overflow-hidden">
+                                        <a href="#">
+                                            <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="slider-item-content d-flex flex-column position-relative">
+                                        <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                            <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                        </div>
+                                        <div class="pt-3 pr-2">
+                                            <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                            <span class="font-size-10 d-block">وزن-تعداد</span>
+                                        </div>
+                                        <div class="price d-flex justify-content-end align-items-end pb-1">
+                                            <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                            <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider-item col-xl-3 col-lg-4 col-md-6 col-sm-12 px-1 pt-1 pb-2 item">
+                                <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                    <div class="slider-item-image border-radius-17 overflow-hidden">
+                                        <a href="#">
+                                            <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="slider-item-content d-flex flex-column position-relative">
+                                        <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                            <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                        </div>
+                                        <div class="pt-3 pr-2">
+                                            <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                            <span class="font-size-10 d-block">وزن-تعداد</span>
+                                        </div>
+                                        <div class="price d-flex justify-content-end align-items-end pb-1">
+                                            <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                            <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container custom-container">
+        <div class="row">
+            <div class="slider w-100 mt-3">
+                <div class="slider-title d-inline-flex align-items-center mb-2 position-relative col-xl-12">
+                    <i class="icon-font-sound font-size-40 d-inline-flex position-relative background-icon bg-after-atomic-tangerine"></i>
+                    <h3 class="mt-2 mb-0 font-size-22 font-weight-light">اینارو نیاز نداری؟</h3>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-4 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                     data-slider data-disable-number="6" data-disable-number-s="1" data-disable-number-m="4"
+                     data-disable-number-xl="6" data-items-nav="false" data-loop="false">
+                    <div class="chevron chevron-right cursor-pointer ml-2">
+                        <i class="icon-font-chevron-right font-size-40 color-atomic-tangerine"></i>
+                    </div>
+                    <ul class="col-xl-11 p-0 this-slider pb-3">
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                    <div class="color-white font-weight-bold product-discount bg-coral-red position-absolute d-flex justify-content-center align-items-center border-radius-50">
+                                        %30
+                                    </div>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.000</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-item col-xl-2 col-lg-2 col-md-3 col-sm-12 px-1 pt-1 pb-2 item">
+                            <div class="bg-seashell p-1 border-radius-17 overflow-hidden w-100 position-relative">
+                                <div class="slider-item-image border-radius-17 overflow-hidden">
+                                    <a href="#">
+                                        <img src="image/slider/slider-1.png" alt="slider" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="slider-item-content d-flex flex-column position-relative">
+                                    <div class="add-to-shop position-absolute border-radius-50 p-2 d-inline-flex justify-content-center align-items-center bg-seashell">
+                                        <i class="icon-font-plus d-inline-flex color-silver-3"></i>
+                                    </div>
+                                    <div class="pt-3 pr-2">
+                                        <a href="#" class="mb-0 font-size-16 text-hover">نام محصول</a>
+                                        <span class="font-size-10 d-block">وزن-تعداد</span>
+                                    </div>
+                                    <div class="price d-flex justify-content-end align-items-end pb-1">
+                                        <label class="d-block mb-0 text-left font-size-12 text-decoration-line-through pb-2 pl-2 color-silver-2">۳۵.۰۰۰</label>
+                                        <span class="color-malachite font-size-30 d-block text-left font-weight-normal pl-2 line-height-1">۲۳.۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chevron chevron-left cursor-pointer mr-2">
+                        <i class="icon-font-chevron-left font-size-40 color-atomic-tangerine"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-seashell pt-5 pb-0 mt-5 flex-column d-none d-lg-flex">
+    <div class="container custom-container d-flex flex-md-row flex-wrap">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <ul class="bg-froly px-4 py-3 border-radius-50 footer-sidebar-right">
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-car font-size-30"></i>
+                    <h6 class="pr-3">ارسال فوری</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-medal font-size-30"></i>
+                    <h6 class="pr-3">اولین در قم</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-location font-size-30"></i>
+                    <h6 class="pr-3">ارسال به تمام نقاط</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-manual-worker font-size-30"></i>
+                    <h6 class="pr-3">پشتیبانی خرید</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-ATM-card font-size-30"></i>
+                    <h6 class="pr-3">پرداخت در محل</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>لینک های پر کاربرد</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>دانلود نرم افزار اندروید</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>نماد اعتبار الکترونیک</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-footer w-100 text-center bg-mercury py-3 mt-3 mt-lg-0">
+        <h5 class="m-0">کلیه حقوق این سایت متعلق به فروشگاه اینترنتی <a href="" class="text-hover">زودمارکت</a> می‌باشد</h5>
+    </div>
+</footer>
+<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+        <span class="color-white">جمع خرید : ۱۴۵۰۰</span>
+        <a href="#" class="d-flex bg-atomic-tangerine p-2 border-radius-50">
+            <i class="icon-font-shop font-size-22 d-inline-flex color-white font-size-20"></i>
+        </a>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade search-box-modal" id="search-box" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <form>
+                    <input type="search" placeholder="جستجو کن" class="border-0 outline-none w-100">
+                    <span class="icon-font-search font-size-20 position-absolute bg-white pr-1"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="black-page"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
