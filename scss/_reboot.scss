@@ -3,8 +3,14 @@
 @include font-face(iran-yekan, '../fonts/iran-yekan/IRANYEKANWEBBOLD', bold, normal, woff);
 @include font-face(icon-font, '../fonts/icon-font', normal, normal, woff);
 
+
+@include font-face(IRANSans, '../fonts/iran-sans/IRANSansWeb(FaNum)', normal, normal, woff);
+@include font-face(IRANSans, '../fonts/iran-sans/IRANSansWeb(FaNum)_Light', 300, normal, woff);
+@include font-face(IRANSans, '../fonts/iran-sans/IRANSansWeb(FaNum)_Medium', 500, normal, woff);
+@include font-face(IRANSans, '../fonts/iran-sans/IRANSansWeb(FaNum)_Bold', bold, normal, woff);
+
 [class*="font-weight-"] {
-  font-family: iran-yekan, $DefaultFonts;
+  font-family: IRANSans, $DefaultFonts;
 }
 
 .font-weight-normal {
@@ -29,7 +35,7 @@
 }
 
 body {
-  font-family: iran-yekan, $DefaultFonts;
+  font-family: IRANSans, $DefaultFonts;
 }
 
 a, a:active, a:hover {

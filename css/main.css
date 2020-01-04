@@ -17,8 +17,32 @@
   font-weight: normal;
   src: url("../fonts/icon-font.woff") format("woff");
 }
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/iran-sans/IRANSansWeb(FaNum).woff") format("woff");
+}
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/iran-sans/IRANSansWeb(FaNum)_Light.woff") format("woff");
+}
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/iran-sans/IRANSansWeb(FaNum)_Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/iran-sans/IRANSansWeb(FaNum)_Bold.woff") format("woff");
+}
 [class*=font-weight-] {
-  font-family: iran-yekan, serif, sans-serif, cursive, fantasy, monospace;
+  font-family: IRANSans, serif, sans-serif, cursive, fantasy, monospace;
 }
 
 .font-weight-normal {
@@ -43,7 +67,7 @@
 }
 
 body {
-  font-family: iran-yekan, serif, sans-serif, cursive, fantasy, monospace;
+  font-family: IRANSans, serif, sans-serif, cursive, fantasy, monospace;
 }
 
 a, a:active, a:hover {
