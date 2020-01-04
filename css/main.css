@@ -700,8 +700,13 @@ main .grouping-content ul {
     width: 705px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  main .grouping-content ul {
+    width: 794px;
+  }
+}
 main .grouping-content ul li {
-  width: 190px;
+  width: 184px;
 }
 main .grouping-content ul li > div {
   transition: all 0.2s ease;
@@ -717,6 +722,11 @@ main .grouping-content ul li > div:hover {
 @media only screen and (max-width: 767px) {
   main .grouping-content ul li {
     width: 176px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main .grouping-content ul li {
+    width: 198px;
   }
 }
 main .ad .ad-big, main .ad .ad-small {

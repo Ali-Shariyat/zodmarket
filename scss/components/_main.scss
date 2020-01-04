@@ -20,8 +20,11 @@ main{
       @include media-query("(max-width: 767px)") {
         width: 705px;
       }
+      @include media-query("(min-width: 1400px)") {
+        width: 794px;
+      }
       li{
-        width: 190px;
+        width: 184px;
         > div{
           transition: all .2s ease;
           &:hover{
@@ -33,6 +36,9 @@ main{
         }
         @include media-query("(max-width: 767px)") {
           width: 176px;
+        }
+        @include media-query("(min-width: 1400px)") {
+          width: 198px;
         }
       }
     }
