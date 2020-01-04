@@ -198,3 +198,14 @@ $("[data-sort-select]").change(function () {
     // console.log($(this).find("input:checked").siblings("label").text());
     $(this).find("[data-close-btn]").trigger("click");
 });
+//==================
+// page loader
+//==================
+
+$(window).on("load", function () {
+    setTimeout(function () {
+        if ($(".loader-page")[0]) {
+            $(".loader-page").fadeOut();
+        }
+    }, 150);
+});
