@@ -50,28 +50,24 @@ main{
           padding: 0 15px !important;
         }
         .slider-home-page-image{
-          height: 496px;
+          height: 458px;
           &::before{
             content: "";
             background-color: $color-picasso;
             position: absolute;
             top:0;
             right: 0;
-            left: 80px;
+            left: 0;
             bottom: 70px;
             z-index: -1;
-            border-radius: 274px 159px 112px 432px;
+            border-radius: 174px 159px 112px 212px;
             @include media-query("(max-width: 767px)") {
               left: 0;
             }
           }
           .discount{
-            left: 102px;
+            left: 28px;
             top:10px;
-
-            @include media-query("(max-width: 767px)") {
-              left: 20px;
-            }
           }
         }
         .slider-home-page-content{
