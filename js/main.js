@@ -132,11 +132,11 @@ $(window).on('ready load resize change', function () {
 });
 $(window).on('ready load resize change', function () {
     if ($("[data-scroll-no-touch]").length) {
+        $("[data-scroll-no-touch]").each(function () {
+            var $this = $(this);
+            $this.scrollbar();
+        });
     }
-});
-$("[data-scroll-no-touch]").each(function () {
-    var $this = $(this);
-    $this.scrollbar();
 });
 // var $get_width = 0;
 // $(".original-category ul li").each(function () {

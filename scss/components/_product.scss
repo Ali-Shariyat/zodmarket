@@ -3,6 +3,19 @@
     border: 3px solid $color-gallery-2;
     min-height: 468px;
     max-height: 468px;
+
+    @include media-query("(max-width: 1300px)") {
+      min-height: 20vw;
+      max-height: 20vw;
+    }
+    @include media-query("(max-width: 991px)") {
+      min-height: 25vw;
+      max-height: 25vw;
+    }
+    @include media-query("(max-width: 767px)") {
+      min-height: 65vw;
+      max-height: 65vw;
+    }
     ul{
       li{
         .discount{
@@ -15,9 +28,20 @@
   .carousel-nav{
     ul{
       width: 288px;
+      @include media-query("(max-width: 767px)") {
+        width: 360px;
+      }
       li{
         width: 72px;
         height: 64px;
+        @include media-query("(max-width: 1199px) and (min-width:991px)") {
+          width: 66px;
+          height: 58px;
+        }
+        @include media-query("(max-width: 991px)") {
+          width: 80px;
+          height: 72px;
+        }
         > div{
           border: 3px solid $color-gallery-2;
           overflow: hidden;
@@ -26,13 +50,64 @@
     }
   }
 }
+.product-title{
+  @include media-query("(max-width: 991px)") {
+    font-size: 26px !important;
+  }
+}
+.sub-product-title{
+  @include media-query("(max-width: 991px)") {
+    font-size: 14px !important;
+  }
+}
+.product-price{
+  @include media-query("(max-width: 1199px) and (min-width:991px)") {
+    font-size: 22px !important;
+  }
+  @include media-query("(max-width: 991px)") {
+    font-size: 24px !important;
+  }
+}
 .product-description{
   min-height: 426px;
   max-height: 426px;
 
+  @include media-query("(max-width: 991px)") {
+    min-height: 28vw;
+    max-height: 28vw;
+  }
+
+  @include media-query("(max-width: 767px)") {
+    min-height: 66vw;
+    max-height: 66vw;
+  }
   padding-bottom: 8px;
+  &.scrollbar-inner{
+    > {
+      .scroll-element{
+        &.scroll-y{
+          left: 8px;
+        }
+      }
+    }
+  }
 }
 .product-description-tools{
+
+  @include media-query("(max-width: 1330px) and (min-width:991px)") {
+    flex-direction: column;
+    .save-message{
+      margin-left: 0 !important;
+      margin-bottom: 10px;
+    }
+  }
+  @include media-query("(max-width: 400px)") {
+    flex-direction: column;
+    .save-message{
+      margin-left: 0 !important;
+      margin-bottom: 10px;
+    }
+  }
   .save-message,
   .share-btn{
     border: 3px solid $color-gallery-2;

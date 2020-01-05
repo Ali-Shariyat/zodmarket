@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
     <link rel="stylesheet" href="css/css-stars.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">-->
@@ -106,35 +107,38 @@
 <main>
     <div class="container custom-container">
         <div class="row mt-4">
-            <div class="carousel col-xl-4">
+            <div class="carousel col-xl-4 col-lg-4 col-md-5 col-sm-12">
                 <div class="carousel-main border-radius-17 overflow-hidden" data-slider data-loop="false" data-items-nav="false" data-disable-number="1"
                      data-disable-number-s="1" data-disable-number-m="1" data-disable-number-xl="1" data-cell-align="center">
-                    <ul class="this-slider p-0 m-0 gallery" id="gallery">
-                        <li class="item px-1" itemprop="associatedMedia">
+                    <ul class="this-slider p-0 m-0 gallery h-100" id="gallery">
+                        <li class="item px-1 h-100" itemprop="associatedMedia">
                             <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
                                 <div class="discount position-absolute bg-coral-red color-white border-radius-50 py-1 px-3">تخفیف ۳۰٪</div>
-                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100 h-100" itemprop="thumbnail">
                             </a>
                         </li>
-                        <li class="item px-1" itemprop="associatedMedia">
+                        <li class="item px-1 h-100" itemprop="associatedMedia">
                             <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                                <div class="discount position-absolute bg-coral-red color-white border-radius-50 py-1 px-3">تخفیف ۳۰٪</div>
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100 h-100" itemprop="thumbnail">
                             </a>
                         </li>
-                        <li class="item px-1" itemprop="associatedMedia">
+                        <li class="item px-1 h-100" itemprop="associatedMedia">
                             <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                                <div class="discount position-absolute bg-coral-red color-white border-radius-50 py-1 px-3">تخفیف ۳۰٪</div>
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100 h-100" itemprop="thumbnail">
                             </a>
                         </li>
-                        <li class="item px-1" itemprop="associatedMedia">
+                        <li class="item px-1 h-100" itemprop="associatedMedia">
                             <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                                <div class="discount position-absolute bg-coral-red color-white border-radius-50 py-1 px-3">تخفیف ۳۰٪</div>
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100 h-100" itemprop="thumbnail">
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="carousel-nav d-flex justify-content-center mt-3 align-items-center" data-slider data-loop="false" data-items-nav="false" data-disable-number="4"
-                     data-disable-number-s="4" data-disable-number-m="4" data-disable-number-xl="4" data-cell-align="center" data-nav-select=".carousel-main .this-slider">
+                     data-disable-number-s="4" data-disable-number-m="3" data-disable-number-xl="4" data-cell-align="center" data-nav-select=".carousel-main .this-slider">
                     <div class="chevron chevron-right ml-2 cursor-pointer">
                         <i class="icon-font-chevron-right font-size-20 color-black"></i>
                     </div>
@@ -165,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product-content col-xl-4 d-flex flex-column mb-2">
+            <div class="product-content col-xl-4 col-lg-4 col-md-7 d-flex flex-column mb-2">
                 <div class="mb-auto">
                     <div class="rating d-flex align-items-center">
                         <select data-rating>
@@ -178,8 +182,8 @@
                         </select>
                         <span data-set-rating-number class="mr-2 font-size-18 mt-1 color-atomic-tangerine">۰/۵</span>
                     </div>
-                    <h3 class="font-size-30 mt-2 mb-3">شامپوی لورئال السِوِه آبی</h3>
-                    <label class="font-size-18 font-weight-normal">ضد شوره و نرم کننده 450 گرمی</label>
+                    <h3 class="font-size-30 mt-2 mb-3 product-title">شامپوی لورئال السِوِه آبی</h3>
+                    <label class="font-size-18 font-weight-normal sub-product-title">ضد شوره و نرم کننده 450 گرمی</label>
                     <div>
                         <span class="font-weight-normal">برند :</span>
                         <a href="#" class="color-coral-red text-decoration-underline font-weight-normal">لورئال</a>
@@ -199,37 +203,39 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mt-auto mb-5">
+                <div class="mt-auto mb-0 mb-lg-5">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                            <span class="font-weight-normal ml-2">قیمت :</span>
-                            <label class="mb-0 font-size-16 text-decoration-line-through color-silver-chalice-2">۱۸۰۰۰ تومان</label>
+                            <span class="font-weight-normal ml-2 font-size-18">قیمت :</span>
+                            <label class="mb-0 font-size-18 text-decoration-line-through color-silver-chalice-2">۱۸۰۰۰ تومان</label>
                         </div>
-                        <h5 class="mb-0">۱۳۵۰۰۰ تومان</h5>
+                        <h5 class="mb-0 font-size-30 product-price">۱۳۵۰۰۰ تومان</h5>
                     </div>
-                    <div class="d-flex align-items-stretch mb-4">
+                    <div class="d-flex align-items-stretch mb-0 mb-lg-4 justify-content-center justify-content-md-start">
                         <select class="custom-select w-auto h-auto ml-2 border-radius-17 border-width-3 font-size-20 ct-w-75">
                             <option value="1">۱</option>
                             <option value="2">۲</option>
                             <option value="3">۳</option>
                         </select>
-                        <a href="" class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-3 px-4 border-radius-17">
-                            <h6 class="mb-0 font-size-26">افزودن به سبد خرید</h6>
+                        <a href="" class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-2 px-4 border-radius-17">
+                            <h6 class="mb-0 font-size-20">افزودن به سبد خرید</h6>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-12">
                 <div class="d-flex justify-content-center mb-3">
                     <a href="#" class="text-hover">دسته بندی</a>
                     <span class="px-1">/</span>
                     <a href="#" class="text-hover">دسته بندی مادر</a>
                 </div>
-                <div class="border-radius-17 border-width-3 border-style-solid border-color-gallery-2 px-3 pt-3 product-description">
-                    <h6 class="font-size-20 color-coral-red mb-0"> توضیحات مختصر :</h6>
-                    <p class="font-size-18 mb-0">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
-                    </p>
+                <div class="border-radius-17 border-width-3 border-style-solid border-color-gallery-2 product-description scrollbar-inner" data-scroll-no-touch>
+                    <div class="px-3 pt-3">
+                        <h6 class="font-size-20 color-coral-red mb-0"> توضیحات مختصر :</h6>
+                        <p class="font-size-18 mb-0 pb-4">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                        </p>
+                    </div>
                 </div>
                 <div class="product-description-tools d-flex mt-3 justify-content-between">
                     <a class="d-inline-flex justify-content-center align-items-center save-message px-3 py-2 border-radius-17 ml-2" data-toggle-class="active" href="#">
@@ -351,7 +357,7 @@
         <h5 class="m-0">کلیه حقوق این سایت متعلق به فروشگاه اینترنتی <a href="" class="text-hover">زودمارکت</a> می‌باشد</h5>
     </div>
 </footer>
-<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none">
+<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none d-none">
     <div class="d-flex w-100 justify-content-between align-items-center">
         <span class="color-white">جمع خرید : ۱۴۵۰۰</span>
         <a href="#" class="d-flex bg-atomic-tangerine p-2 border-radius-50">
@@ -436,7 +442,7 @@
 <script src="js/jquery.barrating.min.js"></script>
 <script src="js/flickity.pkgd.min.js"></script>
 <script src="js/flickity-fade.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1116,6 +1116,24 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   min-height: 468px;
   max-height: 468px;
 }
+@media only screen and (max-width: 1300px) {
+  .carousel .carousel-main {
+    min-height: 20vw;
+    max-height: 20vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .carousel .carousel-main {
+    min-height: 25vw;
+    max-height: 25vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel .carousel-main {
+    min-height: 65vw;
+    max-height: 65vw;
+  }
+}
 .carousel .carousel-main ul li .discount {
   top: 10px;
   right: 10px;
@@ -1123,13 +1141,53 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .carousel .carousel-nav ul {
   width: 288px;
 }
+@media only screen and (max-width: 767px) {
+  .carousel .carousel-nav ul {
+    width: 360px;
+  }
+}
 .carousel .carousel-nav ul li {
   width: 72px;
   height: 64px;
 }
+@media only screen and (max-width: 1199px) and (min-width:991px) {
+  .carousel .carousel-nav ul li {
+    width: 66px;
+    height: 58px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .carousel .carousel-nav ul li {
+    width: 80px;
+    height: 72px;
+  }
+}
 .carousel .carousel-nav ul li > div {
   border: 3px solid #EBEBEB;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  .product-title {
+    font-size: 26px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sub-product-title {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width:991px) {
+  .product-price {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .product-price {
+    font-size: 24px !important;
+  }
 }
 
 .product-description {
@@ -1137,7 +1195,40 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   max-height: 426px;
   padding-bottom: 8px;
 }
+@media only screen and (max-width: 991px) {
+  .product-description {
+    min-height: 28vw;
+    max-height: 28vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .product-description {
+    min-height: 66vw;
+    max-height: 66vw;
+  }
+}
+.product-description.scrollbar-inner > .scroll-element.scroll-y {
+  left: 8px;
+}
 
+@media only screen and (max-width: 1330px) and (min-width:991px) {
+  .product-description-tools {
+    flex-direction: column;
+  }
+  .product-description-tools .save-message {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .product-description-tools {
+    flex-direction: column;
+  }
+  .product-description-tools .save-message {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+}
 .product-description-tools .save-message,
 .product-description-tools .share-btn {
   border: 3px solid #EBEBEB;
