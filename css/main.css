@@ -869,6 +869,7 @@ main .ad .ad-big, main .ad .ad-small {
 }
 main .slider-home-page ul li .slider-home-page-image {
   height: 458px;
+  width: 100%;
 }
 main .slider-home-page ul li .slider-home-page-image::before {
   content: "";
