@@ -53,4 +53,17 @@
       }
     }
   }
+  .share-btn{
+    transition: all .3s ease;
+    &:hover{
+      background-color: $color-atomic-tangerine;
+      *{
+        color: $color-white;
+      }
+      i{
+
+        transition: all 0s ease;
+      }
+    }
+  }
 }

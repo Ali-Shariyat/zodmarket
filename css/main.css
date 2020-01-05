@@ -1157,6 +1157,18 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .product-description-tools .save-message:hover i::before, .product-description-tools .save-message.active i::before {
   content: "";
 }
+.product-description-tools .share-btn {
+  transition: all 0.3s ease;
+}
+.product-description-tools .share-btn:hover {
+  background-color: #FFA259;
+}
+.product-description-tools .share-btn:hover * {
+  color: #fff;
+}
+.product-description-tools .share-btn:hover i {
+  transition: all 0s ease;
+}
 
 .modal.search-box-modal .icon-font-search {
   left: 10px;
