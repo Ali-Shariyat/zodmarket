@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>زودمارکت | zoodmarket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
+    <!--<link href="css/lightgallery.css" rel="stylesheet">-->
+    <!-- Import PhotoSwipe Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
+    <link rel="stylesheet" href="css/css-stars.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"-->
+    <!--media="all">-->
+    <!--<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"-->
+    <!--media="all">-->
+</head>
+<body class="rtl" data-theme-color="">
+<header class="">
+    <div class="py-4 header-big position-fixed bg-white d-none d-lg-block">
+        <div class="container custom-container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="d-inline-flex">
+                    <div class="logo">
+                        <a href="#"><img src="image/logo.png" alt="logo"> </a>
+                    </div>
+                    <div class="menu d-flex align-items-center mr-5">
+                        <ul class="d-flex mb-1">
+                            <li class="ml-4 active">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-home color-persimmon font-size-12"></i>
+                                    صفحه اصلی</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-grouping color-persimmon font-size-12"></i>
+                                    دسته بندی ها</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#" class="position-relative pb-3">
+                                    <i class="icon-font-discounts color-persimmon font-size-12"></i>
+                                    تخفیف ها</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-inline-flex justify-content-end">
+                    <form class="search-box overflow-hidden border-radius-50 border-color-atomic-tangerine border-width-3 border-style-solid d-flex col-xl-6">
+                        <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100">
+                        <a href="#" class="search-btn bg-white position-absolute "><i
+                                class="icon-font-search font-size-22 color-malachite"></i>
+                        </a>
+                    </form>
+                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center">
+                        ورود/ثبت نام
+                        <i class="icon-font-profile font-size-20 mr-2"></i>
+                    </div>
+                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative">
+                        <i class="icon-font-shop font-size-22 d-inline-flex color-white"></i>
+                        <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex d-lg-none justify-content-between container-fluid header-small py-2 position-fixed bg-white">
+        <div class="menu-small-icon d-flex align-items-center">
+            <i class="icon-font-hammer font-size-18"></i>
+        </div>
+        <div class="logo pr-4">
+            <a href="#"><img src="image/logo.png" alt="logo"></a>
+        </div>
+        <div class="search-login-icon d-inline-flex align-items-center">
+            <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
+            <div class="dividing-line py-2 mr-3 ml-1"></div>
+            <a class="icon-font-profile font-size-20 font-size-20 mr-2"></a>
+        </div>
+    </div>
+
+    <div class="menu-items position-fixed h-100 text-white">
+        <div class="close-menu w-100 d-flex justify-content-end"><i
+                class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex"></i></div>
+        <ul class="">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">صفحه اصلی</a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class=""><a href="">دسته بندی ها</a><i
+                        class="float-left position-relative icon-font-plus-menu"></i></div>
+                <ul class="menu-down">
+                    <li><a href="#">بهداشتی و شوینده</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تخفیف ها</a>
+            </li>
+        </ul>
+
+    </div>
+</header>
+<main>
+    <div class="container custom-container">
+        <div class="row mt-4">
+            <div class="carousel col-xl-4">
+                <div class="carousel-main border-radius-17 overflow-hidden" data-slider data-loop="false" data-items-nav="false" data-disable-number="1"
+                     data-disable-number-s="1" data-disable-number-m="1" data-disable-number-xl="1" data-cell-align="center">
+                    <ul class="this-slider p-0 m-0 gallery" id="gallery">
+                        <li class="item px-1" itemprop="associatedMedia">
+                            <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                                <div class="discount position-absolute bg-coral-red color-white border-radius-50 py-1 px-3">تخفیف ۳۰٪</div>
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                            </a>
+                        </li>
+                        <li class="item px-1" itemprop="associatedMedia">
+                            <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                            </a>
+                        </li>
+                        <li class="item px-1" itemprop="associatedMedia">
+                            <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                            </a>
+                        </li>
+                        <li class="item px-1" itemprop="associatedMedia">
+                            <a href="image/slider/slider-1.png" class="border-radius-17 w-100 h-100 position-relative" data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100" itemprop="thumbnail">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-nav d-flex justify-content-center mt-3 align-items-center" data-slider data-loop="false" data-items-nav="false" data-disable-number="4"
+                     data-disable-number-s="4" data-disable-number-m="4" data-disable-number-xl="4" data-cell-align="center" data-nav-select=".carousel-main .this-slider">
+                    <div class="chevron chevron-right ml-2 cursor-pointer">
+                        <i class="icon-font-chevron-right font-size-20 color-black"></i>
+                    </div>
+                    <ul class="this-slider p-0 mt-2">
+                        <li class="item px-1">
+                            <div class="border-radius-17 w-100 h-100 cursor-pointer">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100">
+                            </div>
+                        </li>
+                        <li class="item px-1">
+                            <div class="border-radius-17 w-100 h-100 cursor-pointer">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100">
+                            </div>
+                        </li>
+                        <li class="item px-1">
+                            <div class="border-radius-17 w-100 h-100 cursor-pointer">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100">
+                            </div>
+                        </li>
+                        <li class="item px-1">
+                            <div class="border-radius-17 w-100 h-100 cursor-pointer">
+                                <img src="image/slider/slider-1.png" alt="shampoo-3" class="w-100">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chevron chevron-left mr-2 cursor-pointer">
+                        <i class="icon-font-chevron-left font-size-20 color-black"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content col-xl-4 d-flex flex-column mb-2">
+                <div class="mb-auto">
+                    <div class="rating d-flex align-items-center">
+                        <select data-rating>
+                            <option value=""></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </select>
+                        <span data-set-rating-number class="mr-2 font-size-18 mt-1 color-atomic-tangerine">۰/۵</span>
+                    </div>
+                    <h3 class="font-size-30 mt-2 mb-3">شامپوی لورئال السِوِه آبی</h3>
+                    <label class="font-size-18 font-weight-normal">ضد شوره و نرم کننده 450 گرمی</label>
+                    <div>
+                        <span class="font-weight-normal">برند :</span>
+                        <a href="#" class="color-coral-red text-decoration-underline font-weight-normal">لورئال</a>
+                    </div>
+                    <div class="mt-2">
+                        <span class="font-weight-normal">وزن :</span>
+                        <ul class="d-flex align-items-center mt-2" data-tab-click=".active.bg-malachite.color-white" data-siblings-add=".color-silver-chalice">
+                            <li class="px-3 ml-2 py-2 border-radius-17 cursor-pointer bg-malachite color-white active">
+                                <span> گرم ۱۴۰</span>
+                            </li>
+                            <li class="px-3 ml-2 py-2 border-radius-17 cursor-pointer color-silver-chalice">
+                                <span> گرم ۲۸۰</span>
+                            </li>
+                            <li class="px-3 ml-2 py-2 border-radius-17 cursor-pointer color-silver-chalice">
+                                <span> گرم ۴۸۰</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-auto mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center">
+                            <span class="font-weight-normal ml-2">قیمت :</span>
+                            <label class="mb-0 font-size-16 text-decoration-line-through color-silver-chalice-2">۱۸۰۰۰ تومان</label>
+                        </div>
+                        <h5 class="mb-0">۱۳۵۰۰۰ تومان</h5>
+                    </div>
+                    <div class="d-flex align-items-stretch mb-4">
+                        <select class="custom-select w-auto h-auto ml-2 border-radius-17 border-width-3 font-size-20 ct-w-75">
+                            <option value="1">۱</option>
+                            <option value="2">۲</option>
+                            <option value="3">۳</option>
+                        </select>
+                        <a href="" class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-3 border-radius-17">
+                            <h6 class="mb-0 font-size-30">افزودن به سبد خرید</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="d-flex justify-content-center mb-3">
+                    <a href="#" class="text-hover">دسته بندی</a>
+                    <span class="px-1">/</span>
+                    <a href="#" class="text-hover">دسته بندی مادر</a>
+                </div>
+                <div class="border-radius-17 border-width-3 border-style-solid border-color-gallery-2 px-3 pt-3 product-description">
+                    <h6 class="font-size-20 color-coral-red mb-0"> توضیحات مختصر :</h6>
+                    <p class="font-size-18 mb-0">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                    </p>
+                </div>
+                <div class="product-description-tools d-flex mt-3 justify-content-between">
+                    <a class="d-inline-flex justify-content-center align-items-center save-message px-3 py-2 border-radius-17 ml-2" data-toggle-class="active" href="#">
+                        <i class="icon-font-save-message d-flex font-size-20"></i>
+                        <span class="font-size-20 mr-3">نشان کردن محصول</span>
+                    </a>
+                    <a class="d-inline-flex justify-content-center align-items-center share-btn px-3 py-2 border-radius-17" href="#">
+                        <i class="icon-font-share d-flex font-size-20 color-atomic-tangerine"></i>
+                        <span class="font-size-20 mr-3 color-atomic-tangerine">اشتراک</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-seashell pt-5 pb-0 mt-5 flex-column d-none d-lg-flex">
+    <div class="container custom-container d-flex flex-md-row flex-wrap">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <ul class="bg-froly px-4 py-3 border-radius-50 footer-sidebar-right">
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-car font-size-30"></i>
+                    <h6 class="pr-3">ارسال فوری</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-medal font-size-30"></i>
+                    <h6 class="pr-3">اولین در قم</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-location font-size-30"></i>
+                    <h6 class="pr-3">ارسال به تمام نقاط</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-manual-worker font-size-30"></i>
+                    <h6 class="pr-3">پشتیبانی خرید</h6>
+                </li>
+                <li class="d-flex color-white align-items-center justify-content-center justify-content-md-start">
+                    <i class="icon-font-ATM-card font-size-30"></i>
+                    <h6 class="pr-3">پرداخت در محل</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>لینک های پر کاربرد</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>دانلود نرم افزار اندروید</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 sidebar-left mb-3 mb-md-0">
+            <div class="footer-content-title">
+                <h5>نماد اعتبار الکترونیک</h5>
+            </div>
+            <ul class="footer-content mb-0">
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+                <li>
+                    <a href="" class="my-1 d-inline-block">لورم ایپسوم متن ساختگی</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-footer w-100 text-center bg-mercury py-3 mt-3 mt-lg-0">
+        <h5 class="m-0">کلیه حقوق این سایت متعلق به فروشگاه اینترنتی <a href="" class="text-hover">زودمارکت</a> می‌باشد</h5>
+    </div>
+</footer>
+<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+        <span class="color-white">جمع خرید : ۱۴۵۰۰</span>
+        <a href="#" class="d-flex bg-atomic-tangerine p-2 border-radius-50">
+            <i class="icon-font-shop font-size-22 d-inline-flex color-white font-size-20"></i>
+        </a>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade search-box-modal" id="search-box" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <form>
+                    <input type="search" placeholder="جستجو کن" class="border-0 outline-none w-100">
+                    <span class="icon-font-search font-size-20 position-absolute bg-white pr-1"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="black-page"></div>
+<div class="loader-page">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+</div>
+
+
+<!-- Gallery popup -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+<script src="js/jquery.barrating.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/flickity-fade.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
