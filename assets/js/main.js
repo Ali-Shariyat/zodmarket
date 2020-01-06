@@ -111,6 +111,7 @@ $('[data-slider]').each(function () {
         }
     });
 });
+
 //==================
 // niceScroll touch
 //==================
@@ -130,6 +131,7 @@ $(window).on('ready load resize change', function () {
         })
     }
 });
+
 $(window).on('ready load resize change', function () {
     if ($("[data-scroll-no-touch]").length) {
         $("[data-scroll-no-touch]").each(function () {
@@ -138,11 +140,7 @@ $(window).on('ready load resize change', function () {
         });
     }
 });
-// var $get_width = 0;
-// $(".original-category ul li").each(function () {
-//     $get_width += +$(this).outerWidth(true);
-//     $(this).parent().css("width",$get_width);
-// });
+
 if ($(".original-category").length) {
     var this_div = $(".original-category ul").width() / 2;
     $(".original-category").animate({"scrollLeft": 500}, 500);
@@ -199,10 +197,10 @@ $("[data-sort-select]").change(function () {
     // console.log($(this).find("input:checked").siblings("label").text());
     $(this).find("[data-close-btn]").trigger("click");
 });
+
 //==================
 // page loader
 //==================
-
 $(window).on("load", function () {
     setTimeout(function () {
         if ($(".loader-page")[0]) {
@@ -210,6 +208,7 @@ $(window).on("load", function () {
         }
     }, 150);
 });
+
 //==================
 // light gallery
 //==================
@@ -262,6 +261,7 @@ if ($('[data-rating]').length) {
         }
     });
 }
+
 //==================
 // tab click
 //==================
@@ -270,41 +270,42 @@ $(document).on("click", "[data-tab-click] li", function () {
     $this.removeClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).addClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' ')).siblings("li").addClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).removeClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' '));
     $this.parents("[data-tab-click]").siblings("[data-tab-items]").find("li").eq($this.index()).addClass("active").siblings().removeClass("active");
 });
+
 //==================
 // toggle class
 //==================
-$(document).on("click","[data-toggle-class]",function (e) {
+$(document).on("click", "[data-toggle-class]", function (e) {
     var $this = $(this);
     $this.toggleClass($this.attr("data-toggle-class"));
     e.stopPropagation();
     e.preventDefault();
 });
+
 //==================
 // change class
 //==================
-function padString (str, len, padWith) {
-    var padLength = len - str.length;
-    return padLength < 1 ? str : Array(padLength + 1).join(padWith) + str;
-}
-$(document).on("click","[data-change-class]",function (e) {
+$(document).on("click", "[data-change-class]", function (e) {
     var $this = $(this);
-    // console.log($this.attr("data-after-class").replace(/\ /g, '.'));
-    if($this.is($this.attr("data-before-class"))){
-        $this.addClass($this.attr("data-after-class").replace(/\./g, ' ')).removeClass($this.attr("data-before-class").replace(/\./g, ' '));
-    }else{
-        $this.removeClass($this.attr("data-after-class").replace(/\./g, ' ')).addClass($this.attr("data-before-class").replace(/\./g, ' '));
+    var _get_after_attr_value = $this.attr("data-after-class").replace(/\./g, ' ');
+    var _get_before_attr_value = $this.attr("data-before-class").replace(/\./g, ' ');
+    if ($this.is($this.attr("data-before-class"))) {
+        $this.addClass(_get_after_attr_value).removeClass(_get_before_attr_value);
+    } else {
+        $this.removeClass(_get_after_attr_value).addClass(_get_before_attr_value);
     }
     e.stopPropagation();
     e.preventDefault();
 });
-(function() {
+
+//==================
+// form validate
+//==================
+(function () {
     'use strict';
-    window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    window.addEventListener('load', function () {
         var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
