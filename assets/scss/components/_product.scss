@@ -21,6 +21,10 @@
         .discount {
           top: 10px;
           right: 10px;
+          z-index: 1;
+        }
+        img{
+          max-width: 100%;
         }
       }
     }

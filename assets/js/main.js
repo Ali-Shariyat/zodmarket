@@ -151,8 +151,10 @@ if ($(".original-category").length) {
 $(window).scroll(function () {
     var scroll_top = $(window).scrollTop();
     if (scroll_top >= 100) {
+        $(".header-big").addClass("active-fixed");
         $(".shop-small").fadeIn();
     } else {
+        $(".header-big").removeClass("active-fixed");
         $(".shop-small").fadeOut();
     }
 });

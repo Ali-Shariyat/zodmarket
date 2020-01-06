@@ -3,6 +3,21 @@ header {
   @include media-query("(max-width: 991px)") {
     height: 66px;
   }
+  .header-big{
+    .logo{
+      img{
+        transition: all .5s ease;
+        height: 56px;
+      }
+    }
+    &.active-fixed{
+      .logo{
+        img{
+          height: 45px;
+        }
+      }
+    }
+  }
   .header-big, .header-small {
     border-bottom: 10px solid $color-alabaster;
     left: 0;

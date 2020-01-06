@@ -885,6 +885,13 @@ header {
     height: 66px;
   }
 }
+header .header-big .logo img {
+  transition: all 0.5s ease;
+  height: 56px;
+}
+header .header-big.active-fixed .logo img {
+  height: 45px;
+}
 header .header-big, header .header-small {
   border-bottom: 10px solid #f8f8f8;
   left: 0;
@@ -1293,6 +1300,10 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .carousel .carousel-main ul li .discount {
   top: 10px;
   right: 10px;
+  z-index: 1;
+}
+.carousel .carousel-main ul li img {
+  max-width: 100%;
 }
 .carousel .carousel-nav ul {
   width: 288px;
