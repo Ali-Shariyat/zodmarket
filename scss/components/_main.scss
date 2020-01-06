@@ -51,7 +51,9 @@ main{
   .slider-home-page{
     ul{
       li{
-
+        &.is-selected{
+          z-index: 2;
+        }
         @include media-query("(max-width: 480px)") {
           padding: 0 15px !important;
         }

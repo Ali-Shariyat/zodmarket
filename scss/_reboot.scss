@@ -54,6 +54,18 @@ a:hover {
   }
 }
 
+a.btn.bg-malachite:hover {
+  transition: all .3s ease;
+  background-color: $color-japanese-laurel;
+  color: #fff;
+}
+
+a.btn.bg-brink-pink:hover {
+  transition: all .3s ease;
+  background-color: $color-roman;
+  color: #fff;
+}
+
 ul li {
   list-style: none
 }
@@ -344,6 +356,10 @@ ul li {
 
 .bg-froly {
   background-color: $color-froly;
+}
+
+.bg-brink-pink {
+  background-color: $color-brink-pink;
 }
 
 .bg-cornflower-lilac {

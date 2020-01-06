@@ -83,18 +83,6 @@ a:hover img {
   opacity: 0.75;
 }
 
-a.btn.bg-malachite:hover {
-  transition: all 0.3s ease;
-  background-color: #0e8a12;
-  color: #fff;
-}
-
-a.btn.bg-brink-pink:hover {
-  transition: all 0.3s ease;
-  background-color: #da5d68;
-  color: #fff;
-}
-
 ul li {
   list-style: none;
 }
@@ -273,10 +261,6 @@ ul li {
 
 .bg-froly {
   background-color: #F76D79;
-}
-
-.bg-brink-pink {
-  background-color: #fa6774;
 }
 
 .bg-cornflower-lilac {
@@ -878,9 +862,6 @@ main .grouping-content ul li > div:hover {
 main .ad .ad-big, main .ad .ad-small {
   height: 213px;
 }
-main .slider-home-page ul li.is-selected {
-  z-index: 2;
-}
 @media only screen and (max-width: 480px) {
   main .slider-home-page ul li {
     padding: 0 15px !important;
@@ -1262,10 +1243,10 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .product-description-tools .save-message:hover *, .product-description-tools .save-message.active * {
   color: #fff;
 }
-.product-description-tools .save-message.active i {
+.product-description-tools .save-message:hover i, .product-description-tools .save-message.active i {
   transition: all 0s ease;
 }
-.product-description-tools .save-message.active i::before {
+.product-description-tools .save-message:hover i::before, .product-description-tools .save-message.active i::before {
   content: "";
 }
 .product-description-tools .share-btn {

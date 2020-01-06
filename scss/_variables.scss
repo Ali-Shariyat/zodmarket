@@ -2,6 +2,10 @@ $DefaultFonts: serif, sans-serif, cursive, fantasy, monospace;
 //===============================================
 //colors
 //===============================================
+$color-black : #000;
+$color-black-60 : rgba(0, 0, 0, 0.60);
+$color-black-30 : rgba(0, 0, 0, 0.30);
+$color-dove-gray : #737373;
 $color-white: #fff;
 $color-silver : #bebebe;
 $color-silver-2 : #C0C0C0;
@@ -11,26 +15,25 @@ $color-wild-sand : #F7F7F7;
 $color-alto : #DCDCDC;
 $color-alto-2 : #DBDBDB;
 $color-mercury : #E1E1E1;
-$color-dove-gray : #737373;
 $color-nobel : #B5B5B5;
 $color-seashell : #F1F1F1;
 $color-silver-chalice : #A8A8A8;
 $color-silver-chalice-2: #AAAAAA;
+$color-gallery : #eee;
+$color-gallery-2 : #EBEBEB;
 $color-coral-red : #FA4252;
 $color-froly : #F76D79;
+$color-roman : #da5d68;
+$color-brink-pink : #fa6774;
 $color-atomic-tangerine : #FFA259;
 $color-picasso : #FFF29f;
 $color-persimmon : #FE6845;
 $color-malachite : #0DB413;
+$color-japanese-laurel : #0e8a12;
 $color-mint-green : #86F88A;
 $color-cornflower-lilac : #FFA4AC;
 $color-alabaster : #f8f8f8;
 $color-alabaster-2 : #fcfcfc;
-$color-black : #000;
-$color-black-60 : rgba(0, 0, 0, 0.60);
-$color-black-30 : rgba(0, 0, 0, 0.30);
-$color-gallery : #eee;
-$color-gallery-2 : #EBEBEB;
 
 //===============================================
 //numbers

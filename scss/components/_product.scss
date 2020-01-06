@@ -120,6 +120,8 @@
       *{
         color: $color-white;
       }
+    }
+    &.active{
       i{
         transition: all 0s ease;
         &::before{
