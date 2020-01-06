@@ -144,3 +144,18 @@
     }
   }
 }
+.tab-header{
+  li{
+    &.active{
+      padding-bottom: 0;
+      border-bottom: 7px solid $color-coral-red;
+    }
+  }
+}
+[data-tab-items]{
+  > li{
+    &:not(.active){
+      display: none;
+    }
+  }
+}

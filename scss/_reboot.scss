@@ -54,7 +54,8 @@ a:hover {
   }
 }
 
-a.btn.bg-malachite:hover {
+a.btn.bg-malachite:hover,
+button.btn.bg-malachite:hover{
   transition: all .3s ease;
   background-color: $color-japanese-laurel;
   color: #fff;
@@ -159,6 +160,12 @@ ul li {
 //  }
 //}
 //==========================================
+//box shadows
+//==========================================
+.box-shadow-none{
+  box-shadow: none !important;
+}
+//==========================================
 //colors
 //==========================================
 //.color-black {
@@ -177,12 +184,16 @@ ul li {
   color: $color-black;
 }
 
+.color-black-30 {
+  color: $color-black-30;
+}
+
 .color-black-60 {
   color: $color-black-60;
 }
 
-.color-black-30 {
-  color: $color-black-30;
+.color-black-80 {
+  color: $color-black-80;
 }
 
 .color-silver {
@@ -213,6 +224,10 @@ ul li {
   color: $color-malachite;
 }
 
+.color-malachite-30 {
+  color: $color-malachite-30;
+}
+
 .color-alabaster {
   color: $color-alabaster;
 }
@@ -237,92 +252,22 @@ ul li {
   color: $color-silver-chalice-2;
 }
 
-//.color-mine-shaft-2 {
-//  color: $color-mine-shaft-2;
-//}
-//
-//.color-mine-shaft-3 {
-//  color: $color-mine-shaft-3;
-//}
-//
-//.color-mine-shaft-bright {
-//  color: $color-mine-shaft-bright;
-//}
-//
-//.color-mine-shaft-bright-2 {
-//  color: $color-mine-shaft-bright-2;
-//}
-//
-//.color-dove-gray {
-//  color: $color-dove-gray;
-//}
-//
-//.color-surfie-green {
-//  color: $color-surfie-green;
-//}
-//
-//.color-ming {
-//  color: $color-ming;
-//}
-//
-//.color-silver {
-//  color: $color-silver;
-//}
-//
-//.color-cream-can {
-//  color: $color-cream-can;
-//}
-//
-//.color-tree-poppy {
-//  color: $color-tree-poppy;
-//}
-//
-//.color-pussian-blue {
-//  color: $color-prussian-blue;
-//}
-//
-//.color-bahama-blue {
-//  color: $color-bahama-blue;
-//}
-//
-//.color-sapphire {
-//  color: $color-sapphire;
-//}
-//
-//.color-cod-gray {
-//  color: $color-cod-gray;
-//}
-//
-//.color-dim-gray {
-//  color: $color-dim-gray;
-//}
-//
-//.color-Dodger-Blue {
-//  color: $color-Dodger-Blue;
-//}
-//
-//.color-boulder {
-//  color: $color-boulder;
-//}
-//
-//.color-tundora {
-//  color: $color-tundora;
-//}
-//
-//.color-black-85 {
-//  color: $color-black-85;
-//}
-//
-//.color-emperor {
-//  color: $color-emperor;
-//}
-//
-//.color-night-rider {
-//  color: $color-night-rider;
-//}
-//.color-red {
-//  color: $color-persian-red;
-//}
+.color-tundora {
+  color: $color-tundora;
+}
+
+.color-tundora-50 {
+  color: $color-tundora-50;
+}
+
+.color-tundora-2 {
+  color: $color-tundora-2;
+}
+
+.color-dove-gray-2 {
+  color: $color-dove-gray-2;
+}
+
 //==========================================
 //background colors
 //==========================================
@@ -332,6 +277,10 @@ ul li {
 
 .bg-malachite {
   background-color: $color-malachite;
+}
+
+.bg-malachite-10 {
+  background-color: $color-malachite-10;
 }
 
 .bg-alabaster-2 {
@@ -399,39 +348,6 @@ ul li {
     background-color: $color-cornflower-lilac;
   }
 }
-//.bg-pacific-blue{
-//  background-color: $color-pacific-blue;
-//}
-//
-//.bg-dodger-blue{
-//  background-color: $color-dodger-blue;
-//}
-//
-//.bg-mariner{
-//  background-color: $color-mariner;
-//}
-//
-//.bg-black-pearl{
-//  background-color: $color-black-pearl;
-//}
-//
-//.bg-cerulean{
-//  background-color: $color-cerulean;
-//}
-//
-//.bg-cranberry{
-//  background-color: $color-cranberry;
-//}
-//.bg-white-smoke{
-//  background-color: $color-white-smoke;
-//}
-//.bg-instagram{
-//  background: #f09433;
-//  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-//  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-//  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-//}
-
 //==========================================
 // background image options
 //==========================================
@@ -604,6 +520,30 @@ ul li {
   content: "\f135";
 }
 
+.icon-font-grouping-2::before {
+  content: "\f136";
+}
+
+.icon-font-comment::before {
+  content: "\f137";
+}
+
+.icon-font-like::before {
+  content: "\f138";
+}
+
+.icon-font-like-bold::before {
+  content: "\f139";
+}
+
+.icon-font-reply::before {
+  content: "\f140";
+}
+
+.icon-font-warning::before {
+  content: "\f141";
+}
+
 
 //==========================================
 //z-index
@@ -721,8 +661,20 @@ ul li {
   border-radius: 50px;
 }
 
+.border-width-1 {
+  border-width: 1px;
+}
+
 .border-width-3 {
   border-width: 3px;
+}
+
+.border-top-width-3 {
+  border-top-width: 3px;
+}
+
+.border-bottom-width-3 {
+  border-bottom-width: 3px;
 }
 
 .border-color-coral-red {
@@ -745,8 +697,32 @@ ul li {
   border-color: $color-gallery-2;
 }
 
+.border-color-silver-5 {
+  border-color: $color-silver-5;
+}
+
+.border-top-color-gallery-2 {
+  border-top-color: $color-gallery-2;
+}
+
+.border-bottom-color-gallery-2 {
+  border-bottom-color: $color-gallery-2;
+}
+
 .border-style-solid {
   border-style: solid;
+}
+
+.border-style-top-solid {
+  border-top-style: solid;
+}
+
+.borderborder-bottom-solid {
+  border-bottom-style: solid;
+}
+
+.border-bottom-style-solid {
+  border-bottom-style: solid;
 }
 
 //==========================================
@@ -895,6 +871,52 @@ ul li {
     height: 28px;
     top:50%;
     transform: translate(0,-50%);
+  }
+}
+.form-control{
+  &.coral-red-input{
+    &:focus{
+      border: 1px solid $color-coral-red;
+      box-shadow: 0 0 0 0.2rem $color-malachite-25;
+    }
+  }
+  &.green-input{
+    border: 1px solid $color-malachite;
+    &:focus{
+      box-shadow: 0 0 0 0.2rem $color-malachite-25;
+    }
+  }
+}
+textarea{
+  &.form-control{
+    min-height: 136px;
+    max-height: 300px;
+    resize: vertical;
+    &::placeholder{
+      font-size: $f-20;
+      color: $color-black-30;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      font-size: $f-20;
+      color: $color-black-30;
+    }
+    &::-ms-input-placeholder{
+      font-size: $f-20;
+      color: $color-black-30;
+    }
+    @include media-query("(max-width: 600px)") {
+      font-size: $f-16 !important;
+      &::placeholder{
+        font-size: $f-16;
+      }
+      &:-ms-input-placeholder {
+        font-size: $f-16;
+      }
+      &::-ms-input-placeholder{
+        font-size: $f-16;
+      }
+    }
   }
 }
 

@@ -267,7 +267,8 @@ if ($('[data-rating]').length) {
 //==================
 $(document).on("click", "[data-tab-click] li", function () {
     var $this = $(this);
-    $this.removeClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).addClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' ')).siblings("li").addClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).removeClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' '))
+    $this.removeClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).addClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' ')).siblings("li").addClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).removeClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' '));
+    $this.parents("[data-tab-click]").siblings("[data-tab-items]").find("li").eq($this.index()).addClass("active").siblings().removeClass("active");
 });
 //==================
 // toggle class
@@ -278,3 +279,38 @@ $(document).on("click","[data-toggle-class]",function (e) {
     e.stopPropagation();
     e.preventDefault();
 });
+//==================
+// change class
+//==================
+function padString (str, len, padWith) {
+    var padLength = len - str.length;
+    return padLength < 1 ? str : Array(padLength + 1).join(padWith) + str;
+}
+$(document).on("click","[data-change-class]",function (e) {
+    var $this = $(this);
+    // console.log($this.attr("data-after-class").replace(/\ /g, '.'));
+    if($this.is($this.attr("data-before-class"))){
+        $this.addClass($this.attr("data-after-class").replace(/\./g, ' ')).removeClass($this.attr("data-before-class").replace(/\./g, ' '));
+    }else{
+        $this.removeClass($this.attr("data-after-class").replace(/\./g, ' ')).addClass($this.attr("data-before-class").replace(/\./g, ' '));
+    }
+    e.stopPropagation();
+    e.preventDefault();
+});
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
