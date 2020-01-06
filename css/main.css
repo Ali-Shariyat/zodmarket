@@ -159,6 +159,12 @@ ul li {
   cursor: pointer;
 }
 
+.user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 .text-decoration-line-through {
   text-decoration: line-through;
 }
@@ -723,8 +729,6 @@ ul li {
 
 .item {
   width: 100%;
-  /* full width */
-  /* center images in cells with flexbox */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -828,23 +832,20 @@ textarea.form-control::-ms-input-placeholder {
   background-color: #fff;
   z-index: 99;
 }
-
-.lds-ripple {
+.loader-page .lds-ripple {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-
-.lds-ripple div {
+.loader-page .lds-ripple div {
   position: absolute;
   border: 4px solid #FA4252;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-
-.lds-ripple div:nth-child(2) {
+.loader-page .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
 
@@ -864,18 +865,16 @@ textarea.form-control::-ms-input-placeholder {
     opacity: 0;
   }
 }
-.br-widget a:before {
+.br-widget a.br-selected::before, .br-widget a.br-active::before {
+  color: #FFA259;
+  content: "";
+}
+.br-widget a::before {
   content: "";
   font-family: icon-font, serif, sans-serif, cursive, fantasy, monospace;
   color: #C8C8C8;
   margin-right: 5px;
   font-size: 22px;
-}
-
-.br-widget a.br-selected:before,
-.br-widget a.br-active:before {
-  color: #FFA259;
-  content: "";
 }
 
 header {

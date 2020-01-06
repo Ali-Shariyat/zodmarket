@@ -3,7 +3,7 @@
     li {
       transition: all .3s ease;
       &.original-category-items {
-        h5{
+        h5 {
           white-space: nowrap;
         }
         i {
@@ -35,7 +35,6 @@
 }
 
 .category-content {
-
   @include media-query("(max-width: 991px)") {
     max-width: 890px;
   }
@@ -153,11 +152,11 @@
       }
     }
   }
-  .category-search-tools-menu-small{
+  .category-search-tools-menu-small {
     left: 0;
     right: 0;
     bottom: 0;
-    top:0;
+    top: 0;
     background-color: #fff;
     display: none;
     z-index: 5;
