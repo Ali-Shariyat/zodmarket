@@ -101,8 +101,8 @@
       <file leaf-file-name="after-purchase.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/after-purchase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="185">
+              <caret line="18" column="60" lean-forward="false" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
               <folding>
                 <element signature="n#ul#1;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#table#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -200,7 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>startButtonInner</find>
       <find>.auto-refresher .auto-refresher-container .auto-refresher-progress-bar</find>
       <find>100</find>
       <find>alert</find>
@@ -230,6 +229,7 @@
       <find>data-scroll</find>
       <find>view-purchase</find>
       <find>data-toggle-class</find>
+      <find>class=&quot;d-flex justify-content-end px-4 py-3&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>color-persimmon</replace>
@@ -449,12 +449,12 @@
       <workItem from="1578152434696" duration="116000" />
       <workItem from="1578206278853" duration="23419000" />
       <workItem from="1578289540700" duration="30128000" />
-      <workItem from="1578376049794" duration="20305000" />
+      <workItem from="1578376049794" duration="20390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158732000" />
+    <option name="totallyTimeSpent" value="158817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/after-purchase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="185">
+          <caret line="18" column="60" lean-forward="false" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
           <folding>
             <element signature="n#ul#1;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#table#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
