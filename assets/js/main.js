@@ -279,6 +279,11 @@ $(document).on("click", "[data-tab-click] li", function () {
 $(document).on("click", "[data-toggle-class]", function (e) {
     var $this = $(this);
     $this.toggleClass($this.attr("data-toggle-class"));
+    if($this.hasClass($this.attr("data-toggle-class"))){
+        $this.find(".text-changer").text($this.attr("data-after-text"));
+    }else{
+        $this.find(".text-changer").text($this.attr("data-before-text"));
+    }
     e.stopPropagation();
     e.preventDefault();
 });
