@@ -1690,6 +1690,8 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 
 .modal.search-box-modal .icon-font-search {
   left: 10px;
+  top: calc(50% + 2px);
+  transform: translate(0, -50%);
 }
 
 footer {

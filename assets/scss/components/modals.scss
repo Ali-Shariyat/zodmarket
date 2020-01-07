@@ -2,6 +2,8 @@
   &.search-box-modal {
     .icon-font-search {
       left: 10px;
+      top: calc(50% + 2px);
+      transform: translate(0, -50%);
     }
   }
 }

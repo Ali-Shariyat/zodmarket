@@ -323,7 +323,10 @@ $(document).on("click", "[data-change-class]", function (e) {
     }, false);
 })();
 
-$('#hms_timer').countdowntimer({
+//==================
+// count down timer
+//==================
+$('[data-countdown]').countdowntimer({
     hours : 3,
     minutes :10,
     seconds : 10,
