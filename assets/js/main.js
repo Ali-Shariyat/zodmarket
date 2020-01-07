@@ -326,9 +326,11 @@ $(document).on("click", "[data-change-class]", function (e) {
 //==================
 // count down timer
 //==================
-$('[data-countdown]').countdowntimer({
-    hours : 3,
-    minutes :10,
-    seconds : 10,
-    size : "lg"
-});
+if($('[data-countdown]').length){
+    $('[data-countdown]').countdowntimer({
+        hours : 3,
+        minutes :10,
+        seconds : 10,
+        size : "lg"
+    });
+}
