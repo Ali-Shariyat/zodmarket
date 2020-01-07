@@ -1,0 +1,186 @@
+.after-purchase {
+  .after-purchase-main {
+    width: 520px;
+    min-height: 100vh;
+    @include media-query("(max-width: 520px)") {
+      width: calc(100% - 30px);
+      .countdown-main {
+        padding: 0 10px !important;
+        flex-direction: column;
+        h6 {
+          font-size: 16px !important;
+        }
+      }
+      .after-purchase-main-text {
+        h5 {
+          padding: 0 10px;
+          font-size: 14px !important;
+          text-align: center;
+        }
+      }
+    }
+    > div.bg-white {
+      border: 1px solid $color-dove-gray-2;
+    }
+    .after-purchase-main-images {
+      li {
+        height: 197px;
+        @include media-query("(max-width: 520px)") {
+          height: 37vw;
+        }
+        &:not(.active) {
+          display: none;
+        }
+        img {
+          top: calc(50% + 8px);
+          transform: translate(-50%, -50%);
+          left: 50%;
+        }
+      }
+    }
+    .after-purchase-main-tl-parent {
+      li {
+        .after-purchase-main-tl {
+          height: 5px;
+          width: 100%;
+          span,
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: $color-alto-3;
+          }
+          &::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+          }
+          span {
+            width: 18px;
+            height: 18px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 1;
+          }
+        }
+
+        .after-purchase-main-tl-content {
+          span {
+            @include media-query("(max-width: 520px)") {
+              font-size: 8px !important;
+            }
+          }
+        }
+        &:first-child {
+          .after-purchase-main-tl {
+            &::after {
+              left: 50%;
+
+            }
+          }
+        }
+        &:last-child {
+          .after-purchase-main-tl {
+            &::after {
+              right: 50%;
+            }
+          }
+        }
+        &.passed,
+        &.active {
+          color: $color-coral-red;
+          .after-purchase-main-tl {
+            span,
+            &::after {
+              background-color: $color-coral-red;
+            }
+          }
+        }
+        &.active {
+          .after-purchase-main-tl {
+            &::before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              background-color: #CFCFCF;
+              z-index: 1;
+            }
+          }
+        }
+        &:last-child {
+          .after-purchase-main-tl {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        .after-purchase-main-tl-icon {
+          min-height: 44px;
+          img {
+            max-width: 30px;
+            max-height: 30px;
+          }
+        }
+      }
+    }
+    .view-purchase {
+      display: none;
+      @include media-query("(max-width: 520px)") {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        .table-parent {
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          overflow-x: auto;
+          table {
+            width: 380px !important;
+          }
+        }
+      }
+      table {
+        &.table {
+          thead {
+            th {
+              border-top: none;
+              border-bottom: 2px solid $color-mercury;
+            }
+          }
+          td {
+            border-top: none;
+
+          }
+        }
+      }
+    }
+    .btn-view-purchase-invoice {
+      &.active {
+        background-color: $color-silver-6;
+        color: $color-black;
+        i {
+          font-size: 9px !important;
+          margin: 6.5px 0;
+          width: 19.34px;
+          &::before {
+            content: "\F125";
+          }
+        }
+        ~ {
+          .view-purchase {
+            display: block;
+          }
+        }
+      }
+    }
+    .view-purchase {
+      .view-purchase-btn {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+}

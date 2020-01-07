@@ -66,6 +66,12 @@ a.btn.bg-brink-pink:hover {
   color: #fff;
 }
 
+a.btn.bg-persimmon:hover {
+  transition: all .3s ease;
+  background-color: $color-tuscany;
+  color: #fff;
+}
+
 ul li {
   list-style: none
 }
@@ -179,6 +185,10 @@ ul li {
   color: $color-alto;
 }
 
+.color-alto-3 {
+  color: $color-alto-3;
+}
+
 .color-black {
   color: $color-black;
 }
@@ -205,6 +215,10 @@ ul li {
 
 .color-silver-3 {
   color: $color-silver-3;
+}
+
+.color-silver-6 {
+  color: $color-silver-6;
 }
 
 .color-coral-red {
@@ -267,6 +281,10 @@ ul li {
   color: $color-dove-gray-2;
 }
 
+.color-dove-gray-3 {
+  color: $color-dove-gray-3;
+}
+
 //==========================================
 //background colors
 //==========================================
@@ -324,6 +342,10 @@ ul li {
 
 .bg-wild-sand {
   background-color: $color-wild-sand;
+}
+
+.bg-alto-3 {
+  background-color: $color-alto-3;
 }
 
 //==========================================
@@ -544,6 +566,18 @@ ul li {
   content: "\f141";
 }
 
+.icon-font-list::before {
+  content: "\f142";
+}
+
+.icon-font-printer::before {
+  content: "\f143";
+}
+
+.icon-font-share-btn::before {
+  content: "\f144";
+}
+
 //==========================================
 //z-index
 //==========================================
@@ -644,6 +678,9 @@ ul li {
 //==========================================
 //border
 //==========================================
+.border-radius-8 {
+  border-radius: 8px;
+}
 .border-radius-17 {
   border-radius: 17px;
 }
@@ -670,6 +707,9 @@ ul li {
 
 .border-color-coral-red {
   border-color: $color-coral-red;
+}
+.border-color-dove-gray-2 {
+  border-color: $color-dove-gray-2;
 }
 
 .border-color-malachite {

@@ -126,7 +126,7 @@ $(window).on('ready load resize change', function () {
                 background: $this.attr("data-scroll-rail-color"),
                 cursorcolor: $this.attr("data-scroll-cursor-color"),
                 cursorborder: "none",
-                autohidemode: false,
+                autohidemode: false
             });
         })
     }
@@ -317,3 +317,10 @@ $(document).on("click", "[data-change-class]", function (e) {
         });
     }, false);
 })();
+
+$('#hms_timer').countdowntimer({
+    hours : 3,
+    minutes :10,
+    seconds : 10,
+    size : "lg"
+});
