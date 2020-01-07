@@ -310,7 +310,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="y" value="28" />
     <option name="width" value="1371" />
@@ -433,12 +433,12 @@
       <workItem from="1578152434696" duration="116000" />
       <workItem from="1578206278853" duration="23419000" />
       <workItem from="1578289540700" duration="30128000" />
-      <workItem from="1578376049794" duration="2179000" />
+      <workItem from="1578376049794" duration="2738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140606000" />
+    <option name="totallyTimeSpent" value="141165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,7 +450,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="714" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="714" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25297618" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
