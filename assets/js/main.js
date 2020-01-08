@@ -334,3 +334,27 @@ if($('[data-countdown]').length){
         size : "lg"
     });
 }
+//==================
+// hover item
+//==================
+$("[data-hover] .item").hover(function () {
+    var $this = $(this);
+    $this.parents("[data-hover]").siblings("[data-hover-main]").find(".item-main").eq($this.index()).addClass("active").siblings(".item-main").removeClass("active")
+});
+//==================
+// switch disabled
+//==================
+$.fn.hasAttr = function (name) {
+    return this.attr(name) !== undefined;
+};
+$(document).on("click","[data-switch-disabled]",function (e) {
+    var $this = $(this);
+
+    if($("[data-remove-disabled="+$this.attr("data-switch-disabled")+"] .item-disabled").hasAttr("disabled")){
+        $("[data-remove-disabled="+$this.attr("data-switch-disabled")+"] .item-disabled").removeAttr("disabled");
+    }else{
+        $("[data-remove-disabled="+$this.attr("data-switch-disabled")+"] .item-disabled").attr("disabled","disabled");
+    }
+    e.preventDefault();
+    e.stopPropagation();
+});

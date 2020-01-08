@@ -1,0 +1,12 @@
+.purchase{
+  .purchase-main{
+    min-height: inherit !important;
+    > ul{
+      > li{
+        &:not(.active){
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -296,6 +296,10 @@ ul li {
   color: #727272;
 }
 
+.color-dove-gray-4 {
+  color: #7E7E7E;
+}
+
 .bg-coral-red {
   background-color: #FA4252;
 }
@@ -322,6 +326,10 @@ ul li {
 
 .bg-seashell {
   background-color: #F1F1F1;
+}
+
+.bg-concrete {
+  background-color: #F3F3F3;
 }
 
 .bg-persimmon {
@@ -927,6 +935,52 @@ header {
     height: 66px;
   }
 }
+header .menu-lg-header:hover ~ .menu-lg-main {
+  opacity: 1;
+  visibility: visible;
+}
+header .menu-lg-main {
+  transition: all 0.2s ease;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding-top: 34px;
+  visibility: hidden;
+  opacity: 0;
+}
+header .menu-lg-main:hover {
+  opacity: 1;
+  visibility: visible;
+}
+header .menu-lg-main > div {
+  box-shadow: 0 5px 8px -2px #B5B5B5;
+  border-radius: 0 0 17px 17px;
+  overflow: hidden;
+}
+header .menu-lg-main > div ul.menu-lg-main-right {
+  width: 256px;
+}
+header .menu-lg-main > div ul.menu-lg-main-right li {
+  transition: all 0.2s ease;
+  border-radius: 0 8px 8px 0;
+}
+header .menu-lg-main > div ul.menu-lg-main-right li:hover {
+  background-color: #fff;
+  color: #FA4252;
+}
+header .menu-lg-main > div ul.menu-lg-main-left {
+  width: calc(100% - 256px);
+}
+header .menu-lg-main > div ul.menu-lg-main-left li:not(.active) {
+  display: none;
+}
+header .menu-lg-main > div ul.menu-lg-main-left li .menu-lg-main-left-header a {
+  border-bottom: 1px solid #FA4252;
+}
+header .menu-lg-main > div ul.menu-lg-main-left li .menu-lg-main-left-items {
+  max-height: 230px;
+  min-height: 200px;
+}
 header .header-big .logo img {
   transition: all 0.5s ease;
   height: 56px;
@@ -941,7 +995,7 @@ header .header-big, header .header-small {
   top: 0;
   z-index: 2;
 }
-header ul li.active a::before {
+header .menu > ul > li.active a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1531,6 +1585,12 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   right: 26px;
   top: -14px;
   background-color: #fff;
+  transition: top 0.5s ease, transform 0.5s ease 0s;
+}
+.your-comment .container.custom-container .input-label[disabled] {
+  top: -16px;
+  transform: translate(0, -50%);
+  background-color: transparent;
 }
 .your-comment .container.custom-container .input-label.input-title-in {
   right: 22px;
@@ -1541,6 +1601,13 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   .your-comment .container.custom-container .input-label.input-title-in {
     font-size: 16px !important;
   }
+}
+
+.purchase .purchase-main {
+  min-height: inherit !important;
+}
+.purchase .purchase-main > ul > li:not(.active) {
+  display: none;
 }
 
 .after-purchase .after-purchase-main {

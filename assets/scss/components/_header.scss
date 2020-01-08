@@ -3,16 +3,74 @@ header {
   @include media-query("(max-width: 991px)") {
     height: 66px;
   }
-  .header-big{
-    .logo{
-      img{
+  .menu-lg-header {
+    &:hover {
+      ~ {
+        .menu-lg-main {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .menu-lg-main {
+    transition: all .2s ease;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding-top: 34px;
+    visibility: hidden;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+    }
+    > div {
+      box-shadow: 0 5px 8px -2px $color-nobel;
+      border-radius: 0 0 17px 17px;
+      overflow: hidden;
+      ul {
+        &.menu-lg-main-right {
+          width: 256px;
+          li {
+            transition: all .2s ease;
+            border-radius: 0 8px 8px 0;
+            &:hover {
+              background-color: #fff;
+              color: $color-coral-red;
+            }
+          }
+        }
+        &.menu-lg-main-left {
+          width: calc(100% - 256px);
+          li {
+            &:not(.active) {
+              display: none;
+            }
+            .menu-lg-main-left-header {
+              a {
+                border-bottom: 1px solid $color-coral-red;
+              }
+            }
+            .menu-lg-main-left-items {
+              max-height: 230px;
+              min-height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-big {
+    .logo {
+      img {
         transition: all .5s ease;
         height: 56px;
       }
     }
-    &.active-fixed{
-      .logo{
-        img{
+    &.active-fixed {
+      .logo {
+        img {
           height: 45px;
         }
       }
@@ -25,18 +83,20 @@ header {
     top: 0;
     z-index: 2;
   }
-  ul {
-    li {
-      &.active {
-        a {
-          &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 5px;
-            background-color: $color-malachite;
-            border-radius: 10px;
-            bottom: 0;
+  .menu {
+    > ul {
+      > li {
+        &.active {
+          a {
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 5px;
+              background-color: $color-malachite;
+              border-radius: 10px;
+              bottom: 0;
+            }
           }
         }
       }

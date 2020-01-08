@@ -68,6 +68,12 @@
         right: 26px;
         top: -14px;
         background-color: $color-white;
+        transition: top .5s ease , transform .5s ease 0s;
+        &[disabled]{
+          top: -16px;
+          transform: translate(0,-50%);
+          background-color: transparent;
+        }
         &.input-title-in {
           right: 22px;
           top: 50%;
