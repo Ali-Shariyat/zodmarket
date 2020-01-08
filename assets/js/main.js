@@ -270,7 +270,7 @@ if ($('[data-rating]').length) {
 $(document).on("click", "[data-tab-click] li", function () {
     var $this = $(this);
     $this.removeClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).addClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' ')).siblings("li").addClass($(this).parents("[data-siblings-add]").attr("data-siblings-add").replace(/\./g, ' ')).removeClass($(this).parents("[data-tab-click]").attr("data-tab-click").replace(/\./g, ' '));
-    $this.parents("[data-tab-click]").siblings("[data-tab-items]").find("li").eq($this.index()).addClass("active").siblings().removeClass("active");
+    $this.parents("[data-tab-click]").siblings("[data-tab-items]").find(" > li").eq($this.index()).addClass("active").siblings().removeClass("active");
 });
 
 //==================

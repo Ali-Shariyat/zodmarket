@@ -53,6 +53,19 @@ a:hover {
   }
 }
 
+a.btn.bg-coral-red:hover,
+button.btn.bg-coral-red:hover {
+  transition: all .3s ease;
+  background-color: $color-froly;
+  color: #fff;
+}
+a.btn.bg-concrete:hover,
+button.btn.bg-concrete:hover {
+  transition: all .3s ease;
+  background-color: $color-silver-chalice-2;
+  color: #fff;
+}
+
 a.btn.bg-malachite:hover,
 button.btn.bg-malachite:hover {
   transition: all .3s ease;
@@ -289,6 +302,14 @@ ul li {
   color: $color-dove-gray-4;
 }
 
+.color-dove-gray-5 {
+  color: $color-dove-gray-5;
+}
+
+.color-masala {
+  color: $color-masala;
+}
+
 //==========================================
 //background colors
 //==========================================
@@ -314,6 +335,10 @@ ul li {
 
 .bg-silver-3 {
   background-color: $color-silver-3;
+}
+
+.bg-gallery-3 {
+  background-color: $color-gallery-3;
 }
 
 .bg-seashell {
@@ -586,6 +611,14 @@ ul li {
   content: "\f144";
 }
 
+.icon-font-world-payment::before {
+  content: "\f145";
+}
+
+.icon-font-cards::before {
+  content: "\f146";
+}
+
 //==========================================
 //z-index
 //==========================================
@@ -709,6 +742,21 @@ ul li {
   border-top-width: 3px;
 }
 
+.border-left-width-3 {
+  border-left-width: 3px;
+}
+
+.border-left-width-1 {
+  border-left-width: 1px;
+}
+
+.border-left-width-2 {
+  border-left-width: 2px;
+}
+
+.border-bottom-width-1 {
+  border-bottom-width: 1px;
+}
 .border-bottom-width-3 {
   border-bottom-width: 3px;
 }
@@ -716,6 +764,7 @@ ul li {
 .border-color-coral-red {
   border-color: $color-coral-red;
 }
+
 .border-color-dove-gray-2 {
   border-color: $color-dove-gray-2;
 }
@@ -744,6 +793,21 @@ ul li {
   border-top-color: $color-gallery-2;
 }
 
+.border-left-color-gallery-2 {
+  border-left-color: $color-gallery-2;
+}
+
+.border-left-color-mercury {
+  border-left-color: $color-mercury;
+}
+
+.border-bottom-color-coral-red {
+  border-bottom-color: $color-coral-red;
+}
+.border-bottom-color-mercury {
+  border-bottom-color: $color-mercury;
+}
+
 .border-bottom-color-gallery-2 {
   border-bottom-color: $color-gallery-2;
 }
@@ -756,7 +820,11 @@ ul li {
   border-top-style: solid;
 }
 
-.borderborder-bottom-solid {
+.border-style-left-solid {
+  border-left-style: solid;
+}
+
+.border-bottom-solid {
   border-bottom-style: solid;
 }
 

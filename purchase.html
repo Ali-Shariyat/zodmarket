@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/bootstrap/bootstrap4-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/flickity/flickity.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body class="rtl">
@@ -519,9 +520,9 @@
 <main>
     <div class="container custom-container after-purchase purchase">
         <div class="row">
-            <div class="after-purchase-main purchase-main d-flex w-100 justify-content-center pb-4">
+            <div class="after-purchase-main purchase-main d-flex w-100 justify-content-center pb-4 mt-3">
                 <ul class="after-purchase-main-tl-parent d-flex flex-row-reverse col-xl-4 justify-content-center">
-                    <li class="position-relative col-xl-2 d-flex flex-column p-0 active">
+                    <li class="position-relative col-xl-2 d-flex flex-column p-0 passed">
                         <div class="after-purchase-main-tl-content text-center">
                             <span class="font-size-12">اطلاعات</span>
                         </div>
@@ -529,7 +530,7 @@
                             <span></span>
                         </div>
                     </li>
-                    <li class="position-relative col-xl-2 d-flex flex-column p-0 ">
+                    <li class="position-relative col-xl-2 d-flex flex-column p-0 active">
                         <div class="after-purchase-main-tl-content text-center">
                             <span class="font-size-12">پرداخت</span>
                         </div>
@@ -600,12 +601,217 @@
                         <div class="container custom-container">
                             <div class="row">
                                 <div class="w-100">
-                                    <div class="border-radius-17 border-color-gallery-2 border-style-solid border-width-1 p-5">
+                                    <div class="border-radius-17 border-color-gallery-2 border-style-solid border-width-1 pt-3 pr-2 pr-md-4 pl-2 pl-md-4 pb-3 d-flex flex-column flex-md-row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border-left-color-gallery-2 border-style-left-solid border-left-width-2 border-left-color-mercury pb-4 pt-4 purchase-main-right">
+                                            <div class="" data-tab-click=".active.color-black.pb-1"
+                                                 data-siblings-add=".color-black.pb-2">
+                                                <ul class="d-flex tab-header w-100 mb-0 border-bottom-width-3 border-bottom-color-coral-red border-bottom-style-solid px-3 px-md-0">
+                                                    <li class="cursor-pointer bg-alabaster-2 py-2 px-4 ml-3 active color-black pb-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="font-size-14">ارسال زماندار</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cursor-pointer bg-alabaster-2 py-2 px-4 color-black pb-2">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="font-size-14">ارسال فوری</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <ul data-tab-items>
+                                                <li class="active">
+                                                    <div class="view-purchase w-100 overflow-hidden d-block">
+                                                        <div class="table-parent scrollbar-inner"
+                                                             data-scroll-no-touch="">
+                                                            <table class="table w-100 mt-3 mb-3">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th class="pt-0 px-0 pb-2 text-right"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">ردیف</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-center"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">تاریخ</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-center"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">ساعت</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-right"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light pr-2">توضیحات</span>
+                                                                    </th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="pr-0 py-1"><span
+                                                                            class="font-size-14 font-weight-light">۱/۵</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۸ دی</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۰:۰۰ - ۱۲:۰۰</span>
+                                                                    </td>
+                                                                    <td class="px-0 py-1 text-right"><span
+                                                                            class="pr-2 font-size-14 font-weight-light">هزینه پیک موتور ۳۰۰۰ تومان</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pr-0 py-1"><span
+                                                                            class="font-size-14 font-weight-light">۱/۵</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۸ دی</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۰:۰۰ - ۱۲:۰۰</span>
+                                                                    </td>
+                                                                    <td class="px-0 py-1 text-right"><span
+                                                                            class="pr-2 font-size-14 font-weight-light">-</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pr-0 py-1"><span
+                                                                            class="font-size-14 font-weight-light">۱/۵</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۸ دی</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۰:۰۰ - ۱۲:۰۰</span>
+                                                                    </td>
+                                                                    <td class="px-0 py-1 text-right"><span
+                                                                            class="pr-2 font-size-14 font-weight-light">هزینه پیک موتور ۳۰۰۰ تومان</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pr-0 py-1"><span
+                                                                            class="font-size-14 font-weight-light">۱/۵</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۸ دی</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۰:۰۰ - ۱۲:۰۰</span>
+                                                                    </td>
+                                                                    <td class="px-0 py-1 text-right"><span
+                                                                            class="pr-2 font-size-14 font-weight-light">هزینه پیک موتور ۳۰۰۰ تومان</span>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <ul class="d-flex align-items-center mt-2 justify-content-end"
+                                                            data-tab-click=".active.bg-atomic-tangerine.color-white"
+                                                            data-siblings-add=".bg-concrete.color-dove-gray-5">
+                                                            <li class="px-3 ml-2 py-2 border-radius-8 cursor-pointer active bg-atomic-tangerine color-white">
+                                                                <span class="font-size-12 d-flex">امروز</span>
+                                                            </li>
+                                                            <li class="px-3 ml-2 py-2 border-radius-8 cursor-pointer bg-concrete color-dove-gray-5">
+                                                                <span class="font-size-12 d-flex">فردا</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="view-purchase w-100 overflow-hidden d-block">
+                                                        <div class="table-parent scrollbar-inner"
+                                                             data-scroll-no-touch="">
+                                                            <table class="table w-100 mt-3 mb-3">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th class="pt-0 px-0 pb-2 text-right"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">ردیف</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-center"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">تاریخ</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-center"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light">ساعت</span>
+                                                                    </th>
+                                                                    <th class="pt-0 px-0 pb-2 text-right"
+                                                                        scope="col"><span
+                                                                            class="font-size-14 font-weight-light pr-2">توضیحات</span>
+                                                                    </th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="pr-0 py-1"><span
+                                                                            class="font-size-14 font-weight-light">۱/۵</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۸ دی</span>
+                                                                    </td>
+                                                                    <td class="px-4 py-1 text-center"><span
+                                                                            class="font-size-14 font-weight-light">۱۰:۰۰ - ۱۲:۰۰</span>
+                                                                    </td>
+                                                                    <td class="px-0 py-1 text-right"><span
+                                                                            class="pr-2 font-size-14 font-weight-light">هزینه پیک موتور ۳۰۰۰ تومان</span>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border-left-color-gallery-2 pb-4 pt-4 pl-2 pl-lg-0">
+                                            <div class="view-purchase w-100 overflow-hidden d-block">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-size-18 color-masala font-weight-normal">جمع
+                                                        خرید</h6>
+                                                    <span class="font-size-18 color-masala font-weight-normal">۱۴۸.۰۰۰ تومان</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center border-bottom-width-1 border-bottom-style-solid border-bottom-color-mercury pb-3 mb-3">
+                                                    <h6 class="font-size-18 color-masala font-weight-normal">جمع
+                                                        خرید</h6>
+                                                    <span class="font-size-18 color-masala font-weight-normal">۱۴۸.۰۰۰ تومان</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-size-18 color-coral-red font-weight-normal">جمع کل
+                                                        فاکتور</h6>
+                                                    <span class="font-size-18 color-coral-red font-weight-normal">۱۳۱.۷۰۰ تومان</span>
+                                                </div>
+                                                <div class="d-flex flex-wrap btn-parent">
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pl-0 pl-md-2 pr-0">
+                                                        <a href=""
+                                                           class="btn bg-gallery-3 color-dove-gray-4 d-flex align-items-center py-3 mt-4 border-radius-17 box-shadow-none">
+                                                            <i class="icon-font-world-payment font-size-30 d-flex ml-4"></i>
+                                                            <span class="mb-0 font-size-20 mr-3">پرداخت آنلاین</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pr-0 pr-md-2 pl-0">
+                                                        <a href=""
+                                                           class="btn bg-coral-red color-white d-flex align-items-center py-3 mt-4 border-radius-17 box-shadow-none">
+                                                            <i class="icon-font-cards font-size-30 d-flex ml-4"></i>
+                                                            <span class="mb-0 font-size-20 mr-1">پرداخت درب محل</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex btn-parent">
+                                                    <div class="col-xl-12 p-0">
+                                                        <a href=""
+                                                           class="btn bg-atomic-tangerine color-white d-flex align-items-center justify-content-center py-3 mt-4 mt-md-3 border-radius-17 box-shadow-none"
+                                                           data-toggle="modal" data-target="#factor-list">
+                                                            <span class="mb-0 font-size-20">مشاهده فاکتور</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-end mt-4 mt-lg-4 px-5">
+                                    <div class="d-flex justify-content-center justify-content-md-end mt-4 mt-lg-4 px-0 px-md-5">
                                         <button class="btn bg-concrete color-dove-gray-4 d-inline-flex align-items-center justify-content-between py-2 px-4 border-radius-17 box-shadow-none mt-2 mt-lg-0 ml-3"
-                                                data-switch-disabled="disabled-1" type="submit" data-change-class
-                                                data-after-class=".d-none" data-before-class=".d-inline-flex">ویرایش
+                                                type="submit">مرحله قبل
                                         </button>
                                         <button class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-2 px-4 border-radius-17 box-shadow-none mt-2 mt-lg-0"
                                                 type="submit">مرحله بعد
@@ -730,7 +936,7 @@
 </footer>
 
 <!--small shop btn from responsive-->
-<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none">
+<div class="shop-small bg-coral-red py-3 px-3 position-fixed w-100 d-lg-none d-none">
     <div class="d-flex w-100 justify-content-between align-items-center">
         <span class="color-white">جمع خرید : ۱۴۵۰۰</span>
         <a href="#" class="d-flex bg-atomic-tangerine p-2 border-radius-50">
@@ -749,6 +955,86 @@
                     <input type="search" placeholder="جستجو کن" class="border-0 outline-none w-100">
                     <span class="icon-font-search font-size-20 position-absolute bg-white pr-1"></span>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade search-box-modal" id="factor-list" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="after-purchase">
+                <div class="after-purchase-main mb-2">
+                    <div class="view-purchase w-100 px-5 overflow-hidden d-block">
+                        <div class="table-parent scrollbar-inner" data-scroll-no-touch="">
+                            <table class="table w-100 mt-3 mb-0">
+                                <thead>
+                                <tr>
+                                    <th class="pt-0 px-0 pb-2" scope="col"><span class="font-size-14 font-weight-light">نام محصول</span>
+                                    </th>
+                                    <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
+                                            class="font-size-14 font-weight-light">قیمت</span></th>
+                                    <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
+                                            class="font-size-14 font-weight-light">تعداد</span></th>
+                                    <th class="pt-0 px-0 pb-2 text-left" scope="col"><span
+                                            class="font-size-14 font-weight-light">قیمت کل</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="pr-0 py-1"><span class="font-size-14 font-weight-light">رب گوجه فرنگی 156 گرمی دلوسه</span>
+                                    </td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۱۶۵۰۰</span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۳</span></td>
+                                    <td class="px-0 py-1 text-center"><span class="pr-2 font-size-14 font-weight-light">۴۹۵۰۰</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pr-0 py-1"><span class="font-size-14 font-weight-light">رب گوجه فرنگی 156 گرمی دلوسه</span>
+                                    </td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۱۶۵۰۰</span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۳</span></td>
+                                    <td class="px-0 py-1 text-center"><span class="pr-2 font-size-14 font-weight-light">۴۹۵۰۰</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pr-0 py-1"><span class="font-size-14 font-weight-light">رب گوجه فرنگی 156 گرمی دلوسه</span>
+                                    </td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۱۶۵۰۰</span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۳</span></td>
+                                    <td class="px-0 py-1 text-center"><span class="pr-2 font-size-14 font-weight-light">۴۹۵۰۰</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pr-0 py-1"><span class="font-size-14 font-weight-light">رب گوجه فرنگی 156 گرمی دلوسه</span>
+                                    </td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۱۶۵۰۰</span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۳</span></td>
+                                    <td class="px-0 py-1 text-center"><span class="pr-2 font-size-14 font-weight-light">۴۹۵۰۰</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pr-0 py-1"><span class="font-size-14 font-weight-light"></span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light"></span></td>
+                                    <td class="px-0 py-1 text-center"><span
+                                            class="font-size-14 font-weight-light">۱۲</span></td>
+                                    <td class="px-0 py-1 text-center"><span class="pr-2 font-size-14 font-weight-light">۱۶۵۰۰۰</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -772,7 +1058,7 @@
 <script src="assets/js/plugins/bootstrap/bootstrap.min.js"></script>
 <script src="assets/js/plugins/flickity/flickity.pkgd.min.js"></script>
 <script src="assets/js/plugins/flickity/flickity-fade.js"></script>
-<script src="assets/js/plugins/scrollbar/jquery.nicescroll.min.js"></script>
+<script src="assets/js/plugins/scrollbar/jquery.scrollbar.js"></script>
 <!--jquery calling-->
 <script src="assets/js/main.js"></script>
 </body>

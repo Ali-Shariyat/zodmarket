@@ -84,6 +84,9 @@ main {
             flex-direction: column;
           }
           > div {
+            h4 {
+              width: 390px;
+            }
             &:first-child {
               @include media-query("(max-width: 390px)") {
                 h4 {

@@ -6,4 +6,13 @@
       transform: translate(0, -50%);
     }
   }
+  .after-purchase{
+    .after-purchase-main{
+      width: auto;
+      min-height: inherit;
+      .table-parent{
+        min-height: 194px;
+      }
+    }
+  }
 }
