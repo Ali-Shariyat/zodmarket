@@ -131,8 +131,10 @@
     .view-purchase {
       display: none;
       @include media-query("(max-width: 520px)") {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+        &:not(.no-padding){
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
         .table-parent {
           padding-bottom: 10px;
           margin-bottom: 10px;

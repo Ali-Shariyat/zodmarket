@@ -41,6 +41,18 @@
   }
 }
 .chat-send-main{
+
+  @include media-query("(max-width: 767px)") {
+    span{
+      font-size: 12px !important;
+    }
+    select{
+      font-size: 18px !important;
+    }
+    input{
+      padding: 10px !important;
+    }
+  }
   textarea{
     min-height: 170px;
     resize: none;

@@ -228,6 +228,10 @@ ul li {
   color: $color-silver;
 }
 
+.color-dusty-gray {
+  color: $color-dusty-gray;
+}
+
 .color-silver-2 {
   color: $color-silver-2;
 }
@@ -339,6 +343,9 @@ ul li {
 //==========================================
 //background colors
 //==========================================
+.bg-black-50{
+  background-color: $color-black-50;
+}
 .bg-coral-red {
   background-color: $color-coral-red;
 }
@@ -685,11 +692,18 @@ ul li {
   content: "\f152";
 }
 
+.icon-font-edit::before {
+  content: "\f153";
+}
+
 //==========================================
 //z-index
 //==========================================
 .z-index-1 {
   z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
 }
 
 //==========================================
@@ -835,6 +849,10 @@ ul li {
   border-color: $color-dove-gray-2;
 }
 
+.border-color-alto-5 {
+  border-color: $color-alto-5;
+}
+
 .border-color-malachite {
   border-color: $color-malachite;
 }
@@ -936,10 +954,13 @@ ul li {
     border: none !important;
   }
 }
-
 .scrollbar-inner {
   > {
     .scroll-element {
+      &,
+      div{
+        z-index: 0 !important;
+      }
       &.scroll-y {
         height: auto;
         right: auto;

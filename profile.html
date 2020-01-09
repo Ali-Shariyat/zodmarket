@@ -470,7 +470,7 @@
                                 class="icon-font-search font-size-22 color-malachite"></i>
                         </a>
                     </form>
-                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center">
+                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center" data-toggle="modal" data-target="#login-sign">
                         ورود/ثبت نام
                         <i class="icon-font-profile font-size-20 mr-2"></i>
                     </div>
@@ -492,7 +492,7 @@
         <div class="search-login-icon d-inline-flex align-items-center">
             <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
             <div class="dividing-line py-2 mr-3 ml-1"></div>
-            <a class="icon-font-profile font-size-20 font-size-20 mr-2"></a>
+            <a class="icon-font-profile font-size-20 font-size-20 mr-2" data-toggle="modal" data-target="#login-sign"></a>
         </div>
     </div>
 
@@ -521,21 +521,80 @@
 <main>
     <div class="container custom-container profile">
         <div class="row">
-            <div class="profile-sidebar col-xl-3 col-lg-4 col-md-4 col-sm-12 border-left-width-3 border-left-color-alabaster border-style-left-solid mt-5">
+            <div class="profile-sidebar col-xl-3 col-lg-4 col-md-5 col-sm-12 border-left-width-3 border-left-color-alabaster border-style-left-solid mt-5">
                 <div class="sticky">
-                    <div class="profile-sidebar-header d-flex align-items-center">
-                        <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50">
+                    <div class="profile-sidebar-header d-flex align-items-center position-relative">
+                        <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative" data-toggle-class="active" data-toggle-class-popup-select="pop-3">
                             <img src="assets/image/profile-avatar/1.png" class="w-100 h-100" alt="profile-avatar">
+                            <div class="edit-avatar position-absolute bg-black-50 d-flex justify-content-center align-items-center cursor-pointer">
+                                <i class="icon-font-edit color-white"></i>
+                            </div>
+                        </div>
+                        <div class="avatar-popup small-popup position-absolute bg-white border-radius-17 pt-2" data-toggle-class-popup="pop-3">
+                            <div class="d-flex flex-wrap justify-content-center pt-3 pb-2">
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer active">
+                                    <img src="assets/image/profile-avatar/1.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer">
+                                    <img src="assets/image/profile-avatar/2.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer">
+                                    <img src="assets/image/profile-avatar/3.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer">
+                                    <img src="assets/image/profile-avatar/3.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer">
+                                    <img src="assets/image/profile-avatar/4.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                                <div class="profile-sidebar-header-avatar overflow-hidden border-radius-50 position-relative mx-2 mb-3 cursor-pointer">
+                                    <img src="assets/image/profile-avatar/6.png" class="w-100 h-100" alt="profile-avatar">
+                                </div>
+                            </div>
                         </div>
                         <div class="mr-4 d-flex justify-content-between profile-sidebar-header-text align-items-center">
                             <div>
-                                <h1 class="font-size-14">سجاد روح الهی</h1>
+                                <h1 class="font-size-14 text-no-wrap mb-0 w-100 pl-2">سجاد روح الهی</h1>
                                 <span class="font-size-14">09190657595</span>
                             </div>
-                            <i class="icon-font-notif font-size-22 bg-seashell d-inline-flex justify-content-center align-items-center border-radius-50 notification-btn position-relative cursor-pointer"></i>
+                            <div class="d-flex justify-content-end position-relative">
+                                <i class="icon-font-notif font-size-22 bg-seashell d-inline-flex justify-content-center align-items-center border-radius-50 notification-btn position-relative cursor-pointer" data-toggle-class="active" data-toggle-class-popup-select="pop-2"></i>
+                                <div class="notification-popup small-popup position-absolute bg-white border-radius-17 pl-2 pt-2" data-toggle-class-popup="pop-2">
+                                    <div class="scrollbar-inner" data-scroll-no-touch="">
+                                        <ul class="px-3">
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2 untracked">
+                                                <span class="font-size-12 d-flex">عنوان پیام</span>
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2">
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2">
+                                                <span class="font-size-12 d-flex">عنوان پیام</span>
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2">
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2">
+                                                <span class="font-size-12 d-flex">عنوان پیام</span>
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="border-bottom-width-1 border-bottom-color-gallery-2 border-bottom-solid mb-2">
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                            <li class="mb-2">
+                                                <span class="font-size-12 d-flex">عنوان پیام</span>
+                                                <p class="font-size-10 mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <i class="profile-sidebar-main-btn font-size-18 bg-seashell d-inline-flex d-md-none justify-content-center align-items-center border-radius-50 position-relative cursor-pointer icon-font-advanced-search mr-2" data-toggle-class="active" data-toggle-class-popup-select="pop-1"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="profile-sidebar-main mt-4">
+                    <div class="profile-sidebar-main mt-4" data-toggle-class-popup="pop-1">
                         <ul>
                             <li class="d-flex align-items-center active py-2 mb-3 cursor-pointer color-dove-gray-6"
                                 data-sidebar-tab="dashboard-report">
@@ -566,9 +625,9 @@
                     </div>
                 </div>
             </div>
-            <div class="profile-main col-xl-9 col-xl-8 col-md-8 col-sm-12 mb-5 mb-lg-0 pb-5 pb-lg-0">
+            <div class="profile-main col-xl-9 col-xl-8 col-md-7 col-sm-12 mb-5 mb-lg-0 pb-5 pb-lg-0">
                 <ul class="w-100">
-                    <li class="d-flex w-100 active flex-column flex-lg-row" data-main-tab="dashboard-report">
+                    <li class="d-flex w-100 flex-column flex-lg-row active" data-main-tab="dashboard-report">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="d-flex align-items-center my-3 px-2">
                                 <i class="icon-font-grouping-2 d-flex color-coral-red pl-3"></i>
@@ -577,7 +636,7 @@
                             </div>
                             <div class="after-purchase bg-alabaster-3 border-radius-17 p-3 purchase-records-parent">
                                 <div class="after-purchase-main h-100">
-                                    <div class="view-purchase w-100 px-4 overflow-hidden d-block h-100">
+                                    <div class="view-purchase w-100 px-2 px-lg-4 overflow-hidden d-block h-100">
                                         <div class="table-parent scrollbar-inner purchase-records w-100"
                                              data-scroll-no-touch="">
                                             <div class="h-100 w-100 purchase-records-main pb-3">
@@ -727,15 +786,15 @@
                                            data-sidebar-tab="edit-form-address">ویرایش</a>
                                     </div>
                                     <div class="d-flex flex-wrap align-items-center border-radius-17 py-4 px-4 bg-alabaster-3">
-                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 mb-3 px-0">
+                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 px-0">
                                             <span class="color-coral-red font-size-10 mb-1">نام و نام خانوادگی</span>
                                             <label class="color-mine-shaft font-size-14 mb-0">سجاد روح الهی</label>
                                         </div>
-                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 mb-3 px-0">
+                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 px-0">
                                             <span class="color-coral-red font-size-10 mb-1">شماره موبایل</span>
                                             <label class="color-mine-shaft font-size-14 mb-0">09190657595</label>
                                         </div>
-                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 mb-3 px-0">
+                                        <div class="d-inline-flex flex-column col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 px-0">
                                             <span class="color-coral-red font-size-10 mb-1">شماره تماس</span>
                                             <label class="color-mine-shaft font-size-14 mb-0">02532804326</label>
                                         </div>
@@ -760,7 +819,7 @@
                                     <div class="d-flex flex-wrap align-items-center border-radius-17 pt-4 pb-2 px-4 bg-alabaster-3">
                                         <div class="after-purchase w-100">
                                             <div class="after-purchase-main">
-                                                <div class="view-purchase w-100 overflow-hidden d-block">
+                                                <div class="view-purchase w-100 overflow-hidden d-block no-padding">
                                                     <div class="table-parent scrollbar-inner"
                                                          data-scroll-no-touch="">
                                                         <div class="last-support-message pb-2">
@@ -850,27 +909,27 @@
                             </div>
                         </div>
                     </li>
-                    <li class="w-100" data-main-tab="edit-form-address">
+                    <li class="w-100 px-0 px-md-3" data-main-tab="edit-form-address">
                         <div class="your-comment">
                             <div class="container custom-container">
                                 <div class="row">
-                                    <form action="" class="w-100 needs-validation px-3 px-md-0 mb-5 mb-lg-0 pb-5 pb-lg-0 mt-5"
+                                    <form action="" class="w-100 needs-validation px-3 px-md-0 mb-lg-0 pb-5 pb-lg-0 mt-5"
                                           novalidate>
-                                        <div class="border-radius-17 border-color-gallery-2 border-style-solid border-width-1 p-5">
-                                            <div class="d-flex flex-column flex-md-row pb-2">
-                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-3 mb-md-0">
+                                        <div class="border-radius-17 border-color-gallery-2 border-style-solid border-width-1 px-2 px-md-0 py-4">
+                                            <div class="d-flex flex-wrap pb-0 pb-md-0 pb-xl-2">
+                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-4 mb-md-4 mb-xl-0">
                                                     <label class="position-absolute input-label px-2 font-size-14 color-black-30">نام و نام خانوادگی</label>
                                                     <input type="text"
                                                            class="form-control border-color-silver-5 box-shadow-none coral-red-input h-auto border-radius-17 p-3 item-disabled"
                                                            placeholder="" required>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-3 mb-md-0">
+                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-4 mb-md-4 mb-xl-0">
                                                     <label class="position-absolute input-label px-2 font-size-14 color-black-30">شماره موبایل</label>
                                                     <input type="number"
                                                            class="form-control border-color-silver-5 box-shadow-none coral-red-input h-auto border-radius-17 p-3 dir-ltr"
                                                            placeholder="" required>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-3 mb-md-0">
+                                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 px-3 position-relative mb-4 mb-md-0 mb-xl-0">
                                                     <label class="position-absolute input-label px-2 font-size-14 color-black-30">شماره تماس</label>
                                                     <input type="number"
                                                            class="form-control border-color-silver-5 box-shadow-none coral-red-input h-auto border-radius-17 p-3 dir-ltr"
@@ -896,7 +955,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="w-100" data-main-tab="save">
+                    <li class="w-100 px-3" data-main-tab="save">
                         <div class="slider">
                             <div class="p-reverse mt-2">
                                 <ul class="col-xl-12 p-0 d-flex flex-wrap pb-3">
@@ -1183,317 +1242,319 @@
                             </div>
                         </div>
                     </li>
-                    <li class="w-100" data-main-tab="support">
+                    <li class="w-100 px-3" data-main-tab="support">
                         <div class="d-flex flex-wrap align-items-center py-4 px-2">
                             <div class="after-purchase w-100">
                                 <div class="after-purchase-main mt-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-4">
-                                        <h6 class="font-size-16 font-weight-light mb-0">لیست تیکت های شما</h6>
+                                    <div class="d-flex align-items-center mb-4 flex-wrap justify-content-center justify-content-md-between ">
+                                        <h6 class="font-size-16 font-weight-light mb-3 mb-md-0">لیست تیکت های شما</h6>
                                         <a href="" class="btn bg-malachite color-white border-radius-50 px-4 font-weight-light box-shadow-none" data-sidebar-tab="chat">ارسال تیکت جدید</a>
                                     </div>
-                                    <div class="view-purchase w-100 overflow-hidden d-block">
-                                        <div class="table-parent scrollbar-inner ticket-list pl-4"
+                                    <div class="view-purchase w-100 overflow-hidden d-block ticket-list-parent">
+                                        <div class="table-parent scrollbar-inner ticket-list pl-0 pl-md-4"
                                              data-scroll-no-touch="">
-                                            <table class="table w-100 mb-0">
-                                                <thead>
-                                                <tr>
-                                                    <th class="pt-0 px-0 pb-2" scope="col"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">ردیف</span>
-                                                    </th>
-                                                    <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">عنوان</span>
-                                                    </th>
-                                                    <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">تاریخ</span>
-                                                    </th>
-                                                    <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">وضعیت</span>
-                                                    </th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۴</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۳</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۲</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۱</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۴</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۳</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۲</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۱</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۴</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۳</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۲</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۱</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۴</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۳</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۲</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۱</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۴</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۳</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۲</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="pr-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">۱</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-right w-75"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
-                                                    </td>
-                                                    <td class="px-0 py-1 text-center"><span
-                                                            class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="ticket-list-table-parent">
+                                                <table class="table w-100 mb-0">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="pt-0 px-0 pb-2" scope="col"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">ردیف</span>
+                                                        </th>
+                                                        <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">عنوان</span>
+                                                        </th>
+                                                        <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">تاریخ</span>
+                                                        </th>
+                                                        <th class="pt-0 px-0 pb-2 text-center" scope="col"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">وضعیت</span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۴</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۳</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۲</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۱</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۴</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۳</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۲</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۱</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۴</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۳</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۲</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۱</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۴</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۳</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۲</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۱</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۴</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-mine-shaft">درحال بررسی</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۳</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-malachite">بسته شد</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۲</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="pr-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">۱</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-right w-75"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft text-no-wrap">عنوان تیکت در فایل</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="font-size-14 font-weight-light color-mine-shaft">98/07/14</span>
+                                                        </td>
+                                                        <td class="px-0 py-1 text-center"><span
+                                                                class="pr-2 font-size-14 font-weight-light color-persimmon">منتظر جواب</span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1504,7 +1565,7 @@
                         <div class="d-flex flex-wrap align-items-center py-4 px-4">
                             <div class="after-purchase w-100">
                                 <div class="after-purchase-main mt-3">
-                                    <div class="view-purchase w-100 overflow-hidden d-block">
+                                    <div class="view-purchase w-100 overflow-hidden d-block no-padding">
                                         <div class="chat-list-parent scrollbar-inner pl-4"
                                              data-scroll-no-touch="">
                                             <ul class="chat-list">
@@ -1521,39 +1582,25 @@
                                                         <p class="bg-reef px-4 py-3 border-radius-17 font-size-14 chat-text position-relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                                                     </div>
                                                 </li>
-                                                <li class="set-message d-flex justify-content-start">
-                                                    <div class="d-flex flex-column">
-                                                        <span class="font-size-10 color-malachite px-4 pb-2">پیام شما</span>
-                                                        <p class="bg-reef px-4 py-3 border-radius-17 font-size-14 chat-text position-relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                                    </div>
-                                                </li>
-                                                <li class="set-message d-flex justify-content-start">
-                                                    <div class="d-flex flex-column">
-                                                        <span class="font-size-10 color-malachite px-4 pb-2">پیام شما</span>
-                                                        <p class="bg-reef px-4 py-3 border-radius-17 font-size-14 chat-text position-relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                                    </div>
-                                                </li>
-                                                <li class="set-message d-flex justify-content-start">
-                                                    <div class="d-flex flex-column">
-                                                        <span class="font-size-10 color-malachite px-4 pb-2">پیام شما</span>
-                                                        <p class="bg-reef px-4 py-3 border-radius-17 font-size-14 chat-text position-relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                                                    </div>
-                                                </li>
                                             </ul>
                                         </div>
-                                        <form action="" class="bg-wild-sand-2 border-radius-17 d-flex px-2 py-3 mt-4 chat-send-main">
-                                            <div class="col-xl-5">
-                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 position-relative d-inline-flex flex-column px-0 mb-3">
+                                        <form action="" class="bg-wild-sand-2 border-radius-17 d-flex px-2 py-3 mt-4 chat-send-main flex-wrap">
+                                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-5 col-12 mb-0 mb-sm-3 mb-md-0">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 position-relative d-inline-flex flex-column px-0 mb-2 mb-lg-3">
                                                     <span class="pb-3 px-4">موضوع پیام</span>
                                                     <input type="text" class="form-control box-shadow-none coral-red-input h-auto border-radius-50 p-3 border-0" placeholder="" required="">
                                                 </div>
-                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 position-relative mb-3 mb-md-0 d-inline-flex flex-column px-0">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 position-relative mb-2 mb-lg-0 d-inline-flex flex-column px-0">
                                                     <span class="pb-3 px-4">گیرنده</span>
-                                                    <input type="text" class="form-control box-shadow-none coral-red-input h-auto border-radius-50 p-3 border-0" placeholder="" required="">
+                                                    <select class="custom-select w-auto h-auto border-radius-50 border-0 cursor-pointer box-shadow-none py-2 font-size-26 h-auto">
+                                                        <option value="1">۱</option>
+                                                        <option value="2">۲</option>
+                                                        <option value="3">۳</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="d-flex col-xl-7 flex-wrap">
-                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 position-relative mb-3 mb-md-0 d-flex flex-column px-0">
+                                            <div class="d-flex col-xl-7 col-lg-7 col-md-12 col-sm-7 col-12 flex-wrap">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 position-relative mb-3 mb-md-0 d-flex flex-column px-0">
                                                     <span class="pb-3 px-4">متن پیام را در این قسمت وارد کنید</span>
                                                     <textarea type="text" class="form-control box-shadow-none coral-red-input h-auto border-radius-17 p-3 border-0" placeholder="" required=""></textarea>
                                                 </div>
@@ -1700,6 +1747,30 @@
                 <form>
                     <input type="search" placeholder="جستجو کن" class="border-0 outline-none w-100">
                     <span class="icon-font-search font-size-20 position-absolute bg-white pr-1"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade search-box-modal" id="login-sign" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog h-100 my-0 d-flex align-items-center justify-content-center login-sign-popup" role="document">
+        <div class="modal-content border-radius-50 overflow-hidden border-0">
+            <div class="modal-body position-relative p-0">
+                <div class="d-flex justify-content-between align-items-center bg-coral-red px-5 py-3">
+                    <span class="font-size-20 color-white">ورود/ثبت نام</span>
+                    <i class="icon-font-profile font-size-20 mr-2 d-flex color-white"></i>
+                </div>
+                <form class="px-4 pt-3 pb-3">
+                    <span class="color-dusty-gray font-size-14 mb-2 d-flex">شماره موبایل خود را وارد کنید</span>
+                    <div class="border-width-1 border-style-solid border-color-alto-5 border-radius-8 overflow-hidden mb-3 position-relative">
+                        <label class="login-sign-input-label position-absolute d-flex align-items-center justify-content-center dir-ltr">+98</label>
+                        <input type="search" placeholder="" class="border-0 outline-none w-100 py-3 pr-3 pl-5">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-2 px-3 border-radius-8 box-shadow-none mt-2 mt-lg-0 font-size-14" type="submit">مرحله بعد
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

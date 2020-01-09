@@ -470,7 +470,7 @@
                                 class="icon-font-search font-size-22 color-malachite"></i>
                         </a>
                     </form>
-                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center">
+                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center" data-toggle="modal" data-target="#login-sign">
                         ورود/ثبت نام
                         <i class="icon-font-profile font-size-20 mr-2"></i>
                     </div>
@@ -492,7 +492,7 @@
         <div class="search-login-icon d-inline-flex align-items-center">
             <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
             <div class="dividing-line py-2 mr-3 ml-1"></div>
-            <a class="icon-font-profile font-size-20 font-size-20 mr-2"></a>
+            <a class="icon-font-profile font-size-20 font-size-20 mr-2" data-toggle="modal" data-target="#login-sign"></a>
         </div>
     </div>
 
@@ -1035,6 +1035,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade search-box-modal" id="login-sign" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog h-100 my-0 d-flex align-items-center justify-content-center login-sign-popup" role="document">
+        <div class="modal-content border-radius-50 overflow-hidden border-0">
+            <div class="modal-body position-relative p-0">
+                <div class="d-flex justify-content-between align-items-center bg-coral-red px-5 py-3">
+                    <span class="font-size-20 color-white">ورود/ثبت نام</span>
+                    <i class="icon-font-profile font-size-20 mr-2 d-flex color-white"></i>
+                </div>
+                <form class="px-4 pt-3 pb-3">
+                    <span class="color-dusty-gray font-size-14 mb-2 d-flex">شماره موبایل خود را وارد کنید</span>
+                    <div class="border-width-1 border-style-solid border-color-alto-5 border-radius-8 overflow-hidden mb-3 position-relative">
+                        <label class="login-sign-input-label position-absolute d-flex align-items-center justify-content-center dir-ltr">+98</label>
+                        <input type="search" placeholder="" class="border-0 outline-none w-100 py-3 pr-3 pl-5">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn bg-malachite color-white d-inline-flex align-items-center justify-content-between py-2 px-3 border-radius-8 box-shadow-none mt-2 mt-lg-0 font-size-14" type="submit">مرحله بعد
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
