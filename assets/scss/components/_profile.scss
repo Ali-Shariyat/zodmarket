@@ -1,0 +1,113 @@
+.profile {
+  .profile-sidebar {
+
+    @include media-query("(max-width: 991px) and (min-width: 767px)") {
+      .sticky{
+        top:80px;
+        z-index: 1;
+      }
+    }
+    @include media-query("(max-width: 767px)") {
+      border-left: none;
+    }
+    .profile-sidebar-header {
+      .profile-sidebar-header-avatar {
+        width: 85px;
+        height: 85px;
+        border: 3px solid $color-gallery-3;
+      }
+      .profile-sidebar-header-text {
+        width: calc(100% - 110px);
+        .notification-btn {
+          width: 40px;
+          height: 40px;
+          &:hover {
+            background-color: $color-gallery-2;
+          }
+          &::after {
+            content: "";
+            transition: all .2s ease;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            right: 10px;
+            top: 14px;
+            background-color: $color-coral-red;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .profile-sidebar-main {
+
+      ul {
+        li {
+          &.active {
+            border-radius: 50px 0 0 50px;
+            background-color: $color-coral-red;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  .profile-main {
+    > ul {
+      > li {
+        transition: all .5s ease;
+        visibility: visible;
+        position: absolute;
+        opacity: 1;
+        right: 0;
+        &:not(.active) {
+          visibility: hidden;
+          opacity: 0;
+        }
+        .after-purchase {
+          &.purchase-records-parent {
+            height: calc(100% - 54px);
+            .after-purchase-main {
+              .purchase-records {
+                @include media-query("(max-width: 1200px) and (min-width:991px)") {
+                  > .purchase-records-main {
+                    width: 380px !important;
+                  }
+                }
+              }
+            }
+          }
+          .after-purchase-main {
+            width: auto;
+            min-height: inherit;
+            .last-support-message {
+              @include media-query("(max-width: 1200px) and (min-width:991px)") {
+                width: 380px !important;
+              }
+            }
+            .ticket-list {
+              height: 408px;
+            }
+          }
+        }
+        .box-price {
+          @include media-query("(max-width: 1200px)") {
+            .box-price-header {
+              i {
+                font-size: 16px !important;
+              }
+              h6 {
+                font-size: 12px !important;
+              }
+            }
+            .box-price-text {
+              padding: 20px 10px !important;
+              span {
+                font-size: 16px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

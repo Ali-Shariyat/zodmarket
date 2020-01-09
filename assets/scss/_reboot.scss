@@ -111,7 +111,9 @@ ul li {
   overflow: hidden;
   display: inline-block;
 }
-
+.w-100-px{
+  width: 100px !important;
+}
 .black-page {
   position: fixed;
   left: 0;
@@ -200,6 +202,10 @@ ul li {
 
 .color-alto-3 {
   color: $color-alto-3;
+}
+
+.color-alto-4 {
+  color: $color-alto-4;
 }
 
 .color-black {
@@ -306,8 +312,28 @@ ul li {
   color: $color-dove-gray-5;
 }
 
+.color-dove-gray-6 {
+  color: $color-dove-gray-6;
+}
+
 .color-masala {
   color: $color-masala;
+}
+
+.color-mine-shaft {
+  color: $color-mine-shaft;
+}
+
+.color-alabaster-3 {
+  color: $color-alabaster-3;
+}
+
+.color-heliotrope {
+  color: $color-heliotrope;
+}
+
+.color-science-blue {
+  color: $color-science-blue;
 }
 
 //==========================================
@@ -327,6 +353,10 @@ ul li {
 
 .bg-alabaster-2 {
   background-color: $color-alabaster-2;
+}
+
+.bg-alabaster-3 {
+  background-color: $color-alabaster-3;
 }
 
 .bg-silver-2 {
@@ -377,8 +407,20 @@ ul li {
   background-color: $color-wild-sand;
 }
 
+.bg-wild-sand-2 {
+  background-color: $color-wild-sand-2;
+}
+
 .bg-alto-3 {
   background-color: $color-alto-3;
+}
+
+.bg-picasso {
+  background-color: $color-picasso;
+}
+
+.bg-reef {
+  background-color: $color-reef;
 }
 
 //==========================================
@@ -619,6 +661,30 @@ ul li {
   content: "\f146";
 }
 
+.icon-font-notif::before {
+  content: "\f147";
+}
+
+.icon-font-dashboard::before {
+  content: "\f148";
+}
+
+.icon-font-edit-form::before {
+  content: "\f149";
+}
+
+.icon-font-shop-2::before {
+  content: "\f150";
+}
+
+.icon-font-node::before {
+  content: "\f151";
+}
+
+.icon-font-location::before {
+  content: "\f152";
+}
+
 //==========================================
 //z-index
 //==========================================
@@ -797,6 +863,10 @@ ul li {
   border-left-color: $color-gallery-2;
 }
 
+.border-left-color-alabaster {
+  border-left-color: $color-alabaster;
+}
+
 .border-left-color-mercury {
   border-left-color: $color-mercury;
 }
@@ -879,6 +949,9 @@ ul li {
         z-index: 1;
         border-radius: 50px;
         width: 7px;
+      }
+      &.scroll-x {
+        z-index: 1;
       }
       .scroll-element_track {
         background-color: $color-gallery;
