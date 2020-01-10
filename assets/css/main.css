@@ -1024,7 +1024,7 @@ ul li {
   display: none;
   bottom: 0;
   z-index: 2;
-  border-radius: 45px 45px 0 0;
+  border-radius: 22px 22px 0 0;
 }
 
 .search-box {
@@ -1152,7 +1152,7 @@ textarea.form-control::-ms-input-placeholder {
   font-family: icon-font, serif, sans-serif, cursive, fantasy, monospace;
   color: #C8C8C8;
   margin-right: 5px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 header {
