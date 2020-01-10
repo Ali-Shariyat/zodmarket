@@ -407,3 +407,10 @@ $(document).on("click", "[data-sidebar-tab]", function (e) {
     e.stopPropagation();
     e.preventDefault();
 });
+$('[data-number-spinner]').niceNumber({
+    autoSize:false,
+    autoSizeBuffer: 1,
+});
+$(document).on("click",".nice-number",function (e) {
+    e.stopPropagation();
+});

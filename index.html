@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/bootstrap/bootstrap4-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/flickity/flickity.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/nice-number/jquery.nice-number.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body class="rtl">
@@ -473,10 +475,84 @@
                         ورود/ثبت نام
                         <i class="icon-font-profile font-size-20 mr-2"></i>
                     </div>
-                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative">
+                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative cursor-pointer" data-toggle-class="active" data-toggle-class-popup-select="shop-popup">
                         <i class="icon-font-shop font-size-22 d-inline-flex color-white"></i>
                         <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
                     </a>
+                    <div class="shop-list-popup small-popup position-absolute bg-white border-radius-17 pl-2 pt-2" data-toggle-class-popup="shop-popup">
+                        <div class="scrollbar-inner" data-scroll-no-touch="">
+                            <ul class="px-3">
+                                <li class="d-flex align-items-center mb-3">
+                                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                    </div>
+                                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-flex">
+                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                            </div>
+                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                    </div>
+                                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-flex">
+                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                            </div>
+                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                    </div>
+                                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-flex">
+                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                            </div>
+                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                    </div>
+                                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-flex">
+                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                            </div>
+                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1999,6 +2075,8 @@
 <script src="assets/js/plugins/flickity/flickity.pkgd.min.js"></script>
 <script src="assets/js/plugins/flickity/flickity-fade.js"></script>
 <script src="assets/js/plugins/scrollbar/jquery.nicescroll.min.js"></script>
+<script src="assets/js/plugins/scrollbar/jquery.scrollbar.js"></script>
+<script src="assets/js/plugins/nice-number/jquery.nice-number.js"></script>
 <!--jquery calling-->
 <script src="assets/js/main.js"></script>
 </body>

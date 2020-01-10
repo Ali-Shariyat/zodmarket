@@ -334,6 +334,10 @@ ul li {
   color: #8E8E8E;
 }
 
+.color-dove-gray-7 {
+  color: #828282;
+}
+
 .color-masala {
   color: #403434;
 }
@@ -702,6 +706,10 @@ ul li {
   line-height: 1;
 }
 
+.font-size-8 {
+  font-size: 8px !important;
+}
+
 .font-size-10 {
   font-size: 10px !important;
 }
@@ -788,6 +796,10 @@ ul li {
   border-width: 1px;
 }
 
+.border-width-2 {
+  border-width: 2px;
+}
+
 .border-width-3 {
   border-width: 3px;
 }
@@ -842,6 +854,10 @@ ul li {
 
 .border-color-gallery-2 {
   border-color: #EBEBEB;
+}
+
+.border-color-mercury {
+  border-color: #E1E1E1;
 }
 
 .border-color-silver-5 {
@@ -2196,6 +2212,46 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .small-popup.active {
   visibility: visible;
   opacity: 1;
+}
+.small-popup.shop-list-popup {
+  min-width: 350px;
+}
+.small-popup.shop-list-popup::before {
+  top: -17px;
+  left: 20px;
+}
+.small-popup.shop-list-popup .scrollbar-inner {
+  max-height: 248px;
+}
+.small-popup.shop-list-popup .shop-list-popup-img {
+  width: 68px;
+  height: 68px;
+}
+.small-popup.shop-list-popup .shop-list-popup-main {
+  width: calc(100% - 68px);
+}
+.small-popup.shop-list-popup .shop-list-popup-main .nice-number {
+  flex-direction: row-reverse;
+}
+.small-popup.shop-list-popup .shop-list-popup-main .nice-number input {
+  height: 22px;
+  width: 22px !important;
+  padding: 0 4px;
+}
+.small-popup.shop-list-popup .shop-list-popup-main .nice-number button {
+  border: none;
+  background-color: #E8E8E8;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  padding-left: 1px;
+  color: #828282;
+  outline: none;
 }
 .small-popup .scrollbar-inner {
   max-height: 176px;

@@ -16,18 +16,18 @@
         width: 85px;
         height: 85px;
         border: 3px solid $color-gallery-3;
-        .edit-avatar{
+        .edit-avatar {
           left: 0;
           right: 0;
           bottom: 0;
-          top:0;
+          top: 0;
           visibility: hidden;
           opacity: 0;
           transition: all .2s ease;
         }
         &:hover,
-        &.active{
-          .edit-avatar{
+        &.active {
+          .edit-avatar {
             visibility: visible;
             opacity: 1;
           }
@@ -238,7 +238,47 @@
     visibility: visible;
     opacity: 1;
   }
+  &.shop-list-popup {
+    min-width: 350px;
+    &::before{
+      top:-17px;
+      left: 20px;
+    }
+    .scrollbar-inner{
+      max-height: 248px;
+    }
+    .shop-list-popup-img{
+      width: 68px;
+      height: 68px;
+    }
+    .shop-list-popup-main{
+      width: calc(100% - 68px);
+      .nice-number{
+        flex-direction: row-reverse;
+        input{
+          height: 22px;
+          width: 22px !important;
+          padding: 0 4px;
+        }
+        button{
+          border: none;
+          background-color: $color-mercury-2;
+          width: 22px;
+          height: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          font-size: $f-16;
+          border-radius: 8px;
+          padding-left: 1px;
+          color: $color-dove-gray-7;
+          outline: none;
 
+        }
+      }
+    }
+  }
   .scrollbar-inner {
     max-height: 176px;
   }
@@ -263,11 +303,11 @@
       right: 30px;
       top: -20px;
     }
-    .profile-sidebar-header-avatar{
+    .profile-sidebar-header-avatar {
       width: 72px !important;
       height: 72px !important;
       &.active,
-      &:hover{
+      &:hover {
         border: 3px solid $color-coral-red;
       }
     }
