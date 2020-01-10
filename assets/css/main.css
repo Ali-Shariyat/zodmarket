@@ -1,4 +1,47 @@
 @charset "UTF-8";
+/*-------------------------------------------*\
+   mixins.scss
+   - font face
+   - transition
+   - numbers
+   - media query
+   - user select
+\*-------------------------------------------*/
+/*-------------------------------------------*\
+   variables.scss
+   - font default
+   - colors
+   - numbers
+\*-------------------------------------------*/
+/*-------------------------------------------*\
+   reboot.scss
+   - font face
+   - reboots
+   - buttons
+   - user select
+   - text decoration line
+   - margin and padding
+   - box shadows
+   - colors
+   - background colors
+   - background colors after before
+   - background image options
+   - icon fonts
+   - z indexs
+   - line heights
+   - font size
+   - flex
+   - colors
+   - border - border widths - border colors - border styles
+   - custom container
+   - black page
+   - scroll bar
+   - shop small
+   - search box
+   - custom control
+   - loader
+   - rating star
+\*-------------------------------------------*/
 @font-face {
   font-family: "iran-yekan";
   font-style: normal;
@@ -991,8 +1034,8 @@ ul li {
   padding-left: 22px;
 }
 .search-box .search-btn {
-  left: 10px;
-  top: calc(50% + 1px);
+  left: 16px;
+  top: calc(50% + 2px);
   transform: translate(0, -50%);
 }
 
@@ -1299,6 +1342,9 @@ main .grouping-content ul li > div:hover {
     width: 198px;
   }
 }
+main .ad-poster {
+  height: 95px;
+}
 main .ad .ad-big, main .ad .ad-small {
   height: 213px;
 }
@@ -1311,7 +1357,7 @@ main .slider-home-page ul li.is-selected {
   }
 }
 main .slider-home-page ul li .slider-home-page-image {
-  height: 458px;
+  height: 388px;
   width: 100%;
 }
 main .slider-home-page ul li .slider-home-page-image::before {
@@ -1391,19 +1437,24 @@ main .slider-home-page .chevron.chevron-right {
     right: 10px;
   }
 }
+main .slider .slider-title i.icon-font-laps::before {
+  top: 4px;
+  position: relative;
+}
 main .slider .slider-title i.background-icon::after {
   content: "";
   left: 6px;
   right: 0;
-  bottom: 0;
-  width: 43px;
-  height: 43px;
+  bottom: -4px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   border-radius: 19px 13px 9px 13px;
   z-index: -1;
 }
 main .slider .slider-item > div {
   transition: all 0.2s ease;
+  padding: 2px;
 }
 main .slider .slider-item > div:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
@@ -1435,9 +1486,9 @@ main .slider .slider-item > div .slider-item-image .product-discount::before {
   width: 4px;
 }
 main .slider .slider-item > div .slider-item-content .add-to-shop {
-  width: 45px;
-  height: 45px;
-  border: 5px solid #fff;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
   left: 18px;
   top: -22px;
 }
@@ -1486,8 +1537,11 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 .category-content .category-sidebar-right .grouping > div {
   border: 2px solid #F1F1F1;
 }
-.category-content .category-sidebar-right .grouping > div.active .grouping-header i {
+.category-content .category-sidebar-right .grouping > div .grouping-header i {
   transform: rotate(180deg);
+}
+.category-content .category-sidebar-right .grouping > div.active .grouping-header i {
+  transform: rotate(0deg);
 }
 .category-content .category-sidebar-right .grouping > div .grouping-header i {
   transition: all 0.2s ease;

@@ -43,6 +43,9 @@ main {
       }
     }
   }
+  .ad-poster{
+    height: 95px;
+  }
   .ad {
     .ad-big, .ad-small {
       height: 213px;
@@ -58,7 +61,7 @@ main {
           padding: 0 15px !important;
         }
         .slider-home-page-image {
-          height: 458px;
+          height: 388px;
           width: 100%;
           &::before {
             content: "";
@@ -144,14 +147,20 @@ main {
   .slider {
     .slider-title {
       i {
+        &.icon-font-laps{
+          &::before{
+            top: 4px;
+            position: relative;
+          }
+        }
         &.background-icon {
           &::after {
             content: "";
             left: 6px;
             right: 0;
-            bottom: 0;
-            width: 43px;
-            height: 43px;
+            bottom: -4px;
+            width: 30px;
+            height: 30px;
             position: absolute;
             border-radius: 19px 13px 9px 13px;
             z-index: -1;
@@ -162,6 +171,7 @@ main {
     .slider-item {
       > div {
         transition: all .2s ease;
+        padding: 2px;
         &:hover {
           //background-color: $color-picasso;
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
@@ -204,10 +214,9 @@ main {
         }
         .slider-item-content {
           .add-to-shop {
-            width: 45px;
-            height: 45px;
-            border: 5px solid $color-white;
-
+            width: 40px;
+            height: 40px;
+            border: 3px solid $color-white;
             left: 18px;
             top: -22px;
           }

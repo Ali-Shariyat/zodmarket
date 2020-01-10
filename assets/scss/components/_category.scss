@@ -53,10 +53,15 @@
     .grouping {
       > div {
         border: 2px solid $color-seashell;
+        .grouping-header {
+          i {
+            transform: rotate(180deg);
+          }
+        }
         &.active {
           .grouping-header {
             i {
-              transform: rotate(180deg);
+              transform: rotate(0deg);
             }
           }
         }

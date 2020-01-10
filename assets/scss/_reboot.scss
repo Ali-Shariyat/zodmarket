@@ -1,3 +1,33 @@
+/*-------------------------------------------*\
+   reboot.scss
+   - font face
+   - reboots
+   - buttons
+   - user select
+   - text decoration line
+   - margin and padding
+   - box shadows
+   - colors
+   - background colors
+   - background colors after before
+   - background image options
+   - icon fonts
+   - z indexs
+   - line heights
+   - font size
+   - flex
+   - colors
+   - border - border widths - border colors - border styles
+   - custom container
+   - black page
+   - scroll bar
+   - shop small
+   - search box
+   - custom control
+   - loader
+   - rating star
+\*-------------------------------------------*/
+
 //@include font-face(iran-yekan, '../fonts/iran-yekan/BYEKAN', normal, normal, ttf);
 @include font-face(iran-yekan, '../fonts/iran-yekan/IRANYEKANWEBLIGHT', 300, normal, woff);
 @include font-face(iran-yekan, '../fonts/iran-yekan/IRANYEKANWEBBOLD', bold, normal, woff);
@@ -701,7 +731,7 @@ ul li {
 }
 
 //==========================================
-//z-index
+//z indexs
 //==========================================
 .z-index-1 {
   z-index: 1;
@@ -711,7 +741,7 @@ ul li {
 }
 
 //==========================================
-//line-height
+//line height
 //==========================================
 .line-height-1 {
   line-height: 1;
@@ -723,6 +753,7 @@ ul li {
 .font-size-8 {
   font-size: $f-8 !important;
 }
+
 .font-size-10 {
   font-size: $f-10 !important;
 }
@@ -809,6 +840,7 @@ ul li {
 .border-radius-8 {
   border-radius: 8px;
 }
+
 .border-radius-17 {
   border-radius: 17px;
 }
@@ -907,6 +939,7 @@ ul li {
 .border-bottom-color-coral-red {
   border-bottom-color: $color-coral-red;
 }
+
 .border-bottom-color-mercury {
   border-bottom-color: $color-mercury;
 }
@@ -946,7 +979,7 @@ ul li {
 }
 
 //==========================================
-//black-page
+//black page
 //==========================================
 .black-page {
   top: 0;
@@ -1038,14 +1071,14 @@ ul li {
     padding-left: 22px;
   }
   .search-btn {
-    left: 10px;
-    top: calc(50% + 1px);
+    left: 16px;
+    top: calc(50% + 2px);
     transform: translate(0, -50%);
   }
 }
 
 //==========================================
-//custom-control
+//custom control
 //==========================================
 .custom-radio {
   .custom-control-input {
@@ -1179,7 +1212,7 @@ textarea {
 }
 
 //==========================================
-//loader
+//rating star
 //==========================================
 .br-widget {
   a{
