@@ -464,6 +464,10 @@ ul li {
   background-color: $color-reef;
 }
 
+.bg-mint-green {
+  background-color: $color-mint-green;
+}
+
 //==========================================
 //background colors after before
 //==========================================
@@ -1038,7 +1042,6 @@ ul li {
 //slider
 //==========================================
 .item {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

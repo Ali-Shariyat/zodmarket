@@ -45,6 +45,15 @@ main {
   }
   .ad-poster{
     height: 95px;
+    @include media-query("(max-width: 991px)") {
+      height: 7vw;
+    }
+    @include media-query("(max-width: 767px)") {
+      height: 14vw;
+    }
+    @include media-query("(max-width: 575px)") {
+      height: 19vw;
+    }
   }
   .ad {
     .ad-big, .ad-small {
@@ -68,18 +77,25 @@ main {
             background-color: $color-picasso;
             position: absolute;
             top: 0;
-            right: 0;
-            left: 0;
+            right: 40px;
+            left: 40px;
             bottom: 40px;
             z-index: -1;
             border-radius: 174px 159px 112px 212px;
             @include media-query("(max-width: 767px)") {
-              left: 0;
+              left: 20px;
+              right: 30px;
             }
           }
           .discount {
-            left: 28px;
             top: 10px;
+            left: 60px;
+            @include media-query("(max-width: 350px)") {
+              left: 0;
+            }
+            @include media-query("(max-width: 767px)") {
+              left: 20px;
+            }
           }
         }
         .slider-home-page-content {
@@ -131,20 +147,32 @@ main {
       position: absolute;
       cursor: pointer;
       &.chevron-left {
-        left: 0;
+        left: 16px;
+        @include media-query("(max-width: 767px)") {
+          left: 0;
+        }
         @include media-query("(max-width: 575px)") {
-          left: 10px;
+          left: 18px;
         }
       }
       &.chevron-right {
-        right: 0;
-        @include media-query("(max-width: 575px)") {
-          right: 10px;
+        right: 30px;
+        @include media-query("(max-width: 767px)") {
+          right: 0;
         }
+        @include media-query("(max-width: 575px)") {
+          right: 20px;
+        }
+      }
+      @include media-query("(max-width: 767px)") {
+        top: calc(50% - 78px);
       }
     }
   }
   .slider {
+    [data-slider]{
+      margin: 0 -5px !important;
+    }
     .slider-title {
       i {
         &.icon-font-laps{
@@ -167,8 +195,25 @@ main {
           }
         }
       }
+      .chevron{
+        width: 30px;
+        height: 30px;
+      }
     }
     .slider-item {
+      @include media-query("(max-width: 767px)") {
+        flex: 0 0 33.333333% !important;
+        max-width: 33.333333% !important;
+      }
+      @include media-query("(max-width: 450px)") {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+      }
+      @include media-query("(max-width: 350px)") {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+
       > div {
         transition: all .2s ease;
         padding: 2px;
@@ -222,6 +267,18 @@ main {
           }
         }
       }
+    }
+  }
+}
+.category-product-btn{
+  i{
+    @include media-query("(max-width: 567px)") {
+      font-size: 16px !important;
+    }
+  }
+  span{
+    @include media-query("(max-width: 567px)") {
+      font-size: 14px !important;
     }
   }
 }

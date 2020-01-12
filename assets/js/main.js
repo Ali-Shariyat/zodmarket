@@ -76,17 +76,60 @@ $('[data-slider]').each(function () {
         $this.height($this.find(".item").outerHeight(true));
         $this.find(".this-slider").height($this.find(".item").outerHeight(true));
     }, 10);
-    $this.find(".chevron-left").click(function () {
-        $this.find(".this-slider").flickity('next');
-    });
-    $this.find(".chevron-right").click(function () {
-        $this.find(".this-slider").flickity('previous');
-    });
+    if ($this.siblings(".slider-title").find(".chevron-left").length) {
+        $this.siblings(".slider-title").find(".chevron-left").click(function () {
+            $(this).parents(".slider-title").siblings("[data-slider]").find(".this-slider").flickity('next');
+        });
+    }else{
+        $this.find(".chevron-left").click(function () {
+            $this.find(".this-slider").flickity('previous');
+        });
+    }
+    if ($this.siblings(".slider-title").find(".chevron-right").length) {
+        $this.siblings(".slider-title").find(".chevron-right").click(function () {
+            $(this).parents(".slider-title").siblings("[data-slider]").find(".this-slider").flickity('previous');
+        });
+    }else{
+        $this.find(".chevron-right").click(function () {
+            $this.find(".this-slider").flickity('previous');
+        });
+    }
     $(window).on('ready load resize orientationchange', function () {
         $this.height($this.find(".item").outerHeight(true));
         $this.find(".this-slider").height($this.find(".item").outerHeight(true));
 
-        if ($(this).width() <= 600) {
+
+        if ($(this).width() <= 350) {
+            $this.attr("data-disable-number", $this.attr("data-disable-number-xxs"));
+            if ($this.find(".this-slider .item").length <= $this.attr("data-disable-number")) {
+                option["draggable"] = false;
+                $this.find(".this-slider").flickity('destroy').flickity(option);
+            } else {
+                option["draggable"] = true;
+                option["groupCells"] = eval($this.attr("data-disable-number"));
+                $this.find(".this-slider").flickity('destroy').flickity(option);
+
+                $this.find(".this-slider").flickity('selectCell', 1);
+
+
+            }
+        }
+        if ($(this).width() > 350 && $(this).width() < 450) {
+            $this.attr("data-disable-number", $this.attr("data-disable-number-xs"));
+            if ($this.find(".this-slider .item").length <= $this.attr("data-disable-number")) {
+                option["draggable"] = false;
+                $this.find(".this-slider").flickity('destroy').flickity(option);
+            } else {
+                option["draggable"] = true;
+                option["groupCells"] = eval($this.attr("data-disable-number"));
+                $this.find(".this-slider").flickity('destroy').flickity(option);
+
+                $this.find(".this-slider").flickity('selectCell', 1);
+
+
+            }
+        }
+        if ($(this).width() > 450 && $(this).width() < 767) {
             $this.attr("data-disable-number", $this.attr("data-disable-number-s"));
             if ($this.find(".this-slider .item").length <= $this.attr("data-disable-number")) {
                 option["draggable"] = false;
@@ -436,7 +479,7 @@ $('[data-main-tab] textarea').mousemove(function () {
     });
 
 //==================
-// nice number
+//nice number
 //==================
     $('[data-number-spinner]').niceNumber({
         autoSize:false,

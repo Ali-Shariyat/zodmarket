@@ -47,8 +47,9 @@
           height: 72px;
         }
         > div {
-          border: 3px solid $color-gallery-2;
+          border: 2px solid $color-gallery-2;
           overflow: hidden;
+          padding: 4px;
         }
       }
     }
@@ -79,6 +80,9 @@
 .product-description {
   min-height: 426px;
   max-height: 426px;
+  .product-description{
+    min-height: 100%;
+  }
 
   @include media-query("(max-width: 991px)") {
     min-height: 28vw;

@@ -489,6 +489,10 @@ ul li {
   background-color: #D2FF9F;
 }
 
+.bg-mint-green {
+  background-color: #86F88A;
+}
+
 .bg-after-atomic-tangerine::after {
   background-color: #FFA259;
 }
@@ -1006,7 +1010,6 @@ ul li {
 }
 
 .item {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1223,6 +1226,9 @@ header .header-big, header .header-small {
   top: 0;
   z-index: 3;
 }
+header .header-big .row {
+  padding: 0 14px;
+}
 header .menu > ul > li.active a::before {
   content: "";
   position: absolute;
@@ -1345,6 +1351,21 @@ main .grouping-content ul li > div:hover {
 main .ad-poster {
   height: 95px;
 }
+@media only screen and (max-width: 991px) {
+  main .ad-poster {
+    height: 7vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main .ad-poster {
+    height: 14vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  main .ad-poster {
+    height: 19vw;
+  }
+}
 main .ad .ad-big, main .ad .ad-small {
   height: 213px;
 }
@@ -1365,20 +1386,31 @@ main .slider-home-page ul li .slider-home-page-image::before {
   background-color: #FFF29f;
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
+  right: 40px;
+  left: 40px;
   bottom: 40px;
   z-index: -1;
   border-radius: 174px 159px 112px 212px;
 }
 @media only screen and (max-width: 767px) {
   main .slider-home-page ul li .slider-home-page-image::before {
-    left: 0;
+    left: 20px;
+    right: 30px;
   }
 }
 main .slider-home-page ul li .slider-home-page-image .discount {
-  left: 28px;
   top: 10px;
+  left: 60px;
+}
+@media only screen and (max-width: 350px) {
+  main .slider-home-page ul li .slider-home-page-image .discount {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main .slider-home-page ul li .slider-home-page-image .discount {
+    left: 20px;
+  }
 }
 @media only screen and (max-width: 390px) {
   main .slider-home-page ul li .slider-home-page-content {
@@ -1422,20 +1454,38 @@ main .slider-home-page .chevron {
   cursor: pointer;
 }
 main .slider-home-page .chevron.chevron-left {
-  left: 0;
+  left: 16px;
+}
+@media only screen and (max-width: 767px) {
+  main .slider-home-page .chevron.chevron-left {
+    left: 0;
+  }
 }
 @media only screen and (max-width: 575px) {
   main .slider-home-page .chevron.chevron-left {
-    left: 10px;
+    left: 18px;
   }
 }
 main .slider-home-page .chevron.chevron-right {
-  right: 0;
+  right: 30px;
+}
+@media only screen and (max-width: 767px) {
+  main .slider-home-page .chevron.chevron-right {
+    right: 0;
+  }
 }
 @media only screen and (max-width: 575px) {
   main .slider-home-page .chevron.chevron-right {
-    right: 10px;
+    right: 20px;
   }
+}
+@media only screen and (max-width: 767px) {
+  main .slider-home-page .chevron {
+    top: calc(50% - 78px);
+  }
+}
+main .slider [data-slider] {
+  margin: 0 -5px !important;
 }
 main .slider .slider-title i.icon-font-laps::before {
   top: 4px;
@@ -1451,6 +1501,28 @@ main .slider .slider-title i.background-icon::after {
   position: absolute;
   border-radius: 19px 13px 9px 13px;
   z-index: -1;
+}
+main .slider .slider-title .chevron {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 767px) {
+  main .slider .slider-item {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .slider .slider-item {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  main .slider .slider-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
 }
 main .slider .slider-item > div {
   transition: all 0.2s ease;
@@ -1491,6 +1563,17 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   border: 3px solid #fff;
   left: 18px;
   top: -22px;
+}
+
+@media only screen and (max-width: 567px) {
+  .category-product-btn i {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .category-product-btn span {
+    font-size: 14px !important;
+  }
 }
 
 .original-category ul li {
@@ -1668,8 +1751,9 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   }
 }
 .carousel .carousel-nav ul li > div {
-  border: 3px solid #EBEBEB;
+  border: 2px solid #EBEBEB;
   overflow: hidden;
+  padding: 4px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1699,6 +1783,9 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   min-height: 426px;
   max-height: 426px;
   padding-bottom: 8px;
+}
+.product-description .product-description {
+  min-height: 100%;
 }
 @media only screen and (max-width: 991px) {
   .product-description {
