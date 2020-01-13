@@ -2106,6 +2106,9 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   width: 33px;
   height: 33px;
 }
+.after-purchase .after-purchase-main .after-purchase-rating .br-widget a::before {
+  font-size: 36px;
+}
 
 .purchase .purchase-main {
   min-height: inherit !important;

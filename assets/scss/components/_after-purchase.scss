@@ -184,5 +184,14 @@
         height: 33px;
       }
     }
+    .after-purchase-rating{
+      .br-widget {
+        a{
+          &::before{
+            font-size: 36px;
+          }
+        }
+      }
+    }
   }
 }
