@@ -15,14 +15,18 @@
 </head>
 <body class="rtl">
 
+<!----------- header ----------->
 <header class="">
+    <!----------- header big in lg and xl ----------->
     <div class="py-4 header-big position-fixed bg-white d-none d-lg-block">
         <div class="container custom-container position-relative">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="d-inline-flex">
+                    <!----------- logo ----------->
                     <div class="logo">
                         <a href="#"><img src="assets/image/logo.png" alt="logo"> </a>
                     </div>
+                    <!----------- menu in header ----------->
                     <div class="menu d-flex align-items-center mr-5">
                         <ul class="d-flex mb-1">
                             <li class="ml-4 active">
@@ -38,6 +42,7 @@
                                         <i class="icon-font-grouping color-persimmon font-size-12"></i>
                                         دسته بندی ها</a>
                                 </div>
+                                <!----------- sub menu ----------->
                                 <div class="menu-lg-main position-absolute">
                                     <div class="bg-white d-flex">
                                         <ul class="menu-lg-main-right bg-wild-sand py-2 pr-2" data-hover>
@@ -465,35 +470,47 @@
                     </div>
                 </div>
                 <div class="d-inline-flex justify-content-end">
+                    <!----------- search box big ----------->
                     <form class="search-box overflow-hidden border-radius-50 border-color-atomic-tangerine border-width-3 border-style-solid d-flex col-xl-6 align-items-center">
-                        <input type="text" placeholder="جستجو کن" class="border-0 outline-none w-100 h-100 font-size-14">
+                        <input type="text" placeholder="جستجو کن"
+                               class="border-0 outline-none w-100 h-100 font-size-14">
                         <a href="#" class="search-btn bg-white position-absolute "><i
                                 class="icon-font-search font-size-18 color-malachite"></i>
                         </a>
                     </form>
-                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center font-size-14" data-toggle="modal" data-target="#login-sign">
+                    <!----------- login-signup btn ----------->
+                    <div class="login-btn btn bg-coral-red border-radius-50 color-white py-2 h-47 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center font-size-14"
+                         data-toggle="modal" data-target="#login-sign">
                         ورود/ثبت نام
                         <i class="icon-font-profile font-size-18 mr-2"></i>
                     </div>
-                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative cursor-pointer" data-toggle-class="active" data-toggle-class-popup-select="shop-popup">
+                    <!----------- shop btn ----------->
+                    <a class="shop-icon bg-malachite color-white d-inline-flex justify-content-center align-items-center border-radius-50 mr-2 position-relative cursor-pointer"
+                       data-toggle-class="active" data-toggle-class-popup-select="shop-popup">
                         <i class="icon-font-shop font-size-18 d-inline-flex color-white"></i>
                         <span class="shop-item-number bg-white d-inline-flex color-black position-absolute border-radius-50 border-width-3 border-color-malachite border-style-solid justify-content-center align-items-center font-size-12">۳</span>
                     </a>
-                    <div class="shop-list-popup small-popup position-absolute bg-white border-radius-17 pl-2 pt-2" data-toggle-class-popup="shop-popup">
+                    <!----------- shop list menu big ----------->
+                    <div class="shop-list-popup small-popup position-absolute bg-white border-radius-17 pl-2 pt-2"
+                         data-toggle-class-popup="shop-popup">
                         <div class="scrollbar-inner" data-scroll-no-touch="">
                             <ul class="px-3">
                                 <li class="d-flex align-items-center mb-3">
                                     <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
-                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                                             class="w-100">
                                     </div>
                                     <div class="shop-list-popup-main overflow-hidden pr-3">
-                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                                            محصول</h6>
                                         <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-inline-flex">
-                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                                <input type="number" data-number-spinner min="1"
+                                                       class="border-0 outline-none" value="1">
                                             </div>
-                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                            <a href=""
+                                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
                                                 <h6 class="mb-0 font-size-8">حذف از سبد</h6>
                                             </a>
                                         </div>
@@ -501,16 +518,20 @@
                                 </li>
                                 <li class="d-flex align-items-center mb-3">
                                     <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
-                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                                             class="w-100">
                                     </div>
                                     <div class="shop-list-popup-main overflow-hidden pr-3">
-                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                                            محصول</h6>
                                         <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-inline-flex">
-                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                                <input type="number" data-number-spinner min="1"
+                                                       class="border-0 outline-none" value="1">
                                             </div>
-                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                            <a href=""
+                                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
                                                 <h6 class="mb-0 font-size-8">حذف از سبد</h6>
                                             </a>
                                         </div>
@@ -518,16 +539,20 @@
                                 </li>
                                 <li class="d-flex align-items-center mb-3">
                                     <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
-                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                                             class="w-100">
                                     </div>
                                     <div class="shop-list-popup-main overflow-hidden pr-3">
-                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                                            محصول</h6>
                                         <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-inline-flex">
-                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                                <input type="number" data-number-spinner min="1"
+                                                       class="border-0 outline-none" value="1">
                                             </div>
-                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                            <a href=""
+                                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
                                                 <h6 class="mb-0 font-size-8">حذف از سبد</h6>
                                             </a>
                                         </div>
@@ -535,16 +560,20 @@
                                 </li>
                                 <li class="d-flex align-items-center mb-3">
                                     <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
-                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img" class="w-100">
+                                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                                             class="w-100">
                                     </div>
                                     <div class="shop-list-popup-main overflow-hidden pr-3">
-                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام محصول</h6>
+                                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                                            محصول</h6>
                                         <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-inline-flex">
-                                                <input type="number" data-number-spinner min="1" class="border-0 outline-none" value="1">
+                                                <input type="number" data-number-spinner min="1"
+                                                       class="border-0 outline-none" value="1">
                                             </div>
-                                            <a href="" class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                            <a href=""
+                                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
                                                 <h6 class="mb-0 font-size-8">حذف از سبد</h6>
                                             </a>
                                         </div>
@@ -557,20 +586,25 @@
             </div>
         </div>
     </div>
+    <!----------- header in s and md ----------->
     <div class="d-flex d-lg-none justify-content-between container-fluid header-small py-2 position-fixed bg-white">
+        <!----------- menu small btn to open menu ----------->
         <div class="menu-small-icon d-flex align-items-center">
             <i class="icon-font-hammer font-size-18"></i>
         </div>
+        <!----------- page logo in small page ----------->
         <div class="logo pr-4">
             <a href="#"><img src="assets/image/logo.png" alt="logo"></a>
         </div>
+        <!----------- search btn in small size ----------->
         <div class="search-login-icon d-inline-flex align-items-center">
             <span class="icon-font-search font-size-20" data-toggle="modal" data-target="#search-box"></span>
             <div class="dividing-line py-2 mr-3 ml-1"></div>
-            <a class="icon-font-profile font-size-20 font-size-20 mr-2" data-toggle="modal" data-target="#login-sign"></a>
+            <a class="icon-font-profile font-size-20 font-size-20 mr-2" data-toggle="modal"
+               data-target="#login-sign"></a>
         </div>
     </div>
-
+    <!----------- menu sidebar in small size ----------->
     <div class="menu-items position-fixed h-100 text-white">
         <div class="close-menu w-100 d-flex justify-content-end"><i
                 class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex"></i></div>
@@ -589,10 +623,10 @@
                 <a class="nav-link" href="#">تخفیف ها</a>
             </li>
         </ul>
-
     </div>
 </header>
 
+<!----------- main content of site ----------->
 <main>
     <div class="container custom-container after-purchase purchase">
         <div class="row">
@@ -903,6 +937,7 @@
     </div>
 </main>
 
+<!----------- footer ----------->
 <footer class="bg-seashell pt-5 pb-0 mt-5 flex-column d-none d-lg-flex">
     <div class="container custom-container d-flex flex-md-row flex-wrap">
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -1006,6 +1041,7 @@
 </div>
 
 <!-- modal -->
+<!----------- search box modal show in responsive ----------->
 <div class="modal fade search-box-modal" id="search-box" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -1019,6 +1055,7 @@
         </div>
     </div>
 </div>
+<!----------- factor list in popup ----------->
 <div class="modal fade search-box-modal" id="factor-list" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -1099,6 +1136,7 @@
         </div>
     </div>
 </div>
+<!----------- login signUp popup ----------->
 <div class="modal fade search-box-modal" id="login-sign" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog h-100 my-0 d-flex align-items-center justify-content-center login-sign-popup" role="document">

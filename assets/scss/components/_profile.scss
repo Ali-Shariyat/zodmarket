@@ -239,6 +239,7 @@
     opacity: 1;
   }
   &.shop-list-popup {
+    left: 5px;
     min-width: 350px;
     &::before{
       top:-17px;

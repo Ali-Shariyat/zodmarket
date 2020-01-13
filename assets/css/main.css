@@ -2355,6 +2355,7 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
   opacity: 1;
 }
 .small-popup.shop-list-popup {
+  left: 5px;
   min-width: 350px;
 }
 .small-popup.shop-list-popup::before {

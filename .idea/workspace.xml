@@ -4,7 +4,14 @@
     <list default="true" id="5ecfd80c-7209-4ce7-8d22-6b872e213005" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,9 +120,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="922" y="185" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578851140840" />
-    <state x="647" y="99" width="626" height="852" key="find.popup" timestamp="1578851727949">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="460" y="70" width="626" height="599" key="find.popup" timestamp="1578897153817">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="460" y="70" width="626" height="599" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1578897153817" />
     <state x="647" y="99" width="626" height="852" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578851727949" />
+    <state x="339" y="155" key="run.anything.popup" timestamp="1578903737762">
+      <screen x="0" y="0" width="1366" height="698" />
+    </state>
+    <state x="339" y="155" key="run.anything.popup/0.0.1366.698@0.0.1366.698" timestamp="1578903737762" />
   </component>
 </project>
