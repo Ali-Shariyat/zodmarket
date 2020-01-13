@@ -5,13 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/components/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_category.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_category.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purchase-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purchase-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +47,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\My Files\projects\project\fonts\iran-yekan" />
-      <recent name="C:\My Files\projects\project\sass\mixins" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\My Files\projects\zodmarket\assets\image\banner" />
       <recent name="C:\My Files\projects\zodmarket\assets\image" />
       <recent name="C:\My Files\Project's\zodmarket\assets\js\plugins\a" />
       <recent name="C:\My Files\projects\zodmarket\assets\css\plugins\jquery-ui" />
       <recent name="C:\My Files\projects\zodmarket\assets\js\plugins\jquery-ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\My Files\projects\project\fonts\iran-yekan" />
+      <recent name="C:\My Files\projects\project\sass\mixins" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -116,18 +115,19 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578830127878" />
-    <state x="922" y="185" key="SettingsEditor" timestamp="1578851140840">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="221" y="0" key="SettingsEditor" timestamp="1578910781207">
+      <screen x="0" y="0" width="1366" height="698" />
     </state>
+    <state x="221" y="0" key="SettingsEditor/0.0.1366.698@0.0.1366.698" timestamp="1578910781207" />
     <state x="922" y="185" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578851140840" />
     <state x="460" y="70" width="626" height="599" key="find.popup" timestamp="1578897153817">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="460" y="70" width="626" height="599" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1578897153817" />
     <state x="647" y="99" width="626" height="852" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578851727949" />
-    <state x="339" y="155" key="run.anything.popup" timestamp="1578903737762">
+    <state x="339" y="155" key="run.anything.popup" timestamp="1578910715344">
       <screen x="0" y="0" width="1366" height="698" />
     </state>
-    <state x="339" y="155" key="run.anything.popup/0.0.1366.698@0.0.1366.698" timestamp="1578903737762" />
+    <state x="339" y="155" key="run.anything.popup/0.0.1366.698@0.0.1366.698" timestamp="1578910715344" />
   </component>
 </project>

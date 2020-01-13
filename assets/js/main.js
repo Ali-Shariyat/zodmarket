@@ -30,9 +30,12 @@
 $(".black-page , .close-menu i").click(function () {
     $(".menu-items").css({right: -300});
     $(".black-page").fadeOut();
+    $("[data-close-btn]").trigger("click")
     $("html").removeAttr("style");
 });
-
+$("[data-open-black-page]").click(function(){
+    $(".black-page").fadeIn();
+})
 //==================
 // menu btn
 //==================
@@ -263,6 +266,7 @@ $("[data-open-popup]").click(function (e) {
 //==================
 $("[data-close-btn]").click(function () {
     $(this).parents("[data-close-selector]").stop().fadeOut();
+    $(".black-page").fadeOut();
 });
 
 //==================

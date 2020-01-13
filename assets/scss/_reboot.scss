@@ -166,6 +166,10 @@ ul li {
   outline: none;
 }
 
+.h-40 {
+  height: 40px;
+}
+
 .h-47 {
   height: 47px;
 }
@@ -754,6 +758,10 @@ ul li {
 //==========================================
 //font size
 //==========================================
+.font-size-6 {
+  font-size: $f-6 !important;
+}
+
 .font-size-8 {
   font-size: $f-8 !important;
 }
@@ -1063,13 +1071,15 @@ ul li {
   bottom: 0;
   z-index: 2;
   border-radius: 22px 22px 0 0;
+  right: 0;
+  left: 0;
 }
 
 //==========================================
 //search box
 //==========================================
 .search-box {
-  height: 47px;
+  height: 40px;
   input {
     padding-left: 22px;
   }
