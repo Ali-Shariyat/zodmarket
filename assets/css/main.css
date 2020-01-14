@@ -1567,6 +1567,12 @@ main .slider .slider-item > div .slider-item-image .product-discount::before {
   background-color: #FA4252;
   width: 4px;
 }
+main .slider .slider-item > div .slider-item-image .product-save {
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  left: 15px;
+}
 main .slider .slider-item > div .slider-item-content .add-to-shop {
   width: 40px;
   height: 40px;
@@ -1816,6 +1822,11 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 }
 .product-description .product-description {
   min-height: 100%;
+}
+.product-description p {
+  color: #828282;
+  margin-top: 10px;
+  line-height: 1.7;
 }
 @media only screen and (max-width: 991px) {
   .product-description {
@@ -2108,6 +2119,15 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 }
 .after-purchase .after-purchase-main .after-purchase-rating .br-widget a::before {
   font-size: 36px;
+}
+.after-purchase .after-purchase-main .after-purchase-textarea::placeholder {
+  font-size: 14px;
+}
+.after-purchase .after-purchase-main .after-purchase-textarea:-ms-input-placeholder {
+  font-size: 14px;
+}
+.after-purchase .after-purchase-main .after-purchase-textarea::-ms-input-placeholder {
+  font-size: 14px;
 }
 
 .purchase .purchase-main {

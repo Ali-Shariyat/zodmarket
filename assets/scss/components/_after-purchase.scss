@@ -193,5 +193,16 @@
         }
       }
     }
+    .after-purchase-textarea{
+      &::placeholder {
+        font-size: $f-14;
+      }
+      &:-ms-input-placeholder {
+        font-size: $f-14;
+      }
+      &::-ms-input-placeholder {
+        font-size: $f-14;
+      }
+    }
   }
 }
