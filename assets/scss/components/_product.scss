@@ -150,6 +150,7 @@
   }
   .share-btn {
     transition: all .3s ease;
+    background-color: $color-white;
     &:hover {
       background-color: $color-atomic-tangerine;
       * {

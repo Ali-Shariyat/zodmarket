@@ -588,6 +588,13 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="d-flex justify-content-between align-items-center pr-4 py-2">
+                            <div>
+                                <span class="font-size-12">تعداد اقلام : 3</span>
+                                <h6 class="font-size-14">جمع خرید : <span class="color-malachite">352421</span></h6>
+                            </div>
+                            <div class="btn bg-malachite border-radius-50 color-white py-2 h-40 d-flex align-items-center btn-hover d-flex align-items-center mr-2 col-xl-4 col-lg-4 justify-content-center font-size-14">تایید و خرید</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -889,17 +896,23 @@
                                 <span>پرفروش ترین</span>
                             </a>
                         </li>
-                        <li class="d-none d-md-inline-flex">
-                            <a href="#" class="btn bg-malachite color-white py-1 pr-3 pl-3 border-radius-50 font-size-14 ml-1">پرفروش ترین</a>
-                        </li>
-                        <li class="d-none d-md-inline-flex">
-                            <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">جدیدترین</a>
-                        </li>
-                        <li class="d-none d-md-inline-flex">
-                            <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">ارزان ترین</a>
-                        </li>
-                        <li class="d-none d-md-inline-flex">
-                            <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">گرانترین</a>
+                        <li class="category-search-tools-menu-small border-radius-17"  data-close-selector data-select-popup="sort" data-sort-select="sort-text-1">
+
+                            <i class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex d-md-none" data-close-btn></i>
+                            <ul class="mb-0">
+                                <li class="d-inline-flex">
+                                    <a href="#" class="btn bg-malachite color-white py-1 pr-3 pl-3 border-radius-50 font-size-14 ml-1">پرفروش ترین</a>
+                                </li>
+                                <li class="d-inline-flex">
+                                    <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">جدیدترین</a>
+                                </li>
+                                <li class="d-inline-flex">
+                                    <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">ارزان ترین</a>
+                                </li>
+                                <li class="d-inline-flex">
+                                    <a href="#" class="py-1 pr-2 pl-2 border-radius-50 ml-1 color-nobel font-size-14">گرانترین</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <!----------- search in product items ----------->
@@ -912,35 +925,34 @@
                     </div>
                 </div>
                 <!----------- category sort menu in responsive ----------->
-                <div class="category-search-tools-menu-small position-fixed border-radius-17" data-close-selector data-select-popup="sort" data-sort-select="sort-text-1">
-                    <i class="icon-font-close px-2 pt-2 pb-1 font-size-26 d-inline-flex d-md-none" data-close-btn></i>
-                    <ul>
-                        <li>
-                            <div class="custom-control custom-radio py-2 pr-5">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label pr-3" for="customRadio1">پرفروش ترین</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="custom-control custom-radio py-2 pr-5">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label pr-3" for="customRadio2">جدید ترین</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="custom-control custom-radio py-2 pr-5">
-                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label pr-3" for="customRadio3">ارزان ترین</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="custom-control custom-radio py-2 pr-5">
-                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label pr-3" for="customRadio4">گرانترین</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+<!--                <div class="category-search-tools-menu-small position-fixed border-radius-17" data-close-selector data-select-popup="sort" data-sort-select="sort-text-1">-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <div class="custom-control custom-radio py-2 pr-5">-->
+<!--                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">-->
+<!--                                <label class="custom-control-label pr-3" for="customRadio1">پرفروش ترین</label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="custom-control custom-radio py-2 pr-5">-->
+<!--                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">-->
+<!--                                <label class="custom-control-label pr-3" for="customRadio2">جدید ترین</label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="custom-control custom-radio py-2 pr-5">-->
+<!--                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">-->
+<!--                                <label class="custom-control-label pr-3" for="customRadio3">ارزان ترین</label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="custom-control custom-radio py-2 pr-5">-->
+<!--                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">-->
+<!--                                <label class="custom-control-label pr-3" for="customRadio4">گرانترین</label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
                 <!----------- category items ----------->
                 <div class="slider overflow-hidden">
                     <div class="p-reverse mt-2">
@@ -1247,6 +1259,25 @@
                             </li>
 
                         </ul>
+                        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="icon-font-chevron-right font-size-12 color-black d-inline-flex"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link color-black" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link color-black" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link color-black" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link color-black" href="#">4</a></li>
+                                <li class="page-item active"><a class="page-link color-black" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="icon-font-chevron-left font-size-12 color-black d-inline-flex"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -1717,12 +1748,109 @@
 </footer>
 
 <!--small shop btn from responsive-->
-<div class="shop-small bg-coral-red py-2 px-3 position-fixed w-100 d-lg-none">
-    <div class="d-flex w-100 justify-content-between align-items-center">
+<div class="shop-small position-fixed w-100 d-lg-none">
+    <div class="d-flex w-100 justify-content-between align-items-center bg-coral-red py-2 px-3 shop-small-header">
         <span class="color-white">جمع خرید : ۱۴۵۰۰</span>
         <a href="#" class="d-flex bg-atomic-tangerine p-2 border-radius-50">
-            <i class="icon-font-shop font-size-22 d-inline-flex color-white font-size-20"></i>
+            <i class="icon-font-shop font-size-22 d-inline-flex color-white font-size-20 shop-small-btn"></i>
         </a>
+    </div>
+    <div class="shop-list-popup small-popup bg-white border-radius-17 pl-2 pt-2">
+        <div class="scrollbar-inner" data-scroll-no-touch="">
+            <ul class="px-3">
+                <li class="d-flex align-items-center mb-3">
+                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                             class="w-100">
+                    </div>
+                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                            محصول</h6>
+                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-flex">
+                                <input type="number" data-number-spinner min="1"
+                                       class="border-0 outline-none" value="1">
+                            </div>
+                            <a href=""
+                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                             class="w-100">
+                    </div>
+                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                            محصول</h6>
+                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-flex">
+                                <input type="number" data-number-spinner min="1"
+                                       class="border-0 outline-none" value="1">
+                            </div>
+                            <a href=""
+                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                             class="w-100">
+                    </div>
+                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                            محصول</h6>
+                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-flex">
+                                <input type="number" data-number-spinner min="1"
+                                       class="border-0 outline-none" value="1">
+                            </div>
+                            <a href=""
+                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                    <div class="shop-list-popup-img overflow-hidden border-radius-17 border-color-mercury border-style-solid border-width-2">
+                        <img src="assets/image/slider/slider-2.png" alt="shop-list-popup-img"
+                             class="w-100">
+                    </div>
+                    <div class="shop-list-popup-main overflow-hidden pr-3">
+                        <h6 class="font-size-12 color-dove-gray-7 font-weight-normal mb-1">نام
+                            محصول</h6>
+                        <span class="font-size-12 color-dove-gray-7 font-weight-normal d-flex">قیمت : ۱۴۰۰۰ تومان</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-flex">
+                                <input type="number" data-number-spinner min="1"
+                                       class="border-0 outline-none" value="1">
+                            </div>
+                            <a href=""
+                               class="btn bg-coral-red color-white d-inline-flex align-items-center justify-content-between py-2 border-radius-8">
+                                <h6 class="mb-0 font-size-8">حذف از سبد</h6>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center pr-4 py-2">
+            <div>
+                <span class="font-size-12">تعداد اقلام : 3</span>
+                <h6 class="font-size-14">جمع خرید : <span class="color-malachite">352421</span></h6>
+            </div>
+            <div class="btn bg-malachite border-radius-50 color-white py-2 px-3 h-40 d-flex align-items-center btn-hover d-flex align-items-center mr-2 justify-content-center font-size-14">تایید و خرید</div>
+        </div>
     </div>
 </div>
 

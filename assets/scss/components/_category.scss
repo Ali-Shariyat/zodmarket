@@ -186,10 +186,18 @@
   .category-search-tools-menu-small {
     left: 40px;
     right: 40px;
-    bottom: 80px;
-    top: 80px;
+    bottom: 40px;
+    top: 70px;
     background-color: #fff;
-    display: none;
     z-index: 22;
+    display: block;
+    @include media-query("(max-width:767px)"){
+      display: none;
+      position: fixed;
+      li{
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
   }
 }

@@ -367,6 +367,9 @@ $(document).on("click", "[data-toggle-class]", function (e) {
         $this.find(".text-changer").text($this.attr("data-before-text"));
         $("[data-toggle-class-popup=" + $this.attr("data-toggle-class-popup-select") + "]").removeClass("active");
     }
+    if($this.hasClass("btn-view-purchase-invoice")){
+        $this.parent().siblings(".view-purchase").toggleClass("active");
+    }
     e.stopPropagation();
     e.preventDefault();
 });
@@ -491,4 +494,13 @@ $('[data-number-spinner]').niceNumber({
 });
 $(document).on("click", ".nice-number", function (e) {
     e.stopPropagation();
+});
+
+//==================
+//shop small btn
+//==================
+$(".shop-small-btn").click(function (e) {
+    var $this = $(this);
+    $this.parents(".shop-small").find(".shop-list-popup").stop().slideToggle();
+    e.preventDefault()
 });

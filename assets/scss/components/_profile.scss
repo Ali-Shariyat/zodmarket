@@ -178,7 +178,9 @@
             }
             .ticket-list-parent {
               .ticket-list {
-                height: 408px;
+                .title-table{
+                  width: 300px !important;
+                }
                 @include media-query("(max-width: 1200px)") {
                   .w-75 {
                     width: 30% !important;

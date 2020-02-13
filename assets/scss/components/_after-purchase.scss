@@ -171,14 +171,12 @@
             content: "\F125";
           }
         }
-        ~ {
-          .view-purchase {
-            display: block;
-          }
-        }
       }
     }
     .view-purchase {
+      &.active{
+        display: block;
+      }
       .view-purchase-btn {
         width: 33px;
         height: 33px;
