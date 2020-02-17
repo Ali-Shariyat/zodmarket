@@ -1267,7 +1267,28 @@ textarea {
       }
     }
   }
+  &.just-radio-box {
+    width: 22px;
+    height: 22px;
+    min-height: 20px;
+    padding: 0;
 
+    label {
+      height: 100%;
+      width: 100%;
+    }
+
+    .custom-control-label {
+      &::before,
+      &::after {
+        right: 0;
+        top: 0;
+        left: auto;
+        transform: translate(0, 0);
+      }
+    }
+  }
+&.custom-checkbox{
   .custom-control-input {
     &:checked {
       ~ {
@@ -1303,6 +1324,8 @@ textarea {
       }
     }
   }
+}
+
 
   label {
     &::before,

@@ -5,11 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/icon-font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/icon-font.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/icon-font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/icon-font.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_reboot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/mixins/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/mixins/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/purchase-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,8 @@
       <workItem from="1578848621746" duration="5125000" />
       <workItem from="1578987295404" duration="2933000" />
       <workItem from="1578992978181" duration="3638000" />
-      <workItem from="1581608248737" duration="1457000" />
+      <workItem from="1581608248737" duration="1774000" />
+      <workItem from="1581935665728" duration="2698000" />
     </task>
     <servers />
   </component>
@@ -127,13 +128,13 @@
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.698@0.0.1366.698" timestamp="1578910781207" />
     <state x="922" y="192" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1581608299289" />
-    <state x="460" y="70" width="626" height="599" key="find.popup" timestamp="1581595015668">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="647" y="99" width="627" height="852" key="find.popup" timestamp="1581935914276">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="460" y="66" width="626" height="568" key="find.popup/0.0.1366.698@0.0.1366.698" timestamp="1578925080205" />
     <state x="460" y="70" width="626" height="599" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1581595015668" />
     <state x="647" y="96" width="880" height="822" key="find.popup/0.0.1920.1010@0.0.1920.1010" timestamp="1578988815711" />
-    <state x="647" y="99" width="626" height="852" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578851727949" />
+    <state x="647" y="99" width="627" height="852" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1581935914276" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1581601394495">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -1168,16 +1168,32 @@ textarea.form-control::-ms-input-placeholder {
   left: auto;
   transform: translate(0, 0);
 }
-.custom-control .custom-control-input:checked ~ .custom-control-label::before {
+.custom-control.just-radio-box {
+  width: 22px;
+  height: 22px;
+  min-height: 20px;
+  padding: 0;
+}
+.custom-control.just-radio-box label {
+  height: 100%;
+  width: 100%;
+}
+.custom-control.just-radio-box .custom-control-label::before, .custom-control.just-radio-box .custom-control-label::after {
+  right: 0;
+  top: 0;
+  left: auto;
+  transform: translate(0, 0);
+}
+.custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #FA4252;
 }
-.custom-control .custom-control-input:checked ~ .custom-control-label::after {
+.custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB3aWR0aD0iMzA5cHQiIGhlaWdodD0iMjM1cHQiIHZpZXdCb3g9IjAgMCAzMDkgMjM1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gMjg0LjAxIDAuMDAgTCAyODQuNDkgMC4wMCBDIDI5Mi4xOSA4LjM1IDMwMC40OSAxNi4xNCAzMDguNDEgMjQuMjkgTCAzMDkuMDAgMjQuMzEgTCAzMDkuMDAgMjQuMzEgQyAyNTIuMjUgODAuNzggMTk1Ljc1IDEzNy41MSAxMzkuMTIgMTk0LjEwIEMgMTI1LjU0IDIwNy43NSAxMTEuODEgMjIxLjI1IDk4LjMzIDIzNS4wMCBMIDk4LjE2IDIzNS4wMCBDIDY1LjU3IDIwMi4xOCAzMi43MCAxNjkuNjUgMC4xNyAxMzYuNzkgTCAwLjAwIDEzOC4wMCBMIDAuMDAgMTM2LjgxIEMgOC4xNCAxMjguNTYgMTYuMzIgMTIwLjM0IDI0LjYzIDExMi4yNiBDIDQ5LjA5IDEzNi45MCA3My43MCAxNjEuMzkgOTguMTkgMTg1Ljk5IEMgMTYwLjE1IDEyNC4wMSAyMjIuMTggNjIuMTAgMjg0LjAxIDAuMDAgWiIgLz48L3N2Zz4NCg==");
 }
-.custom-control .custom-control-input:active ~ .custom-control-label::before {
+.custom-control.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
   background-color: #F76D79;
 }
-.custom-control .custom-control-input:focus ~ .custom-control-label::before {
+.custom-control.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: none;
 }
 .custom-control label::before, .custom-control label::after {
@@ -1382,7 +1398,7 @@ header .menu-items {
   transition: all 0.5s;
   overflow-y: scroll;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
   header .menu-items .nav-link {
     padding: 0.5rem 0;
   }
@@ -1401,7 +1417,7 @@ header .menu-items ul {
 header .menu-items ul.menu-down {
   display: none;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
   header .menu-items ul.menu-down li {
     color: #fff;
     padding: 0;
