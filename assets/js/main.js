@@ -467,9 +467,11 @@ $('[data-main-tab] textarea').mousemove(function () {
 //==================
 // sidebar tab
 //==================
+// window.location.hash = $("[data-sidebar-tab].active").attr("data-sidebar-tab");
 $(document).on("click", "[data-sidebar-tab]", function (e) {
     var _self = $(this);
     var _get_data_val = _self.attr("data-sidebar-tab");
+    window.location.hash = _self.attr("data-sidebar-tab");
     if (!_self.hasClass("active")) {
         $(".profile-main").animate({
             scrollTop: 0
@@ -484,7 +486,13 @@ $(document).on("click", "[data-sidebar-tab]", function (e) {
     e.stopPropagation();
     e.preventDefault();
 });
-
+if ($("[data-sidebar-tab]").length) {
+    if (window.location.hash !== "") {
+        $("[data-sidebar-tab=" + window.location.hash.replace("#", "") + "]").trigger("click");
+    }else{
+        $("[data-sidebar-tab]:first").trigger("click");
+    }
+}
 //==================
 //nice number
 //==================
