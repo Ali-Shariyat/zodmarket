@@ -1894,6 +1894,7 @@ main .slider .slider-item > div .slider-item-content .add-to-shop {
 }
 .carousel .carousel-main ul li img {
   max-width: 100%;
+  height: 330px;
 }
 .carousel .carousel-nav ul {
   width: 288px;
