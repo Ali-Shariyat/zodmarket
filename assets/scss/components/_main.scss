@@ -58,6 +58,13 @@ main {
   .ad {
     .ad-big, .ad-small {
       height: 213px;
+      div{
+        background-size: cover;
+        background-position: center;
+      }
+      @include media-query("(max-width: 600px)") {
+        height: 26vw;
+      }
     }
   }
   .slider-home-page {

@@ -1502,6 +1502,15 @@ main .ad-poster {
 main .ad .ad-big, main .ad .ad-small {
   height: 213px;
 }
+main .ad .ad-big div, main .ad .ad-small div {
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 600px) {
+  main .ad .ad-big, main .ad .ad-small {
+    height: 26vw;
+  }
+}
 main .slider-home-page ul li.is-selected {
   z-index: 2;
 }
